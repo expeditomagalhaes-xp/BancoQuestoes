@@ -201,6 +201,14 @@ nav.tabs button{position:relative}
       </div>
     </div>
     <div class="card"><div class="label">Por matéria</div><div id="pstats"></div></div>
+    <div class="card"><div class="label">Últimas respostas</div><div id="hist"></div></div>
+    <div class="card">
+      <div class="label">Cópia de segurança</div>
+      <p class="muted" style="font-size:.9rem">O progresso fica guardado no aparelho e funciona sem internet. Para não perder nada ao trocar de celular ou limpar o navegador, copie o código abaixo e guarde (num e-mail ou no WhatsApp para você mesmo). Para restaurar, cole o código e toque em Restaurar.</p>
+      <div class="row"><button class="btn ghost small" id="bkCopy">Copiar código</button><button class="btn ghost small" id="bkShow">Mostrar código</button></div>
+      <textarea id="bkText" rows="4" style="width:100%;font:inherit;font-size:.8rem;padding:8px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)" placeholder="Cole aqui um código de cópia de segurança"></textarea>
+      <div class="row"><button class="btn small" id="bkLoad">Restaurar</button><span class="muted" id="bkMsg" style="font-size:.9rem"></span></div>
+    </div>
     <div class="card">
       <div class="label">Sobre as questões</div>
       <p class="muted" style="font-size:.9rem" id="about"></p>
@@ -288,11 +296,13 @@ function startSession(list){
   sess={list:list,i:0,ok:0,done:0,answered:false,res:[]};
   $('setup').hidden=true;$('summary').hidden=true;$('quiz').hidden=false;showQ();window.scrollTo(0,0);
 }
+function histTag(id){var r=S.ans[id];if(!r)return '<span class="tag">Nova</span>';
+  return '<span class="tag" style="color:'+(r[2]?'var(--ok)':'var(--bad)')+'">'+(r[2]?'✓ Acertou da última vez':'✗ Errou da última vez')+' · '+r[0]+'✓ '+r[1]+'✗</span>'}
 function showQ(){
   var q=BYID[sess.list[sess.i]];sess.answered=false;
   $('sessScore').textContent=sess.ok+'/'+sess.done;
   $('sessLeft').textContent='questão '+(sess.i+1)+' de '+sess.list.length;
-  var head='<div class="qmeta"><span class="tag'+(q.t==='ce'?' ce':'')+'">'+esc(SN[q.s])+(q.t==='ce'?' · Certo ou errado':'')+'</span>'+(isWrong(q.id)?'<span class="tag" style="color:var(--bad)">Errada antes</span>':'')+'</div>';
+  var head='<div class="qmeta"><span class="tag'+(q.t==='ce'?' ce':'')+'">'+esc(SN[q.s])+(q.t==='ce'?' · Certo ou errado':'')+'</span>'+histTag(q.id)+'</div>';
   var body='<p class="qtext">'+esc(q.q)+'</p>';
   if(q.t==='ce'){
     sess.map=[0,1];
@@ -384,7 +394,21 @@ $('drawTema').onclick=function(){
 };
 
 /* ---------- progresso ---------- */
-function renderProg(){
+function renderHist(){
+  var ids=Object.keys(S.ans).filter(function(id){return BYID[id]}).sort(function(a,b){return S.ans[b][3]-S.ans[a][3]}).slice(0,30);
+  $('hist').innerHTML=ids.length?ids.map(function(id){var q=BYID[id],r=S.ans[id];var d=new Date(r[3]);
+    return '<div class="err"><span style="font-weight:600;color:'+(r[2]?'var(--ok)':'var(--bad)')+'">'+(r[2]?'✓ Acertou':'✗ Errou')+' <span class="muted" style="font-weight:400;font-size:.85rem">· '+esc(SN[q.s])+' · '+d.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'})+' '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})+'</span></span><span style="font-size:.95rem">'+esc(q.q.length>140?q.q.slice(0,140)+'…':q.q)+'</span></div>'}).join('')
+    :'<div class="empty">Você ainda não respondeu nenhuma questão.</div>';
+}
+function bkCode(){try{return btoa(unescape(encodeURIComponent(JSON.stringify(S))))}catch(e){return ''}}
+$('bkShow').onclick=function(){$('bkText').value=bkCode();$('bkMsg').textContent=''};
+$('bkCopy').onclick=function(){var c=bkCode();$('bkText').value=c;
+  try{navigator.clipboard.writeText(c).then(function(){$('bkMsg').textContent='Copiado.'},function(){$('bkText').select();$('bkMsg').textContent='Selecione o texto e copie.'})}catch(e){$('bkText').select();$('bkMsg').textContent='Selecione o texto e copie.'}};
+$('bkLoad').onclick=function(){var t=$('bkText').value.trim();if(!t){$('bkMsg').textContent='Cole o código primeiro.';return}
+  try{var v=JSON.parse(decodeURIComponent(escape(atob(t))));if(!v||typeof v.ans!=='object')throw 0;
+    S=Object.assign({ans:{},chk:{},red:{},flag:{}},v);persist();renderAll();go('progresso');$('bkMsg').textContent='Progresso restaurado.'}
+  catch(e){$('bkMsg').textContent='Código inválido. Confira se copiou ele inteiro.'}};
+function renderProg(){renderHist();
   var all=Object.keys(S.ans).filter(function(id){return BYID[id]});
   var r=0,w=0;all.forEach(function(id){r+=S.ans[id][0];w+=S.ans[id][1]});
   $('pAns').textContent=all.length;$('pPct').textContent=(r+w)?Math.round(r/(r+w)*100)+'%':'–';
@@ -418,7 +442,8 @@ function renderAll(){renderChips();renderBadges();var v=location.hash.slice(1);g
 /* ---------- início ---------- */
 segInit('srcseg','src','src');segInit('modeseg','mode','mode');
 load();
-fetch('questoes.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){setData(d);renderAll()})
+try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(e){}
+fetch('questoes.json').then(function(r){return r.json()}).then(function(d){setData(d);renderAll()})
  .catch(function(){document.querySelector('.wrap').insertAdjacentHTML('beforeend','<div class="card"><b>Não consegui carregar as questões.</b><span class="muted">Verifique a internet e abra de novo.</span></div>')});
 if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){try{var had=navigator.serviceWorker.controller,rl=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(had&&!rl){rl=true;location.reload()}});navigator.serviceWorker.register('sw.js').then(function(r){r.update&&r.update()}).catch(function(){})}catch(e){}}
 </script>
