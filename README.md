@@ -3,7 +3,7 @@
 App de estudo para o concurso do Corpo de Bombeiros Militar de Pernambuco (banca Instituto AOCP). Funciona no navegador e pode ser instalado no celular como aplicativo (PWA).
 
 - **Treino rápido:** rodadas de 10 questões, com resposta e comentário na hora. As alternativas são embaralhadas a cada vez.
-- **Conteúdos:** checklist do edital e dos índices do TAF.
+- **Conteúdos:** tópicos do edital 2026 (Soldado), cada um com um resumo teórico curto, checklist e índices do TAF.
 - **Erros:** caderno de erros automático. A questão sai de lá quando você acerta.
 - **Redação:** 100 temas, com sorteio.
 - **Progresso:** acertos por matéria, com meta de 75%.
@@ -20,6 +20,7 @@ App de estudo para o concurso do Corpo de Bombeiros Militar de Pernambuco (banca
 |---|---|
 | `index.html` | O app inteiro (telas e lógica) |
 | `questoes.json` | O banco de questões e os temas de redação |
+| `conteudos.json` | Tópicos do edital e resumos teóricos (`r` = lista de frases; `**texto**` vira negrito) |
 | `sw.js` | Funciona sem internet e atualiza sozinho |
 | `manifest.webmanifest`, `icon-*.png` | Instalação como app |
 
