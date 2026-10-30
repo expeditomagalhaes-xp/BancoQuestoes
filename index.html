@@ -113,7 +113,6 @@ nav.tabs button[aria-current="page"]{color:var(--accent)}
 nav.tabs .dot{min-width:18px;padding:0 4px;height:16px;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-size:.66rem;line-height:16px;position:absolute;margin-left:22px;margin-top:-4px}
 nav.tabs button{position:relative}
 [hidden]{display:none!important}
-.inp{font:inherit;padding:11px 12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
 </style>
 </head>
 <body>
@@ -123,7 +122,7 @@ nav.tabs button{position:relative}
       <div class="label">CBMPE 2026 · Instituto AOCP</div>
       <h1>Banco de Questões</h1>
     </div>
-    <div class="sync" id="sync">Progresso salvo neste aparelho</div>
+    <div class="sync">Progresso salvo neste aparelho</div>
   </header>
 
   <!-- TREINO -->
@@ -202,24 +201,6 @@ nav.tabs button{position:relative}
       </div>
     </div>
     <div class="card"><div class="label">Por matéria</div><div id="pstats"></div></div>
-    <div class="card" id="conta">
-      <div class="label">Conta (opcional)</div>
-      <div id="ctOff">
-        <p class="muted" style="font-size:.92rem;margin-bottom:10px">Sem conta, o progresso fica só neste aparelho. Entre com a mesma conta do Controle de Aulas (ou crie uma) para ter o progresso no celular e no computador.</p>
-        <form id="authForm" style="display:flex;flex-direction:column;gap:8px">
-          <input id="lem" type="email" autocomplete="username" placeholder="E-mail" class="inp">
-          <input id="lpw" type="password" autocomplete="current-password" placeholder="Senha" class="inp">
-          <div class="row"><button class="btn grow" type="submit" id="authGo">Entrar</button><button class="btn ghost grow" type="button" id="authUp">Criar conta</button></div>
-          <button class="linkbtn" type="button" id="authForgot" style="width:fit-content">Esqueci minha senha</button>
-          <p id="authMsg" class="muted" style="font-size:.9rem" hidden></p>
-        </form>
-      </div>
-      <div id="ctOn" hidden>
-        <p><b id="ctMail"></b></p>
-        <p class="muted" style="font-size:.9rem" id="ctStatus"></p>
-        <div class="row"><button class="btn ghost small" id="ctSync">Sincronizar agora</button><button class="btn ghost small" id="ctOut">Sair da conta</button></div>
-      </div>
-    </div>
     <div class="card">
       <div class="label">Sobre as questões</div>
       <p class="muted" style="font-size:.9rem" id="about"></p>
@@ -263,17 +244,7 @@ var CHKN={PT:'Língua Portuguesa',MAT:'Matemática',RL:'Raciocínio Lógico',INF
 var S={ans:{},chk:{},red:{},flag:{}};
 var LS='cbmpe-banco-v1';
 function load(){try{var v=JSON.parse(localStorage.getItem(LS)||'null');if(v)S=Object.assign({ans:{},chk:{},red:{},flag:{}},v)}catch(e){}}
-function persist(){try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){};if(window.cloudQueue)window.cloudQueue()}
-function initCloud(){if(window.cloudInit)window.cloudInit()}
-function setSync(t){document.getElementById('sync').textContent=t}
-function merge(a,b){ // junta dois estados (aparelho e nuvem) sem perder nada
-  var ra=a.reset||0,rb=b.reset||0,r=Math.max(ra,rb);
-  if(rb>ra){var t=a;a=b;b=t}
-  var o={reset:r,ans:{},chk:Object.assign({},ra===rb?b.chk:{},a.chk||{}),red:Object.assign({},ra===rb?b.red:{},a.red||{}),flag:Object.assign({},ra===rb?b.flag:{},a.flag||{})};
-  var ks={};Object.keys(a.ans||{}).concat(Object.keys(b.ans||{})).forEach(function(k){ks[k]=1});
-  Object.keys(ks).forEach(function(k){var x=(a.ans||{})[k],y=(b.ans||{})[k];var v=!x?y:!y?x:(x[3]>=y[3]?x:y);if(v&&v[3]>=r)o.ans[k]=v});
-  return o;
-}
+function persist(){try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){}}
 /* ---------- util ---------- */
 function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
@@ -425,7 +396,7 @@ function renderProg(){
 }
 $('reset').onclick=function(){$('resetConfirm').hidden=false};
 $('resetNo').onclick=function(){$('resetConfirm').hidden=true};
-$('resetYes').onclick=function(){S={ans:{},chk:{},red:{},flag:{},reset:Date.now()};persist();$('resetConfirm').hidden=true;renderAll()};
+$('resetYes').onclick=function(){S={ans:{},chk:{},red:{},flag:{}};persist();$('resetConfirm').hidden=true;renderAll()};
 
 /* ---------- navegação ---------- */
 var VIEWS=['treino','conteudos','erros','redacao','progresso'];
@@ -447,11 +418,10 @@ function renderAll(){renderChips();renderBadges();var v=location.hash.slice(1);g
 /* ---------- início ---------- */
 segInit('srcseg','src','src');segInit('modeseg','mode','mode');
 load();
-fetch('questoes.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){setData(d);renderAll();window._dataReady=true;initCloud()})
+fetch('questoes.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){setData(d);renderAll()})
  .catch(function(){document.querySelector('.wrap').insertAdjacentHTML('beforeend','<div class="card"><b>Não consegui carregar as questões.</b><span class="muted">Verifique a internet e abra de novo.</span></div>')});
 if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){try{var had=navigator.serviceWorker.controller,rl=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(had&&!rl){rl=true;location.reload()}});navigator.serviceWorker.register('sw.js').then(function(r){r.update&&r.update()}).catch(function(){})}catch(e){}}
 </script>
-<script type="module" src="nuvem.js"></script>
 
 </body>
 </html>

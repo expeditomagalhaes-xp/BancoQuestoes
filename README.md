@@ -1,30 +1,18 @@
 # Banco de Questões CBMPE
 
-App de estudo para o concurso do Corpo de Bombeiros Militar de Pernambuco (banca Instituto AOCP). Funciona no navegador e pode ser instalado no celular como aplicativo (PWA), igual ao Controle de Aulas.
+App de estudo para o concurso do Corpo de Bombeiros Militar de Pernambuco (banca Instituto AOCP). Funciona no navegador e pode ser instalado no celular como aplicativo (PWA).
 
 - **Treino rápido:** rodadas de 10 questões, com resposta e comentário na hora. As alternativas são embaralhadas a cada vez.
 - **Conteúdos:** checklist do edital e dos índices do TAF.
 - **Erros:** caderno de erros automático. A questão sai de lá quando você acerta.
 - **Redação:** 100 temas, com sorteio.
 - **Progresso:** acertos por matéria, com meta de 75%.
-- **Conta (opcional):** usa o mesmo login do Controle de Aulas para levar o progresso entre celular e computador.
+- **Sem cadastro:** o progresso fica salvo no próprio aparelho.
 
 ## Instalar no celular
 
 - **iPhone (Safari):** abra o link, toque em Compartilhar e depois em "Adicionar à Tela de Início".
 - **Android (Chrome):** abra o link, toque no menu ⋮ e depois em "Instalar app" ou "Adicionar à tela inicial".
-
-## Regra do Firestore (uma vez só)
-
-O progresso fica no documento `banco/{uid}` do projeto Firebase `controle-aulas`. No console do Firebase, abra **Firestore Database > Regras** e acrescente este bloco dentro de `match /databases/{database}/documents { ... }`, ao lado da regra de `users` que já existe:
-
-```
-match /banco/{uid} {
-  allow read, write: if request.auth != null && request.auth.uid == uid;
-}
-```
-
-Depois toque em **Publicar**. Sem essa regra, o app funciona normalmente, mas o progresso fica salvo só no aparelho.
 
 ## Arquivos
 
@@ -32,7 +20,6 @@ Depois toque em **Publicar**. Sem essa regra, o app funciona normalmente, mas o 
 |---|---|
 | `index.html` | O app inteiro (telas e lógica) |
 | `questoes.json` | O banco de questões e os temas de redação |
-| `nuvem.js` | Login e sincronização com o Firebase |
 | `sw.js` | Funciona sem internet e atualiza sozinho |
 | `manifest.webmanifest`, `icon-*.png` | Instalação como app |
 
