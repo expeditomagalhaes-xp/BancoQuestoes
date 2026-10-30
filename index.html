@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Banco de Questões CBMPE</title>
+<meta name="theme-color" content="#C62F1D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Questões">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F0F2F4;--surface:#FFFFFF;--ink:#14202B;--muted:#5A6672;--line:#D8DDE2;--soft:#E7EAED;
+  --accent:#C62F1D;--accent-ink:#FFFFFF;--ok:#1E7B57;--ok-soft:#E3F2EB;--bad:#C62F1D;--bad-soft:#F8E4E1;--warn:#8A5A12;
+  --f-display:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;
+  --f-body:'Barlow',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0E151C;--surface:#16202A;--ink:#E8EDF1;--muted:#9AA6B1;--line:#2A3743;--soft:#1F2B36;
+  --accent:#F0654F;--accent-ink:#1A0B08;--ok:#5CC49A;--ok-soft:#14322A;--bad:#F0654F;--bad-soft:#3A1E1A;--warn:#E0A64E;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5;
+  padding:calc(env(safe-area-inset-top,0px) + 14px) 14px calc(env(safe-area-inset-bottom,0px) + 86px)}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.1;margin:0}
+h1{font-size:1.9rem;text-transform:uppercase;letter-spacing:.01em}
+h2{font-size:1.45rem;text-transform:uppercase}
+p{margin:0}
+button{font:inherit;cursor:pointer;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.muted{color:var(--muted)}
+.label{font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.sync{font-size:.78rem;color:var(--muted);text-align:right}
+.card{background:var(--surface);border:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.seg{display:flex;border:1.5px solid var(--ink);width:100%}
+.seg button{flex:1;border:0;background:transparent;padding:9px 6px;font-weight:600;font-size:.92rem;border-right:1.5px solid var(--ink)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1.5px solid var(--line);background:var(--surface);padding:5px 11px;font-size:.88rem;font-weight:600}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent);color:var(--accent-ink)}
+.chip small{font-weight:500;opacity:.75}
+.btn{background:var(--accent);color:var(--accent-ink);border:0;padding:13px 18px;font-weight:600;font-size:1rem;min-height:48px}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.small{padding:7px 12px;min-height:36px;font-size:.9rem}
+.btn[disabled]{opacity:.45;cursor:default}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.grow{flex:1}
+
+/* questão */
+.qmeta{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+.tag{font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border:1.5px solid currentColor;padding:1px 7px;color:var(--muted)}
+.tag.ce{color:var(--warn)}
+.qtext{font-size:1.08rem;font-weight:500;overflow-wrap:anywhere}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:8px;align-items:start;text-align:left;width:100%;
+  background:var(--surface);border:1.5px solid var(--line);padding:11px 12px;min-height:50px;font-size:1rem}
+.opt b{font-family:var(--f-display);font-size:1.2rem;line-height:1.2}
+.opt span{overflow-wrap:anywhere}
+.opt:hover:not([disabled]){border-color:var(--ink)}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt[disabled]{cursor:default}
+.ce-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ce-opts .opt{grid-template-columns:1fr;text-align:center;font-weight:600;font-size:1.05rem}
+.fb{border-left:5px solid var(--ok);background:var(--ok-soft);padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+.fb.bad{border-color:var(--bad);background:var(--bad-soft)}
+.fb strong{font-size:1.02rem}
+.src{font-size:.78rem;color:var(--muted)}
+.linkbtn{background:none;border:0;padding:0;color:var(--muted);text-decoration:underline;font-size:.82rem}
+.sess{display:flex;gap:14px;align-items:baseline}
+.big{font-family:var(--f-display);font-weight:700;font-size:2rem;line-height:1;font-variant-numeric:tabular-nums}
+.bar{height:8px;background:var(--soft);position:relative;width:100%}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--accent);display:block}
+.bar.ok i{background:var(--ok)}
+
+/* listas */
+.subj{border-top:1px solid var(--line);padding-top:10px}
+details.sj{background:var(--surface);border:1px solid var(--line)}
+details.sj>summary{list-style:none;cursor:pointer;padding:12px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:center}
+details.sj>summary::-webkit-details-marker{display:none}
+details.sj>summary .bar{grid-column:1/-1}
+details.sj>summary .n{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem}
+.items{border-top:1px solid var(--line);padding:4px 0}
+.item{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;padding:9px 14px;align-items:start;cursor:pointer}
+.item input{width:22px;height:22px;accent-color:var(--accent);margin:1px 0 0}
+.item.done span{color:var(--muted);text-decoration:line-through}
+.stat{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.stat:last-child{border-bottom:0}
+.stat .n{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem}
+.stat .bar{grid-column:1/-1}
+.err{border-top:1px solid var(--line);padding:10px 0;display:flex;flex-direction:column;gap:4px}
+.empty{padding:20px;text-align:center;color:var(--muted)}
+.tema{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.tema input{width:22px;height:22px;accent-color:var(--accent)}
+.tema .c{font-size:.88rem;color:var(--muted)}
+
+/* barra inferior */
+nav.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(5,1fr);padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+nav.tabs button{background:none;border:0;padding:9px 2px 10px;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:.72rem;font-weight:600;color:var(--muted)}
+nav.tabs button svg{width:22px;height:22px}
+nav.tabs button[aria-current="page"]{color:var(--accent)}
+nav.tabs .dot{min-width:18px;padding:0 4px;height:16px;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-size:.66rem;line-height:16px;position:absolute;margin-left:22px;margin-top:-4px}
+nav.tabs button{position:relative}
+[hidden]{display:none!important}
+.inp{font:inherit;padding:11px 12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="label">CBMPE 2026 · Instituto AOCP</div>
+      <h1>Banco de Questões</h1>
+    </div>
+    <div class="sync" id="sync">Progresso salvo neste aparelho</div>
+  </header>
+
+  <!-- TREINO -->
+  <section id="v-treino" class="view">
+    <div class="card" id="setup">
+      <div class="label">Banco</div>
+      <div class="seg" id="srcseg">
+        <button data-src="cb" aria-pressed="true">CBMPE</button>
+        <button data-src="x" aria-pressed="false">Extras</button>
+        <button data-src="all" aria-pressed="false">Tudo</button>
+      </div>
+      <div class="label">Matérias <span style="text-transform:none;letter-spacing:0;font-weight:400">(nenhuma marcada = todas)</span></div>
+      <div class="chips" id="subjchips"></div>
+      <div class="label">Quais questões</div>
+      <div class="seg" id="modeseg">
+        <button data-mode="new" aria-pressed="true">Novas</button>
+        <button data-mode="wrong" aria-pressed="false">Erradas</button>
+        <button data-mode="rand" aria-pressed="false">Qualquer</button>
+      </div>
+      <div class="row">
+        <button class="btn grow" id="start">Começar</button>
+      </div>
+      <p class="muted" id="poolinfo" style="font-size:.9rem"></p>
+    </div>
+
+    <div id="quiz" hidden style="display:flex;flex-direction:column;gap:12px">
+      <div class="row">
+        <div class="sess grow"><span class="big" id="sessScore">0/0</span><span class="muted" id="sessLeft"></span></div>
+        <button class="btn ghost small" id="stop">Encerrar</button>
+      </div>
+      <div class="card" id="qcard"></div>
+    </div>
+
+    <div class="card" id="summary" hidden></div>
+  </section>
+
+  <!-- CONTEÚDOS -->
+  <section id="v-conteudos" class="view" hidden>
+    <div class="card">
+      <div class="row"><h2 class="grow">Conteúdos do edital</h2><span class="big" id="chkTotal">0%</span></div>
+      <div class="bar ok"><i id="chkBar" style="width:0"></i></div>
+      <p class="muted" style="font-size:.92rem">Marque cada tópico quando conseguir explicá-lo em uma frase e acertar as questões dele. Toque em "Treinar" para ir direto às questões da matéria.</p>
+    </div>
+    <div id="chklist" style="display:flex;flex-direction:column;gap:8px"></div>
+  </section>
+
+  <!-- ERROS -->
+  <section id="v-erros" class="view" hidden>
+    <div class="card">
+      <div class="row"><h2 class="grow">Caderno de erros</h2><span class="big" id="errCount">0</span></div>
+      <p class="muted" style="font-size:.92rem">Uma questão sai daqui quando você acerta ela na revisão.</p>
+      <button class="btn" id="redoErr">Refazer as erradas</button>
+    </div>
+    <div class="card" id="errlist"></div>
+  </section>
+
+  <!-- REDAÇÃO -->
+  <section id="v-redacao" class="view" hidden>
+    <div class="card">
+      <div class="row"><h2 class="grow">Temas de redação</h2><span class="big" id="redCount">0/100</span></div>
+      <p class="muted" style="font-size:.92rem">Dissertação de 15 a 20 linhas, vale 40 pontos (mínimo 12). Sorteie um tema, escreva à mão em 50 minutos e mande a foto no chat para correção.</p>
+      <button class="btn" id="drawTema">Sortear tema</button>
+      <div id="drawn"></div>
+    </div>
+    <div class="card" id="temas"></div>
+  </section>
+
+  <!-- PROGRESSO -->
+  <section id="v-progresso" class="view" hidden>
+    <div class="card">
+      <h2>Desempenho</h2>
+      <div class="row" style="gap:24px">
+        <div><div class="label">Respondidas</div><span class="big" id="pAns">0</span></div>
+        <div><div class="label">Acertos</div><span class="big" id="pPct">–</span></div>
+        <div><div class="label">Meta</div><span class="big">75%</span></div>
+      </div>
+    </div>
+    <div class="card"><div class="label">Por matéria</div><div id="pstats"></div></div>
+    <div class="card" id="conta">
+      <div class="label">Conta (opcional)</div>
+      <div id="ctOff">
+        <p class="muted" style="font-size:.92rem;margin-bottom:10px">Sem conta, o progresso fica só neste aparelho. Entre com a mesma conta do Controle de Aulas (ou crie uma) para ter o progresso no celular e no computador.</p>
+        <form id="authForm" style="display:flex;flex-direction:column;gap:8px">
+          <input id="lem" type="email" autocomplete="username" placeholder="E-mail" class="inp">
+          <input id="lpw" type="password" autocomplete="current-password" placeholder="Senha" class="inp">
+          <div class="row"><button class="btn grow" type="submit" id="authGo">Entrar</button><button class="btn ghost grow" type="button" id="authUp">Criar conta</button></div>
+          <button class="linkbtn" type="button" id="authForgot" style="width:fit-content">Esqueci minha senha</button>
+          <p id="authMsg" class="muted" style="font-size:.9rem" hidden></p>
+        </form>
+      </div>
+      <div id="ctOn" hidden>
+        <p><b id="ctMail"></b></p>
+        <p class="muted" style="font-size:.9rem" id="ctStatus"></p>
+        <div class="row"><button class="btn ghost small" id="ctSync">Sincronizar agora</button><button class="btn ghost small" id="ctOut">Sair da conta</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="label">Sobre as questões</div>
+      <p class="muted" style="font-size:.9rem" id="about"></p>
+      <button class="btn ghost small" id="reset" style="width:fit-content">Zerar meu progresso</button>
+      <div id="resetConfirm" hidden class="row"><span class="grow">Apagar respostas, checklist e redações?</span><button class="btn small" id="resetYes">Apagar</button><button class="btn ghost small" id="resetNo">Cancelar</button></div>
+    </div>
+  </section>
+</div>
+
+<nav class="tabs" id="tabs">
+  <button data-v="treino" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>Treino</button>
+  <button data-v="conteudos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg>Conteúdos</button>
+  <button data-v="erros"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Erros<span class="dot" id="errDot" hidden></span></button>
+  <button data-v="redacao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>Redação</button>
+  <button data-v="progresso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/></svg>Progresso</button>
+</nav>
+
+<script>
+var Q=[],TEMAS=[],BYID={};
+function setData(DATA){Q=DATA.q;TEMAS=DATA.red;BYID={};Q.forEach(function(q){q.g=q.g||(q.id.indexOf('cb-')===0?'cb':'x');BYID[q.id]=q})}
+var SN={PT:'Português',INF:'Informática',MAT:'Matemática',RL:'Raciocínio Lógico',FIS:'Física',BIO:'Biologia',DC:'Dir. Constitucional',
+  ATU:'Atualidades',HPE:'História de PE',DPEN:'Direito Penal',LPE:'Leg. Penal Especial',DPP:'Proc. Penal',DA:'Dir. Administrativo',
+  LEPE:'Legislação de PE',EST:'Estatística',CONT:'Contabilidade',ARQ:'Arquivologia'};
+var ORDER=['PT','MAT','RL','INF','FIS','BIO','DC','ATU','HPE','DA','DPEN','LPE','DPP','LEPE','EST','CONT','ARQ'];
+var CHK={
+ PT:['Interpretação de texto','Tipologia e gêneros textuais; figuras de linguagem','Classes de palavras','Ortografia e acentuação','Pontuação','Termos da oração','Período composto; funções de "que" e "se"','Concordância verbal e nominal','Regência e crase','Colocação pronominal','Coesão, coerência e significação das palavras','Formação de palavras e variação linguística'],
+ MAT:['Operações com naturais, inteiros, frações e decimais','Divisibilidade, MMC e MDC','Razão, proporção e regra de três','Porcentagem','Juros simples e compostos','Equações e sistemas do 1º grau','Equação do 2º grau','Funções do 1º e 2º grau','Geometria plana (ângulos, triângulos, Pitágoras, Tales)','Áreas, perímetros, volumes e unidades de medida','Estatística: média, mediana, moda, desvio-padrão','Probabilidade e análise combinatória','PA, PG, exponencial, logaritmo e trigonometria básica'],
+ RL:['Proposições, conectivos e tabela-verdade','Equivalências e negações','Quantificadores e diagramas lógicos','Argumentação, validade e falácias','Princípio multiplicativo e permutações','Combinações, arranjos e probabilidade'],
+ INF:['Internet, intranet, navegadores e redes','Segurança da informação (malware, phishing, backup)','Windows 11: arquivos, pastas, Painel de Controle','Word/Writer e Excel/Calc','PowerPoint/Impress, hardware e periféricos'],
+ FIS:['Grandezas, unidades, vetores e cinemática','Leis de Newton, atrito, trabalho, energia e potência','Hidrostática e termologia','Ondulatória, óptica, eletricidade e magnetismo'],
+ BIO:['Citologia, metabolismo e genética','Evolução, ecologia e meio ambiente','Seres vivos, corpo humano, saúde e primeiros socorros'],
+ DC:['Princípios fundamentais (arts. 1º a 4º)','Direitos e deveres individuais e coletivos (art. 5º)','Direitos sociais, nacionalidade, políticos e remédios','Organização do Estado e competências','Administração Pública (art. 37) e militares dos Estados','Poder Legislativo','Poder Executivo e Judiciário','Segurança pública (art. 144)','Súmulas e jurisprudência','ECA (Lei 8.069/1990)','Estatuto da Juventude (Lei 12.852/2013)','Lei Maria da Penha (Lei 11.340/2006)'],
+ ATU:['Globalização, geopolítica e conflitos','Migração, América Latina e Mercosul','Crise energética e hídrica, mudanças climáticas','Brasil: economia, SUS, educação e movimentos sociais','Violência contra a mulher e segurança pública'],
+ HPE:['Colonização, açúcar, Olinda, Recife e Nassau','Insurreição Pernambucana, quilombos e Palmares','Guerra dos Mascates e Revolução de 1817','Confederação do Equador, Cabanos, Praieira e cultura pernambucana'],
+ RED:['Estrutura da dissertação em 15 a 20 linhas','Tese, argumentos e repertório','Parágrafos, conectivos e coesão','Escrevi 3 redações cronometradas','Escrevi 6 redações cronometradas'],
+ TAF:['Barra fixa: 8 repetições','Abdominal: 45 em 1 min','Salto horizontal: 1,70 m','Shuttle run: até 11"40','Corrida 2.400 m: até 12\'36"','Natação 100 m: até 1\'50"']
+};
+var CHKN={PT:'Língua Portuguesa',MAT:'Matemática',RL:'Raciocínio Lógico',INF:'Informática',FIS:'Física',BIO:'Biologia',DC:'Direito Constitucional',ATU:'Atualidades',HPE:'História de Pernambuco',RED:'Redação',TAF:'Teste físico (índices masculinos)'};
+
+/* ---------- estado ---------- */
+var S={ans:{},chk:{},red:{},flag:{}};
+var LS='cbmpe-banco-v1';
+function load(){try{var v=JSON.parse(localStorage.getItem(LS)||'null');if(v)S=Object.assign({ans:{},chk:{},red:{},flag:{}},v)}catch(e){}}
+function persist(){try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){};if(window.cloudQueue)window.cloudQueue()}
+function initCloud(){if(window.cloudInit)window.cloudInit()}
+function setSync(t){document.getElementById('sync').textContent=t}
+function merge(a,b){ // junta dois estados (aparelho e nuvem) sem perder nada
+  var ra=a.reset||0,rb=b.reset||0,r=Math.max(ra,rb);
+  if(rb>ra){var t=a;a=b;b=t}
+  var o={reset:r,ans:{},chk:Object.assign({},ra===rb?b.chk:{},a.chk||{}),red:Object.assign({},ra===rb?b.red:{},a.red||{}),flag:Object.assign({},ra===rb?b.flag:{},a.flag||{})};
+  var ks={};Object.keys(a.ans||{}).concat(Object.keys(b.ans||{})).forEach(function(k){ks[k]=1});
+  Object.keys(ks).forEach(function(k){var x=(a.ans||{})[k],y=(b.ans||{})[k];var v=!x?y:!y?x:(x[3]>=y[3]?x:y);if(v&&v[3]>=r)o.ans[k]=v});
+  return o;
+}
+/* ---------- util ---------- */
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+function isWrong(id){var r=S.ans[id];return r&&r[2]===0}
+function $(id){return document.getElementById(id)}
+
+/* ---------- treino ---------- */
+var cfg={src:'cb',subj:{},mode:'new'};
+function poolSubjects(){var c={};Q.forEach(function(q){if(cfg.src==='all'||q.g===cfg.src)c[q.s]=(c[q.s]||0)+1});return c}
+function renderChips(){
+  var c=poolSubjects();
+  Object.keys(cfg.subj).forEach(function(k){if(!c[k])delete cfg.subj[k]});
+  $('subjchips').innerHTML=ORDER.filter(function(s){return c[s]}).map(function(s){
+    return '<button class="chip" data-s="'+s+'" aria-pressed="'+(!!cfg.subj[s])+'">'+esc(SN[s])+' <small>'+c[s]+'</small></button>'}).join('');
+  $('subjchips').querySelectorAll('.chip').forEach(function(b){b.onclick=function(){var s=b.dataset.s;if(cfg.subj[s])delete cfg.subj[s];else cfg.subj[s]=1;renderChips()}});
+  renderPoolInfo();
+}
+function buildPool(){
+  var any=Object.keys(cfg.subj).length===0;
+  return Q.filter(function(q){
+    if(!(cfg.src==='all'||q.g===cfg.src))return false;
+    if(!any&&!cfg.subj[q.s])return false;
+    if(cfg.mode==='new')return !S.ans[q.id];
+    if(cfg.mode==='wrong')return isWrong(q.id);
+    return true;
+  });
+}
+function renderPoolInfo(){
+  var n=buildPool().length;
+  $('poolinfo').textContent=n?(n+' questões disponíveis. Cada rodada tem até 10, em ordem aleatória.'):(cfg.mode==='wrong'?'Nenhuma questão errada aqui. Bom sinal.':'Você já respondeu todas destas. Escolha "Qualquer" para rever.');
+  $('start').disabled=!n;
+}
+function segInit(id,key,attr){
+  $(id).querySelectorAll('button').forEach(function(b){b.onclick=function(){
+    cfg[key]=b.dataset[attr];$(id).querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    if(key==='src')renderChips();else renderPoolInfo();
+  }});
+}
+var sess=null;
+function startSession(list){
+  sess={list:list,i:0,ok:0,done:0,answered:false,res:[]};
+  $('setup').hidden=true;$('summary').hidden=true;$('quiz').hidden=false;showQ();window.scrollTo(0,0);
+}
+function showQ(){
+  var q=BYID[sess.list[sess.i]];sess.answered=false;
+  $('sessScore').textContent=sess.ok+'/'+sess.done;
+  $('sessLeft').textContent='questão '+(sess.i+1)+' de '+sess.list.length;
+  var head='<div class="qmeta"><span class="tag'+(q.t==='ce'?' ce':'')+'">'+esc(SN[q.s])+(q.t==='ce'?' · Certo ou errado':'')+'</span>'+(isWrong(q.id)?'<span class="tag" style="color:var(--bad)">Errada antes</span>':'')+'</div>';
+  var body='<p class="qtext">'+esc(q.q)+'</p>';
+  if(q.t==='ce'){
+    sess.map=[0,1];
+    body+='<div class="ce-opts"><button class="opt" data-i="0"><span>Certo</span></button><button class="opt" data-i="1"><span>Errado</span></button></div>';
+  }else{
+    sess.map=shuffle(q.o.map(function(_,i){return i}));
+    body+='<div class="opts">'+sess.map.map(function(oi,pos){return '<button class="opt" data-i="'+oi+'"><b>'+'ABCDE'[pos]+'</b><span>'+esc(q.o[oi])+'</span></button>'}).join('')+'</div>';
+  }
+  body+='<div id="fb"></div>';
+  $('qcard').innerHTML=head+body;
+  $('qcard').querySelectorAll('.opt').forEach(function(b){b.onclick=function(){answer(q,+b.dataset.i)}});
+}
+function answer(q,i){
+  if(sess.answered)return;sess.answered=true;
+  var ok=i===q.a;sess.done++;if(ok)sess.ok++;
+  var r=S.ans[q.id]||[0,0,0,0];r=[r[0]+(ok?1:0),r[1]+(ok?0:1),ok?1:0,Date.now()];S.ans[q.id]=r;persist();
+  sess.res.push({id:q.id,ok:ok});
+  $('qcard').querySelectorAll('.opt').forEach(function(b){var k=+b.dataset.i;b.disabled=true;if(k===q.a)b.classList.add('right');else if(k===i)b.classList.add('wrong')});
+  var gab=q.t==='ce'?(q.a===0?'Certo':'Errado'):'ABCDE'[sess.map.indexOf(q.a)];
+  var last=sess.i===sess.list.length-1;
+  $('fb').innerHTML='<div class="fb'+(ok?'':' bad')+'"><strong>'+(ok?'Acertou.':'Errou. Resposta: '+gab+'.')+'</strong>'+(q.c?'<span>'+esc(q.c)+'</span>':'')+'</div>'+
+    '<div class="row" style="margin-top:10px"><button class="btn grow" id="next">'+(last?'Ver resultado':'Próxima')+'</button></div>'+
+    '<div class="row" style="justify-content:space-between;margin-top:6px"><span class="src">'+esc(q.f)+'</span><button class="linkbtn" id="flag">'+(S.flag[q.id]?'Marcada como suspeita':'Gabarito parece errado?')+'</button></div>';
+  $('sessScore').textContent=sess.ok+'/'+sess.done;
+  $('next').onclick=function(){if(last)endSession();else{sess.i++;showQ();window.scrollTo(0,0)}};
+  $('flag').onclick=function(){if(S.flag[q.id])delete S.flag[q.id];else S.flag[q.id]=1;persist();this.textContent=S.flag[q.id]?'Marcada como suspeita':'Gabarito parece errado?'};
+  try{$('next').focus({preventScroll:true})}catch(e){}
+  renderBadges();
+}
+function endSession(){
+  $('quiz').hidden=true;var s=$('summary');s.hidden=false;
+  var pct=sess.done?Math.round(sess.ok/sess.done*100):0;
+  var wrong=sess.res.filter(function(r){return !r.ok});
+  s.innerHTML='<div class="label">Fim da rodada</div><div class="row"><span class="big">'+sess.ok+'/'+sess.done+'</span><span class="muted">'+pct+'% · '+(pct>=75?'meta de 75% batida':'abaixo da meta de 75%')+'</span></div>'+
+   '<div class="bar'+(pct>=75?' ok':'')+'"><i style="width:'+pct+'%"></i></div>'+
+   '<div class="row"><button class="btn grow" id="again">Mais 10</button>'+(wrong.length?'<button class="btn ghost grow" id="redoNow">Refazer as '+wrong.length+' erradas</button>':'')+'</div>'+
+   '<button class="btn ghost small" id="back" style="width:fit-content">Mudar matérias</button>';
+  $('again').onclick=function(){var p=shuffle(buildPool().map(function(q){return q.id})).slice(0,10);if(p.length)startSession(p);else{s.hidden=true;$('setup').hidden=false;renderPoolInfo()}};
+  if(wrong.length)$('redoNow').onclick=function(){startSession(shuffle(wrong.map(function(r){return r.id})))};
+  $('back').onclick=function(){s.hidden=true;$('setup').hidden=false;renderChips()};
+  sess=null;renderAllSide();
+}
+$('start').onclick=function(){var p=shuffle(buildPool().map(function(q){return q.id})).slice(0,10);if(p.length)startSession(p)};
+$('stop').onclick=function(){if(sess&&sess.done)endSession();else{sess=null;$('quiz').hidden=true;$('setup').hidden=false;renderPoolInfo()}};
+
+/* ---------- conteúdos ---------- */
+var openChk={};
+function renderChk(){
+  var tot=0,dn=0;
+  $('chklist').innerHTML=Object.keys(CHK).map(function(s){
+    var items=CHK[s],d=items.filter(function(_,i){return S.chk[s+i]}).length;tot+=items.length;dn+=d;
+    var pct=Math.round(d/items.length*100);
+    var trainable=Q.some(function(q){return q.g==='cb'&&q.s===s});
+    return '<details class="sj" data-s="'+s+'"'+(openChk[s]?' open':'')+'><summary><span style="font-weight:600">'+esc(CHKN[s])+'</span><span class="n">'+d+'/'+items.length+'</span><div class="bar ok"><i style="width:'+pct+'%"></i></div></summary><div class="items">'+
+      items.map(function(t,i){var on=!!S.chk[s+i];return '<label class="item'+(on?' done':'')+'"><input type="checkbox" data-k="'+s+i+'"'+(on?' checked':'')+'><span>'+esc(t)+'</span></label>'}).join('')+
+      (trainable?'<div style="padding:6px 14px 12px"><button class="btn ghost small" data-train="'+s+'">Treinar '+esc(SN[s])+'</button></div>':'')+'</div></details>';
+  }).join('');
+  var p=tot?Math.round(dn/tot*100):0;$('chkTotal').textContent=p+'%';$('chkBar').style.width=p+'%';
+  $('chklist').querySelectorAll('details').forEach(function(d){d.ontoggle=function(){openChk[d.dataset.s]=d.open}});
+  $('chklist').querySelectorAll('input').forEach(function(c){c.onchange=function(){if(c.checked)S.chk[c.dataset.k]=1;else delete S.chk[c.dataset.k];persist();renderChk()}});
+  $('chklist').querySelectorAll('[data-train]').forEach(function(b){b.onclick=function(){
+    cfg.src='cb';cfg.subj={};cfg.subj[b.dataset.train]=1;cfg.mode='new';
+    $('srcseg').querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.src==='cb')});
+    $('modeseg').querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.mode==='new')});
+    go('treino');sess=null;$('quiz').hidden=true;$('summary').hidden=true;$('setup').hidden=false;renderChips();
+  }});
+}
+
+/* ---------- erros ---------- */
+function wrongIds(){return Object.keys(S.ans).filter(function(id){return BYID[id]&&isWrong(id)}).sort(function(a,b){return S.ans[b][3]-S.ans[a][3]})}
+function renderErr(){
+  var ids=wrongIds();$('errCount').textContent=ids.length;$('redoErr').disabled=!ids.length;
+  $('errlist').innerHTML=ids.length?ids.slice(0,60).map(function(id){var q=BYID[id];
+    var gab=q.t==='ce'?(q.a===0?'Certo':'Errado'):q.o[q.a];
+    return '<div class="err"><span class="tag" style="width:fit-content">'+esc(SN[q.s])+'</span><span>'+esc(q.q)+'</span><span style="color:var(--ok);font-weight:600">Resposta: '+esc(gab)+'</span>'+(q.c?'<span class="muted" style="font-size:.9rem">'+esc(q.c)+'</span>':'')+'</div>'}).join('')+(ids.length>60?'<p class="muted">Mostrando as 60 mais recentes.</p>':'')
+    :'<div class="empty">Nenhum erro pendente.</div>';
+}
+$('redoErr').onclick=function(){var ids=shuffle(wrongIds()).slice(0,10);if(ids.length){go('treino');startSession(ids)}};
+
+/* ---------- redação ---------- */
+function renderRed(){
+  var d=Object.keys(S.red).length;$('redCount').textContent=d+'/'+TEMAS.length;
+  $('temas').innerHTML=TEMAS.map(function(t){var on=!!S.red[t.n];return '<label class="tema"><input type="checkbox" data-n="'+t.n+'"'+(on?' checked':'')+'><span><span style="font-weight:600'+(on?';color:var(--muted)':'')+'">'+t.n+'. '+esc(t.t)+'</span><br><span class="c">'+esc(t.c)+'</span></span></label>'}).join('');
+  $('temas').querySelectorAll('input').forEach(function(c){c.onchange=function(){if(c.checked)S.red[c.dataset.n]=Date.now();else delete S.red[c.dataset.n];persist();renderRed()}});
+}
+$('drawTema').onclick=function(){
+  var left=TEMAS.filter(function(t){return !S.red[t.n]});var pool=left.length?left:TEMAS;var t=pool[Math.floor(Math.random()*pool.length)];
+  $('drawn').innerHTML='<div class="fb" style="margin-top:4px"><strong>'+t.n+'. '+esc(t.t)+'</strong><span>'+esc(t.c)+'</span></div>';
+};
+
+/* ---------- progresso ---------- */
+function renderProg(){
+  var all=Object.keys(S.ans).filter(function(id){return BYID[id]});
+  var r=0,w=0;all.forEach(function(id){r+=S.ans[id][0];w+=S.ans[id][1]});
+  $('pAns').textContent=all.length;$('pPct').textContent=(r+w)?Math.round(r/(r+w)*100)+'%':'–';
+  var by={};Q.forEach(function(q){var b=by[q.s]||(by[q.s]={n:0,seen:0,r:0,w:0});b.n++;var a=S.ans[q.id];if(a){b.seen++;b.r+=a[0];b.w+=a[1]}});
+  $('pstats').innerHTML=ORDER.filter(function(s){return by[s]}).map(function(s){var b=by[s];var pct=(b.r+b.w)?Math.round(b.r/(b.r+b.w)*100):null;
+    return '<div class="stat"><span style="font-weight:500">'+esc(SN[s])+'</span><span class="n">'+b.seen+'/'+b.n+' feitas'+(pct!==null?' · '+pct+'% acertos':'')+'</span><div class="bar'+(pct!==null&&pct>=75?' ok':'')+'"><i style="width:'+Math.round(b.seen/b.n*100)+'%"></i></div></div>'}).join('');
+  var nf=Object.keys(S.flag).length;
+  $('about').textContent=Q.filter(function(q){return q.g==='cb'}).length+' questões da Apostila CBMPE 2026 (estilo AOCP, criadas pela apostila, não são de provas anteriores) e '+Q.filter(function(q){return q.g==='x'}).length+' extras das apostilas de Direito e PC-PE (inclui certo/errado no estilo Cebraspe). Gabaritos e comentários vêm das apostilas. As alternativas são embaralhadas a cada vez.'+(nf?' Você marcou '+nf+' gabarito(s) como suspeito(s): peça no chat para eu conferir.':'');
+}
+$('reset').onclick=function(){$('resetConfirm').hidden=false};
+$('resetNo').onclick=function(){$('resetConfirm').hidden=true};
+$('resetYes').onclick=function(){S={ans:{},chk:{},red:{},flag:{},reset:Date.now()};persist();$('resetConfirm').hidden=true;renderAll()};
+
+/* ---------- navegação ---------- */
+var VIEWS=['treino','conteudos','erros','redacao','progresso'];
+function go(v){
+  if(VIEWS.indexOf(v)<0)v='treino';
+  VIEWS.forEach(function(x){$('v-'+x).hidden=x!==v});
+  $('tabs').querySelectorAll('button').forEach(function(b){if(b.dataset.v===v)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+  if(v==='conteudos')renderChk();if(v==='erros')renderErr();if(v==='redacao')renderRed();if(v==='progresso')renderProg();
+  if(v==='treino'&&!sess)renderPoolInfo();
+  try{if(location.hash!=='#'+v)history.replaceState(null,'','#'+v)}catch(e){}
+  window.scrollTo(0,0);
+}
+$('tabs').querySelectorAll('button').forEach(function(b){b.onclick=function(){go(b.dataset.v)}});
+window.addEventListener('hashchange',function(){go(location.hash.slice(1))});
+function renderBadges(){var n=wrongIds().length;var d=$('errDot');d.hidden=!n;d.textContent=n>99?'99+':n}
+function renderAllSide(){renderBadges();renderPoolInfo()}
+function renderAll(){renderChips();renderBadges();var v=location.hash.slice(1);go(VIEWS.indexOf(v)>=0?v:'treino')}
+
+/* ---------- início ---------- */
+segInit('srcseg','src','src');segInit('modeseg','mode','mode');
+load();
+fetch('questoes.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){setData(d);renderAll();window._dataReady=true;initCloud()})
+ .catch(function(){document.querySelector('.wrap').insertAdjacentHTML('beforeend','<div class="card"><b>Não consegui carregar as questões.</b><span class="muted">Verifique a internet e abra de novo.</span></div>')});
+if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){try{var had=navigator.serviceWorker.controller,rl=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(had&&!rl){rl=true;location.reload()}});navigator.serviceWorker.register('sw.js').then(function(r){r.update&&r.update()}).catch(function(){})}catch(e){}}
+</script>
+<script type="module" src="nuvem.js"></script>
+
+</body>
+</html>
