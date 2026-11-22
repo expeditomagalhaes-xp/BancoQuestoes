@@ -1,0 +1,2863 @@
+{
+ "v": 1,
+ "fonte": "Cartões de revisão do CBMPE 2026 (Soldado). Artigos de lei e súmulas conferidos nas aulas do Projeto; dados atuais e História de PE a conferir em fonte oficial.",
+ "temas": [
+  {
+   "id": "PT-0",
+   "s": "PT",
+   "t": "Compreensão e interpretação de textos",
+   "c": [
+    {
+     "id": "t-PT-0-1",
+     "p": "Qual a diferença entre compreensão e interpretação de texto?",
+     "r": "Compreensão é extrair o que o texto diz de forma explícita. Interpretação é concluir o que ele sugere (inferência), sem contrariar o texto."
+    },
+    {
+     "id": "t-PT-0-2",
+     "p": "O que é uma inferência em questão de interpretação?",
+     "r": "Conclusão que se tira do que está implícito no texto. Se a alternativa precisa de informação de fora do texto, ela extrapola."
+    },
+    {
+     "id": "t-PT-0-3",
+     "p": "Que palavras costumam denunciar uma alternativa errada por generalização?",
+     "r": "Sempre, nunca, todos, nenhum, apenas, somente, exclusivamente. Verifique se o texto realmente afirma isso de forma absoluta."
+    },
+    {
+     "id": "t-PT-0-4",
+     "p": "O que é ideia central (tese) de um texto?",
+     "r": "A posição principal que o autor defende ou a informação principal que ele quer transmitir, à qual os demais parágrafos servem."
+    },
+    {
+     "id": "t-PT-0-5",
+     "p": "Como diferenciar fato de opinião?",
+     "r": "Fato pode ser comprovado ou refutado (dado, data, número). Opinião expressa avaliação pessoal e traz marcas como adjetivos de valor e verbos como achar e parecer."
+    }
+   ]
+  },
+  {
+   "id": "PT-1",
+   "s": "PT",
+   "t": "Tipologia e gêneros textuais",
+   "c": [
+    {
+     "id": "t-PT-1-1",
+     "p": "Quais são as tipologias textuais clássicas?",
+     "r": "Narração, descrição, dissertação (expositiva ou argumentativa), injunção (instrução) e exposição."
+    },
+    {
+     "id": "t-PT-1-2",
+     "p": "Qual a diferença entre tipo textual e gênero textual?",
+     "r": "Tipo é a estrutura (narrar, descrever, argumentar). Gênero é o texto concreto (notícia, carta, receita, ofício). Um gênero pode misturar tipos."
+    },
+    {
+     "id": "t-PT-1-3",
+     "p": "Que tipo textual predomina em uma receita ou manual?",
+     "r": "Injuntivo (instrucional): verbos no imperativo ou infinitivo que orientam a ação do leitor."
+    },
+    {
+     "id": "t-PT-1-4",
+     "p": "Qual a característica do texto dissertativo-argumentativo?",
+     "r": "Defende um ponto de vista com argumentos, em estrutura de introdução com tese, desenvolvimento e conclusão."
+    },
+    {
+     "id": "t-PT-1-5",
+     "p": "O que marca a narração?",
+     "r": "Sequência de ações no tempo, com personagens, espaço, tempo e enredo; predominam verbos de ação."
+    }
+   ]
+  },
+  {
+   "id": "PT-2",
+   "s": "PT",
+   "t": "Figuras de linguagem",
+   "c": [
+    {
+     "id": "t-PT-2-1",
+     "p": "O que é metáfora?",
+     "r": "Comparação implícita, sem conectivo: \"Ele é uma fera.\""
+    },
+    {
+     "id": "t-PT-2-2",
+     "p": "Qual a diferença entre metáfora e comparação?",
+     "r": "A comparação traz conectivo (como, tal qual): \"Ele é como uma fera.\" A metáfora não."
+    },
+    {
+     "id": "t-PT-2-3",
+     "p": "O que é metonímia?",
+     "r": "Troca de um termo por outro com relação de proximidade: parte pelo todo, autor pela obra, continente pelo conteúdo. Ex.: \"Li Machado de Assis.\""
+    },
+    {
+     "id": "t-PT-2-4",
+     "p": "O que é eufemismo?",
+     "r": "Suavizar uma ideia desagradável. Ex.: \"Ele partiu\" no lugar de \"morreu\"."
+    },
+    {
+     "id": "t-PT-2-5",
+     "p": "O que é hipérbole?",
+     "r": "Exagero expressivo. Ex.: \"Morri de rir.\""
+    },
+    {
+     "id": "t-PT-2-6",
+     "p": "O que é ironia?",
+     "r": "Dizer o contrário do que se pensa, com intenção crítica ou humorística."
+    },
+    {
+     "id": "t-PT-2-7",
+     "p": "O que é antítese e o que é paradoxo?",
+     "r": "Antítese opõe palavras ou ideias (luz e sombra). Paradoxo une ideias contraditórias em uma só afirmação (\"silêncio ensurdecedor\")."
+    },
+    {
+     "id": "t-PT-2-8",
+     "p": "O que é prosopopeia (personificação)?",
+     "r": "Atribuir ações ou sentimentos humanos a seres inanimados ou irracionais. Ex.: \"O vento sussurrava.\""
+    }
+   ]
+  },
+  {
+   "id": "PT-3",
+   "s": "PT",
+   "t": "Relações de sentido entre orações e parágrafos",
+   "c": [
+    {
+     "id": "t-PT-3-1",
+     "p": "Que ideia expressam as conjunções \"porém, contudo, todavia, no entanto\"?",
+     "r": "Adversidade (oposição)."
+    },
+    {
+     "id": "t-PT-3-2",
+     "p": "Que ideia expressam \"embora, conquanto, ainda que, mesmo que\"?",
+     "r": "Concessão: algo que seria obstáculo, mas não impede o fato principal."
+    },
+    {
+     "id": "t-PT-3-3",
+     "p": "Que ideia expressam \"porque, pois, visto que, já que\"?",
+     "r": "Causa (explicação). \"Pois\" antes do verbo é explicativa ou causal."
+    },
+    {
+     "id": "t-PT-3-4",
+     "p": "Que ideia expressam \"se, caso, contanto que, desde que\"?",
+     "r": "Condição."
+    },
+    {
+     "id": "t-PT-3-5",
+     "p": "Que ideia expressam \"logo, portanto, por isso, assim\"?",
+     "r": "Conclusão (consequência lógica)."
+    },
+    {
+     "id": "t-PT-3-6",
+     "p": "Que ideia expressam \"para que, a fim de que\"?",
+     "r": "Finalidade."
+    }
+   ]
+  },
+  {
+   "id": "PT-4",
+   "s": "PT",
+   "t": "Ortografia oficial",
+   "c": [
+    {
+     "id": "t-PT-4-1",
+     "p": "Quando se usa \"mau\" e quando se usa \"mal\"?",
+     "r": "\"Mau\" é adjetivo, oposto de bom. \"Mal\" é advérbio ou substantivo, oposto de bem."
+    },
+    {
+     "id": "t-PT-4-2",
+     "p": "Qual a diferença entre \"a fim\" e \"afim\"?",
+     "r": "\"A fim de\" indica finalidade. \"Afim\" é adjetivo e significa semelhante, relacionado."
+    },
+    {
+     "id": "t-PT-4-3",
+     "p": "Qual a diferença entre \"onde\" e \"aonde\"?",
+     "r": "\"Onde\" indica lugar em que se está. \"Aonde\" indica movimento (a + onde): \"Aonde você vai?\""
+    },
+    {
+     "id": "t-PT-4-4",
+     "p": "Qual a diferença entre \"porque, por que, porquê e por quê\"?",
+     "r": "Porque: conjunção (resposta). Por que: pergunta, em meio de frase. Porquê: substantivo (o motivo). Por quê: pergunta no fim da frase."
+    },
+    {
+     "id": "t-PT-4-5",
+     "p": "Escreve-se \"mal-estar\" ou \"malestar\"? E \"menos mal\"?",
+     "r": "\"Mal-estar\", com hífen. \"Menos mal\" é locução sem hífen."
+    }
+   ]
+  },
+  {
+   "id": "PT-5",
+   "s": "PT",
+   "t": "Acentuação gráfica",
+   "c": [
+    {
+     "id": "t-PT-5-1",
+     "p": "Quando as oxítonas são acentuadas?",
+     "r": "Quando terminam em a, e, o (seguidos ou não de s) e em em ou ens: sofá, café, avô, também, parabéns."
+    },
+    {
+     "id": "t-PT-5-2",
+     "p": "Quando as paroxítonas são acentuadas?",
+     "r": "Quando terminam em l, n, r, x, ps, ão(s), ã(s), i(s), us, um, uns: fácil, hífen, tórax, bíceps, órfão, táxi, vírus, álbum."
+    },
+    {
+     "id": "t-PT-5-3",
+     "p": "Todas as proparoxítonas levam acento?",
+     "r": "Sim, sem exceção: máquina, hóspede, cálculo."
+    },
+    {
+     "id": "t-PT-5-4",
+     "p": "O que mudou com o Acordo Ortográfico sobre ditongos abertos em paroxítonas?",
+     "r": "Perderam o acento: ideia, assembleia, jiboia, heroico. Os oxítonos continuam: herói, papéis, troféu."
+    },
+    {
+     "id": "t-PT-5-5",
+     "p": "Como ficam \"veem\" e \"leem\" no plural?",
+     "r": "Sem acento circunflexo: eles veem, eles leem, eles creem. Singular: vê, lê."
+    }
+   ]
+  },
+  {
+   "id": "PT-6",
+   "s": "PT",
+   "t": "Emprego das classes de palavras",
+   "c": [
+    {
+     "id": "t-PT-6-1",
+     "p": "O que são pronomes relativos? Cite os principais.",
+     "r": "Retomam um termo anterior e introduzem oração subordinada: que, quem, o qual, cujo, onde, quanto."
+    },
+    {
+     "id": "t-PT-6-2",
+     "p": "Como usar o pronome \"cujo\"?",
+     "r": "Indica posse, concorda com a coisa possuída e não leva artigo depois dele: \"O livro cujo autor conheci.\""
+    },
+    {
+     "id": "t-PT-6-3",
+     "p": "O que é advérbio?",
+     "r": "Palavra invariável que modifica verbo, adjetivo ou outro advérbio, indicando tempo, lugar, modo, intensidade e outras circunstâncias."
+    },
+    {
+     "id": "t-PT-6-4",
+     "p": "Qual a diferença entre preposição e conjunção?",
+     "r": "Preposição liga termos e exige complemento (de, em, para). Conjunção liga orações ou termos de mesma função (e, mas, porque)."
+    },
+    {
+     "id": "t-PT-6-5",
+     "p": "O que é verbo transitivo direto?",
+     "r": "O que pede complemento sem preposição obrigatória (objeto direto). Ex.: \"Comprei o carro.\""
+    }
+   ]
+  },
+  {
+   "id": "PT-7",
+   "s": "PT",
+   "t": "Crase",
+   "c": [
+    {
+     "id": "t-PT-7-1",
+     "p": "O que é crase?",
+     "r": "A fusão da preposição \"a\" com o artigo feminino \"a\" (ou com pronomes como aquele, a qual)."
+    },
+    {
+     "id": "t-PT-7-2",
+     "p": "Macete básico para testar a crase.",
+     "r": "Troque a palavra feminina por uma masculina. Se aparecer \"ao\", use crase: \"Vou à escola\" (Vou ao colégio)."
+    },
+    {
+     "id": "t-PT-7-3",
+     "p": "Há crase antes de verbo?",
+     "r": "Nunca. Também não há crase antes de pronomes pessoais, de pessoa e de palavras masculinas."
+    },
+    {
+     "id": "t-PT-7-4",
+     "p": "Há crase em \"a casa\" e \"a terra\"?",
+     "r": "Casa: sem crase, salvo se vier especificada (\"Volto à casa de meus pais\"). Terra, no sentido de chão firme: sem crase."
+    },
+    {
+     "id": "t-PT-7-5",
+     "p": "Crase em horas e em \"à moda de\"?",
+     "r": "Há crase em horas determinadas (\"às 8h\") e em locuções femininas (à vista, à noite, à moda de)."
+    }
+   ]
+  },
+  {
+   "id": "PT-8",
+   "s": "PT",
+   "t": "Sintaxe: termos da oração e períodos",
+   "c": [
+    {
+     "id": "t-PT-8-1",
+     "p": "Quais são os termos essenciais da oração?",
+     "r": "Sujeito e predicado."
+    },
+    {
+     "id": "t-PT-8-2",
+     "p": "O que é sujeito indeterminado?",
+     "r": "Quando não se sabe ou não se quer dizer quem pratica a ação: verbo na 3ª pessoa do plural sem referência, ou verbo + \"se\" (VTI, VI ou VL)."
+    },
+    {
+     "id": "t-PT-8-3",
+     "p": "O que é objeto direto e objeto indireto?",
+     "r": "Objeto direto completa verbo sem preposição obrigatória. Objeto indireto completa com preposição obrigatória."
+    },
+    {
+     "id": "t-PT-8-4",
+     "p": "O que é predicativo do sujeito?",
+     "r": "Termo que atribui característica ao sujeito, ligado por verbo de ligação: \"Ela está cansada.\""
+    },
+    {
+     "id": "t-PT-8-5",
+     "p": "O que é aposto?",
+     "r": "Termo que explica ou especifica outro, geralmente entre vírgulas: \"Recife, capital de Pernambuco, é plana.\""
+    },
+    {
+     "id": "t-PT-8-6",
+     "p": "O que é agente da passiva?",
+     "r": "Quem pratica a ação na voz passiva, introduzido por \"por\" ou \"de\": \"O fogo foi apagado pelos bombeiros.\""
+    }
+   ]
+  },
+  {
+   "id": "PT-9",
+   "s": "PT",
+   "t": "Funções do \"que\" e do \"se\"",
+   "c": [
+    {
+     "id": "t-PT-9-1",
+     "p": "Como reconhecer o \"que\" pronome relativo?",
+     "r": "Pode ser trocado por \"o qual, a qual\" e retoma um termo anterior."
+    },
+    {
+     "id": "t-PT-9-2",
+     "p": "Como reconhecer o \"que\" conjunção integrante?",
+     "r": "Introduz oração que funciona como sujeito ou complemento e pode ser trocado por \"isso\": \"Espero que ele venha.\""
+    },
+    {
+     "id": "t-PT-9-3",
+     "p": "O \"se\" de \"Vendem-se casas\" é o quê?",
+     "r": "Partícula apassivadora: equivale a \"casas são vendidas\", e o verbo concorda com o sujeito."
+    },
+    {
+     "id": "t-PT-9-4",
+     "p": "O \"se\" de \"Precisa-se de bombeiros\" é o quê?",
+     "r": "Índice de indeterminação do sujeito: verbo na 3ª pessoa do singular, sem concordar com \"bombeiros\" (objeto indireto)."
+    },
+    {
+     "id": "t-PT-9-5",
+     "p": "Que é o \"se\" em \"Ele se feriu\"?",
+     "r": "Pronome reflexivo (ele feriu a si mesmo)."
+    }
+   ]
+  },
+  {
+   "id": "PT-10",
+   "s": "PT",
+   "t": "Mecanismos de coesão textual",
+   "c": [
+    {
+     "id": "t-PT-10-1",
+     "p": "O que é coesão textual?",
+     "r": "Ligação entre palavras, frases e parágrafos por meio de elementos linguísticos (conectivos, pronomes, repetições)."
+    },
+    {
+     "id": "t-PT-10-2",
+     "p": "O que é anáfora e catáfora?",
+     "r": "Anáfora retoma algo já dito. Catáfora antecipa algo que será dito."
+    },
+    {
+     "id": "t-PT-10-3",
+     "p": "Que função têm os pronomes em um texto coeso?",
+     "r": "Retomam termos e evitam repetição (referenciação): ele, este, aquele, o qual."
+    },
+    {
+     "id": "t-PT-10-4",
+     "p": "O que é elipse na coesão?",
+     "r": "Omissão de um termo facilmente recuperável pelo contexto."
+    }
+   ]
+  },
+  {
+   "id": "PT-11",
+   "s": "PT",
+   "t": "Pontuação",
+   "c": [
+    {
+     "id": "t-PT-11-1",
+     "p": "Pode-se separar sujeito e verbo com vírgula?",
+     "r": "Não, a não ser que haja um termo intercalado entre vírgulas (aposto, vocativo)."
+    },
+    {
+     "id": "t-PT-11-2",
+     "p": "Quando se usa vírgula antes de \"mas\"?",
+     "r": "Sempre que ele liga orações ou termos em oposição."
+    },
+    {
+     "id": "t-PT-11-3",
+     "p": "Como se pontua o aposto explicativo?",
+     "r": "Entre vírgulas, travessões ou parênteses."
+    },
+    {
+     "id": "t-PT-11-4",
+     "p": "Qual a função do ponto e vírgula?",
+     "r": "Separar orações coordenadas mais longas e itens de enumeração que já têm vírgulas."
+    },
+    {
+     "id": "t-PT-11-5",
+     "p": "Quando se usam dois-pontos?",
+     "r": "Antes de enumeração, citação, explicação ou esclarecimento."
+    }
+   ]
+  },
+  {
+   "id": "PT-12",
+   "s": "PT",
+   "t": "Concordância verbal e nominal",
+   "c": [
+    {
+     "id": "t-PT-12-1",
+     "p": "Regra geral da concordância verbal.",
+     "r": "O verbo concorda em número e pessoa com o núcleo do sujeito."
+    },
+    {
+     "id": "t-PT-12-2",
+     "p": "Sujeito composto anteposto ao verbo: como fica?",
+     "r": "Verbo no plural: \"Pedro e Maria chegaram.\""
+    },
+    {
+     "id": "t-PT-12-3",
+     "p": "Como concordam os verbos \"haver\" (existir) e \"fazer\" (tempo)?",
+     "r": "Ficam no singular: \"Houve problemas.\" \"Faz dois anos.\""
+    },
+    {
+     "id": "t-PT-12-4",
+     "p": "\"Mais de um\" leva verbo no singular ou plural?",
+     "r": "Singular, em regra: \"Mais de um bombeiro chegou.\" Plural se houver reciprocidade ou repetição."
+    },
+    {
+     "id": "t-PT-12-5",
+     "p": "Concordância de \"é muito\", \"é pouco\", \"é suficiente\" com expressões de quantidade.",
+     "r": "O verbo \"ser\" fica no singular: \"Dez reais é pouco.\""
+    },
+    {
+     "id": "t-PT-12-6",
+     "p": "Como o adjetivo concorda com vários substantivos?",
+     "r": "Pode ir ao plural ou concordar com o mais próximo: \"carro e moto novos\" ou \"carro e moto nova\"."
+    }
+   ]
+  },
+  {
+   "id": "PT-13",
+   "s": "PT",
+   "t": "Regência verbal e nominal",
+   "c": [
+    {
+     "id": "t-PT-13-1",
+     "p": "Qual a regência de \"assistir\" no sentido de ver?",
+     "r": "Transitivo indireto, com \"a\": \"Assisti ao jogo.\""
+    },
+    {
+     "id": "t-PT-13-2",
+     "p": "Qual a regência de \"obedecer\" e \"desobedecer\"?",
+     "r": "Transitivos indiretos, com \"a\": \"Obedeça às ordens.\""
+    },
+    {
+     "id": "t-PT-13-3",
+     "p": "Qual a regência de \"preferir\"?",
+     "r": "Preferir uma coisa a outra: \"Prefiro café a chá.\" Não usa \"do que\"."
+    },
+    {
+     "id": "t-PT-13-4",
+     "p": "Qual a regência de \"visar\" no sentido de almejar?",
+     "r": "Transitivo indireto, com \"a\": \"Visa ao cargo.\" No sentido de mirar ou pôr visto, é direto."
+    },
+    {
+     "id": "t-PT-13-5",
+     "p": "Qual a regência de \"aspirar\" no sentido de desejar?",
+     "r": "Transitivo indireto, com \"a\": \"Aspiro a uma vaga.\""
+    },
+    {
+     "id": "t-PT-13-6",
+     "p": "Qual a regência de \"namorar\" e \"informar\"?",
+     "r": "Namorar: transitivo direto. Informar: alguém DE algo ou algo A alguém."
+    }
+   ]
+  },
+  {
+   "id": "PT-14",
+   "s": "PT",
+   "t": "Colocação pronominal",
+   "c": [
+    {
+     "id": "t-PT-14-1",
+     "p": "O que é próclise, ênclise e mesóclise?",
+     "r": "Pronome antes, depois e no meio do verbo, respectivamente."
+    },
+    {
+     "id": "t-PT-14-2",
+     "p": "Há próclise depois de palavras negativas?",
+     "r": "Sim: \"Não me avise.\" Também depois de pronomes relativos e advérbios: \"Quem o viu?\""
+    },
+    {
+     "id": "t-PT-14-3",
+     "p": "Pode-se começar frase com pronome oblíquo na norma culta?",
+     "r": "Não: \"Entregaram-me\" e não \"Me entregaram\"."
+    },
+    {
+     "id": "t-PT-14-4",
+     "p": "Quando se usa mesóclise?",
+     "r": "Com verbo no futuro do presente ou do pretérito, sem palavra atrativa: \"Entregar-lhe-ei.\""
+    },
+    {
+     "id": "t-PT-14-5",
+     "p": "Qual a colocação em locução verbal com infinitivo?",
+     "r": "Pode vir depois do verbo auxiliar ou ligado ao infinitivo: \"Vou avisá-lo\" ou \"Vou lhe avisar\" (esta, aceita em uso informal)."
+    }
+   ]
+  },
+  {
+   "id": "PT-15",
+   "s": "PT",
+   "t": "Formação de palavras",
+   "c": [
+    {
+     "id": "t-PT-15-1",
+     "p": "O que é derivação prefixal e sufixal?",
+     "r": "Prefixal: prefixo antes do radical (infeliz). Sufixal: sufixo depois (felizmente)."
+    },
+    {
+     "id": "t-PT-15-2",
+     "p": "O que é composição por justaposição e por aglutinação?",
+     "r": "Justaposição mantém as formas (guarda-chuva). Aglutinação funde e altera (planalto)."
+    },
+    {
+     "id": "t-PT-15-3",
+     "p": "O que é derivação parassintética?",
+     "r": "Prefixo e sufixo ao mesmo tempo, sem existir só um deles: entardecer, enraivecer."
+    },
+    {
+     "id": "t-PT-15-4",
+     "p": "O que são hibridismo e neologismo?",
+     "r": "Hibridismo mistura elementos de línguas diferentes (automóvel). Neologismo é palavra nova."
+    }
+   ]
+  },
+  {
+   "id": "PT-16",
+   "s": "PT",
+   "t": "Significação das palavras",
+   "c": [
+    {
+     "id": "t-PT-16-1",
+     "p": "Qual a diferença entre sinônimos e parônimos?",
+     "r": "Sinônimos têm sentido semelhante. Parônimos têm escrita e pronúncia parecidas e significados diferentes (emigrar e imigrar)."
+    },
+    {
+     "id": "t-PT-16-2",
+     "p": "O que é denotação e conotação?",
+     "r": "Denotação é o sentido literal. Conotação é o figurado."
+    },
+    {
+     "id": "t-PT-16-3",
+     "p": "O que são homônimos?",
+     "r": "Palavras com mesma grafia ou pronúncia e sentidos diferentes (cela e sela)."
+    },
+    {
+     "id": "t-PT-16-4",
+     "p": "Qual a diferença entre \"cumprimento\" e \"comprimento\"?",
+     "r": "Cumprimento: saudação ou ato de cumprir. Comprimento: extensão."
+    },
+    {
+     "id": "t-PT-16-5",
+     "p": "Qual a diferença entre \"descrição\" e \"discrição\"?",
+     "r": "Descrição: ato de descrever. Discrição: reserva, prudência."
+    }
+   ]
+  },
+  {
+   "id": "PT-17",
+   "s": "PT",
+   "t": "Variação linguística",
+   "c": [
+    {
+     "id": "t-PT-17-1",
+     "p": "O que é variação linguística?",
+     "r": "Diferenças no uso da língua conforme região, época, grupo social e situação."
+    },
+    {
+     "id": "t-PT-17-2",
+     "p": "Cite os tipos de variação.",
+     "r": "Diatópica (região), diacrônica (tempo), diastrática (classe ou grupo social) e diafásica (situação ou registro)."
+    },
+    {
+     "id": "t-PT-17-3",
+     "p": "O que é a norma culta?",
+     "r": "Variedade de prestígio, usada em situações formais e ensinada na escola. Não é a única correta, mas é a exigida em prova."
+    }
+   ]
+  },
+  {
+   "id": "INF-0",
+   "s": "INF",
+   "t": "Internet e intranet",
+   "c": [
+    {
+     "id": "t-INF-0-1",
+     "p": "O que é Internet e o que é intranet?",
+     "r": "Internet é a rede mundial pública de computadores. Intranet é uma rede privada, de uso interno de uma organização, que usa as mesmas tecnologias da Internet."
+    },
+    {
+     "id": "t-INF-0-2",
+     "p": "O que é extranet?",
+     "r": "Parte da intranet aberta a usuários externos autorizados (clientes, fornecedores), em geral com login."
+    },
+    {
+     "id": "t-INF-0-3",
+     "p": "Para que serve o protocolo HTTPS?",
+     "r": "Transferir páginas web com criptografia (TLS), garantindo sigilo e autenticidade. Aparece com cadeado no navegador."
+    },
+    {
+     "id": "t-INF-0-4",
+     "p": "Qual a função do DNS?",
+     "r": "Traduzir nomes de domínio (exemplo.com.br) em endereços IP."
+    },
+    {
+     "id": "t-INF-0-5",
+     "p": "Para que servem os protocolos SMTP, POP3 e IMAP?",
+     "r": "SMTP envia e-mail. POP3 baixa e-mail para o computador. IMAP acessa e sincroniza e-mail no servidor."
+    }
+   ]
+  },
+  {
+   "id": "INF-1",
+   "s": "INF",
+   "t": "Navegadores, serviços e computação em nuvem",
+   "c": [
+    {
+     "id": "t-INF-1-1",
+     "p": "O que é computação em nuvem?",
+     "r": "Uso de servidores remotos pela Internet para armazenar dados e executar serviços, sob demanda (ex.: Google Drive, OneDrive)."
+    },
+    {
+     "id": "t-INF-1-2",
+     "p": "Quais os modelos de serviço da nuvem?",
+     "r": "IaaS (infraestrutura), PaaS (plataforma) e SaaS (software como serviço)."
+    },
+    {
+     "id": "t-INF-1-3",
+     "p": "O que são cookies?",
+     "r": "Pequenos arquivos que o site grava no navegador para lembrar preferências e sessão. Podem ser usados para rastreamento."
+    },
+    {
+     "id": "t-INF-1-4",
+     "p": "O que faz a navegação anônima (privativa)?",
+     "r": "Não guarda histórico, cookies e dados de formulário ao fechar a janela. Não torna o usuário invisível para o provedor ou para o site."
+    },
+    {
+     "id": "t-INF-1-5",
+     "p": "Qual a diferença entre buscador e navegador?",
+     "r": "Navegador é o programa para acessar páginas (Chrome, Edge). Buscador é o site que pesquisa conteúdo (Google)."
+    }
+   ]
+  },
+  {
+   "id": "INF-2",
+   "s": "INF",
+   "t": "Segurança da informação",
+   "c": [
+    {
+     "id": "t-INF-2-1",
+     "p": "Quais são os princípios da segurança da informação (CIA/DICA)?",
+     "r": "Confidencialidade, Integridade, Disponibilidade e Autenticidade."
+    },
+    {
+     "id": "t-INF-2-2",
+     "p": "O que é phishing?",
+     "r": "Golpe que usa mensagens ou páginas falsas para enganar a vítima e roubar dados."
+    },
+    {
+     "id": "t-INF-2-3",
+     "p": "O que é ransomware?",
+     "r": "Malware que criptografa os arquivos e exige resgate para liberá-los."
+    },
+    {
+     "id": "t-INF-2-4",
+     "p": "O que faz o firewall?",
+     "r": "Filtra o tráfego de rede, permitindo ou bloqueando conexões conforme regras. Não substitui o antivírus."
+    },
+    {
+     "id": "t-INF-2-5",
+     "p": "Qual a diferença entre vírus e worm?",
+     "r": "Vírus precisa de um arquivo hospedeiro e da ação do usuário. Worm se propaga sozinho pela rede."
+    },
+    {
+     "id": "t-INF-2-6",
+     "p": "O que é criptografia simétrica e assimétrica?",
+     "r": "Simétrica usa a mesma chave para cifrar e decifrar. Assimétrica usa um par de chaves, pública e privada."
+    },
+    {
+     "id": "t-INF-2-7",
+     "p": "O que é um spyware e um keylogger?",
+     "r": "Spyware espia a atividade do usuário. Keylogger registra o que é digitado."
+    }
+   ]
+  },
+  {
+   "id": "INF-3",
+   "s": "INF",
+   "t": "Armazenamento e cópia de segurança (backup)",
+   "c": [
+    {
+     "id": "t-INF-3-1",
+     "p": "Qual a diferença entre backup completo, incremental e diferencial?",
+     "r": "Completo copia tudo. Incremental copia só o que mudou desde o último backup de qualquer tipo. Diferencial copia o que mudou desde o último completo."
+    },
+    {
+     "id": "t-INF-3-2",
+     "p": "Qual a regra 3-2-1 de backup?",
+     "r": "Três cópias, em duas mídias diferentes, com uma delas fora do local."
+    },
+    {
+     "id": "t-INF-3-3",
+     "p": "Sincronizar na nuvem é o mesmo que fazer backup?",
+     "r": "Não. Se você apaga ou corrompe o arquivo, a alteração se propaga. Backup guarda versões independentes."
+    }
+   ]
+  },
+  {
+   "id": "INF-4",
+   "s": "INF",
+   "t": "Arquivos, pastas, programas e periféricos",
+   "c": [
+    {
+     "id": "t-INF-4-1",
+     "p": "O que é uma extensão de arquivo?",
+     "r": "Sufixo após o ponto no nome que indica o tipo (.docx, .xlsx, .pdf, .jpg)."
+    },
+    {
+     "id": "t-INF-4-2",
+     "p": "Cite exemplos de dispositivos de entrada e de saída.",
+     "r": "Entrada: teclado, mouse, scanner. Saída: monitor, impressora, caixa de som. Entrada e saída: pen drive, HD, touchscreen."
+    },
+    {
+     "id": "t-INF-4-3",
+     "p": "Quais as unidades de medida de armazenamento?",
+     "r": "Bit, byte (8 bits), KB, MB, GB, TB, cada uma 1024 vezes a anterior no uso tradicional."
+    },
+    {
+     "id": "t-INF-4-4",
+     "p": "Qual a diferença entre RAM e ROM?",
+     "r": "RAM é memória volátil de trabalho. ROM é memória não volátil, com dados de fábrica."
+    }
+   ]
+  },
+  {
+   "id": "INF-5",
+   "s": "INF",
+   "t": "Windows 11 e Prompt de Comando",
+   "c": [
+    {
+     "id": "t-INF-5-1",
+     "p": "Qual o atalho do Windows para abrir o Gerenciador de Tarefas?",
+     "r": "Ctrl + Shift + Esc (ou Ctrl + Alt + Del e escolher a opção)."
+    },
+    {
+     "id": "t-INF-5-2",
+     "p": "Qual o atalho para alternar entre janelas abertas?",
+     "r": "Alt + Tab."
+    },
+    {
+     "id": "t-INF-5-3",
+     "p": "Qual o atalho para abrir o Explorador de Arquivos?",
+     "r": "Windows + E."
+    },
+    {
+     "id": "t-INF-5-4",
+     "p": "Qual atalho bloqueia a tela do Windows?",
+     "r": "Windows + L."
+    },
+    {
+     "id": "t-INF-5-5",
+     "p": "Para que serve o comando ipconfig no Prompt de Comando?",
+     "r": "Mostra a configuração de rede (endereço IP, máscara e gateway)."
+    },
+    {
+     "id": "t-INF-5-6",
+     "p": "Para que serve o comando ping?",
+     "r": "Testa a comunicação com outro computador ou site enviando pacotes e medindo o tempo de resposta."
+    },
+    {
+     "id": "t-INF-5-7",
+     "p": "Qual a diferença entre Excluir e Shift+Delete?",
+     "r": "Delete envia à Lixeira. Shift+Delete exclui de forma definitiva, sem passar pela Lixeira."
+    }
+   ]
+  },
+  {
+   "id": "INF-6",
+   "s": "INF",
+   "t": "Word/Writer, Excel/Calc e PowerPoint/Impress",
+   "c": [
+    {
+     "id": "t-INF-6-1",
+     "p": "Qual o atalho de Negrito no Word em português?",
+     "r": "Ctrl + N. (Ctrl + B é Salvar; Ctrl + I, Itálico; Ctrl + S, Sublinhado.)"
+    },
+    {
+     "id": "t-INF-6-2",
+     "p": "Como começa toda fórmula no Excel e no Calc?",
+     "r": "Com o sinal de igual (=)."
+    },
+    {
+     "id": "t-INF-6-3",
+     "p": "O que faz a função SOMA, MÉDIA, MÁXIMO e MÍNIMO?",
+     "r": "Somam, calculam a média, e encontram o maior e o menor valor do intervalo."
+    },
+    {
+     "id": "t-INF-6-4",
+     "p": "O que significa referência absoluta ($A$1)?",
+     "r": "O cifrão fixa coluna e linha; a referência não muda ao copiar a fórmula."
+    },
+    {
+     "id": "t-INF-6-5",
+     "p": "O que faz a função SE?",
+     "r": "Testa uma condição: =SE(teste; valor_se_verdadeiro; valor_se_falso)."
+    },
+    {
+     "id": "t-INF-6-6",
+     "p": "Qual a extensão padrão dos arquivos do Writer, Calc e Impress?",
+     "r": ".odt, .ods e .odp."
+    },
+    {
+     "id": "t-INF-6-7",
+     "p": "Qual a diferença entre recuo e tabulação?",
+     "r": "Recuo afasta o parágrafo das margens. Tabulação alinha texto em pontos definidos da linha."
+    }
+   ]
+  },
+  {
+   "id": "MAT-0",
+   "s": "MAT",
+   "t": "Conjuntos numéricos e operações",
+   "c": [
+    {
+     "id": "t-MAT-0-1",
+     "p": "Qual a ordem das operações em uma expressão?",
+     "r": "Parênteses, colchetes e chaves (de dentro para fora); potências e raízes; multiplicação e divisão; adição e subtração."
+    },
+    {
+     "id": "t-MAT-0-2",
+     "p": "O que é número primo?",
+     "r": "Natural maior que 1 com exatamente dois divisores: 1 e ele mesmo. O 2 é o único primo par."
+    },
+    {
+     "id": "t-MAT-0-3",
+     "p": "Como se calcula o MMC e o MDC?",
+     "r": "Pela fatoração: MMC usa todos os fatores com o maior expoente. MDC usa só os comuns com o menor expoente."
+    },
+    {
+     "id": "t-MAT-0-4",
+     "p": "Quando usar MMC e quando usar MDC?",
+     "r": "MMC: eventos que se repetem juntos (quando coincidirão). MDC: dividir em partes iguais, o maior possível."
+    },
+    {
+     "id": "t-MAT-0-5",
+     "p": "Qual o sinal de -(-3) e de (-2)^2 e -2^2?",
+     "r": "-(-3) = 3. (-2)^2 = 4. -2^2 = -4 (a potência é calculada antes do sinal)."
+    },
+    {
+     "id": "t-MAT-0-6",
+     "p": "Como somar frações com denominadores diferentes?",
+     "r": "Reduza ao mesmo denominador (MMC) e some os numeradores."
+    }
+   ]
+  },
+  {
+   "id": "MAT-1",
+   "s": "MAT",
+   "t": "Razão, proporção, regra de três e porcentagem",
+   "c": [
+    {
+     "id": "t-MAT-1-1",
+     "p": "O que é razão e o que é proporção?",
+     "r": "Razão é a divisão de duas grandezas (a/b). Proporção é a igualdade entre duas razões (a/b = c/d)."
+    },
+    {
+     "id": "t-MAT-1-2",
+     "p": "Qual a propriedade fundamental da proporção?",
+     "r": "O produto dos meios é igual ao produto dos extremos: a·d = b·c."
+    },
+    {
+     "id": "t-MAT-1-3",
+     "p": "Quando a regra de três é direta e quando é inversa?",
+     "r": "Direta: as grandezas crescem juntas. Inversa: uma cresce e a outra diminui."
+    },
+    {
+     "id": "t-MAT-1-4",
+     "p": "Como calcular x% de um valor?",
+     "r": "Multiplique o valor por x/100."
+    },
+    {
+     "id": "t-MAT-1-5",
+     "p": "Como aplicar um aumento de 20% e um desconto de 20%?",
+     "r": "Aumento: multiplicar por 1,20. Desconto: multiplicar por 0,80. Aumento seguido de desconto de 20% dá 0,96, ou seja, perde 4%."
+    },
+    {
+     "id": "t-MAT-1-6",
+     "p": "Como calcular a variação percentual?",
+     "r": "(valor final − valor inicial) ÷ valor inicial, vezes 100."
+    }
+   ]
+  },
+  {
+   "id": "MAT-2",
+   "s": "MAT",
+   "t": "Juros simples e compostos",
+   "c": [
+    {
+     "id": "t-MAT-2-1",
+     "p": "Qual a fórmula do juro simples?",
+     "r": "J = C · i · t, e o montante M = C + J = C(1 + i·t)."
+    },
+    {
+     "id": "t-MAT-2-2",
+     "p": "Qual a fórmula do montante em juros compostos?",
+     "r": "M = C · (1 + i)^t."
+    },
+    {
+     "id": "t-MAT-2-3",
+     "p": "Taxa e tempo precisam estar na mesma unidade?",
+     "r": "Sim. Se a taxa é mensal, o tempo deve estar em meses."
+    },
+    {
+     "id": "t-MAT-2-4",
+     "p": "Em juros simples, o juro cresce de forma linear ou exponencial?",
+     "r": "Linear. Em juros compostos, cresce de forma exponencial (juros sobre juros)."
+    }
+   ]
+  },
+  {
+   "id": "MAT-3",
+   "s": "MAT",
+   "t": "Sequências: PA e PG",
+   "c": [
+    {
+     "id": "t-MAT-3-1",
+     "p": "Fórmula do termo geral da PA.",
+     "r": "an = a1 + (n − 1) · r."
+    },
+    {
+     "id": "t-MAT-3-2",
+     "p": "Fórmula da soma dos n primeiros termos da PA.",
+     "r": "Sn = (a1 + an) · n / 2."
+    },
+    {
+     "id": "t-MAT-3-3",
+     "p": "Fórmula do termo geral da PG.",
+     "r": "an = a1 · q^(n−1)."
+    },
+    {
+     "id": "t-MAT-3-4",
+     "p": "Fórmula da soma dos termos de uma PG finita.",
+     "r": "Sn = a1 · (q^n − 1) / (q − 1), para q diferente de 1."
+    },
+    {
+     "id": "t-MAT-3-5",
+     "p": "Qual a soma de uma PG infinita?",
+     "r": "S = a1 / (1 − q), se |q| < 1."
+    }
+   ]
+  },
+  {
+   "id": "MAT-4",
+   "s": "MAT",
+   "t": "Funções, equações e inequações",
+   "c": [
+    {
+     "id": "t-MAT-4-1",
+     "p": "Qual a forma de uma função afim e o que é o coeficiente angular?",
+     "r": "f(x) = ax + b. O coeficiente a é a inclinação da reta; b é onde ela corta o eixo y."
+    },
+    {
+     "id": "t-MAT-4-2",
+     "p": "Fórmula de Bhaskara.",
+     "r": "x = (−b ± √Δ) / 2a, com Δ = b² − 4ac."
+    },
+    {
+     "id": "t-MAT-4-3",
+     "p": "O que o discriminante Δ diz sobre as raízes?",
+     "r": "Δ > 0: duas raízes reais distintas. Δ = 0: uma raiz real dupla. Δ < 0: sem raízes reais."
+    },
+    {
+     "id": "t-MAT-4-4",
+     "p": "Soma e produto das raízes de ax² + bx + c = 0.",
+     "r": "Soma = −b/a. Produto = c/a."
+    },
+    {
+     "id": "t-MAT-4-5",
+     "p": "Como é o vértice da parábola y = ax² + bx + c?",
+     "r": "xv = −b/2a e yv = −Δ/4a. Se a > 0, o vértice é mínimo; se a < 0, é máximo."
+    },
+    {
+     "id": "t-MAT-4-6",
+     "p": "O que acontece com uma inequação ao multiplicar por número negativo?",
+     "r": "O sentido da desigualdade se inverte."
+    }
+   ]
+  },
+  {
+   "id": "MAT-5",
+   "s": "MAT",
+   "t": "Sistemas de equações e geometria analítica",
+   "c": [
+    {
+     "id": "t-MAT-5-1",
+     "p": "Como resolver um sistema pelo método da substituição?",
+     "r": "Isole uma incógnita em uma equação e substitua na outra."
+    },
+    {
+     "id": "t-MAT-5-2",
+     "p": "Qual a distância entre dois pontos A(x1,y1) e B(x2,y2)?",
+     "r": "d = √[(x2 − x1)² + (y2 − y1)²]."
+    },
+    {
+     "id": "t-MAT-5-3",
+     "p": "Qual o coeficiente angular da reta que passa por dois pontos?",
+     "r": "m = (y2 − y1) / (x2 − x1)."
+    },
+    {
+     "id": "t-MAT-5-4",
+     "p": "Como é o ponto médio de A e B?",
+     "r": "M = ((x1 + x2)/2, (y1 + y2)/2)."
+    }
+   ]
+  },
+  {
+   "id": "MAT-6",
+   "s": "MAT",
+   "t": "Geometria plana e espacial",
+   "c": [
+    {
+     "id": "t-MAT-6-1",
+     "p": "Soma dos ângulos internos de um triângulo.",
+     "r": "180°."
+    },
+    {
+     "id": "t-MAT-6-2",
+     "p": "Teorema de Pitágoras.",
+     "r": "No triângulo retângulo, a² = b² + c² (a é a hipotenusa)."
+    },
+    {
+     "id": "t-MAT-6-3",
+     "p": "Área do triângulo, do retângulo e do círculo.",
+     "r": "Triângulo: base·altura/2. Retângulo: base·altura. Círculo: π·r²."
+    },
+    {
+     "id": "t-MAT-6-4",
+     "p": "Comprimento da circunferência.",
+     "r": "C = 2·π·r."
+    },
+    {
+     "id": "t-MAT-6-5",
+     "p": "Volume do paralelepípedo, do cilindro e da esfera.",
+     "r": "Paralelepípedo: a·b·c. Cilindro: π·r²·h. Esfera: (4/3)·π·r³."
+    },
+    {
+     "id": "t-MAT-6-6",
+     "p": "Teorema de Tales.",
+     "r": "Retas paralelas cortadas por transversais determinam segmentos proporcionais."
+    },
+    {
+     "id": "t-MAT-6-7",
+     "p": "Quanto vale 1 m³ em litros?",
+     "r": "1000 litros. E 1 dm³ = 1 litro."
+    },
+    {
+     "id": "t-MAT-6-8",
+     "p": "Área do trapézio e do losango.",
+     "r": "Trapézio: (B + b)·h/2. Losango: D·d/2."
+    }
+   ]
+  },
+  {
+   "id": "MAT-7",
+   "s": "MAT",
+   "t": "Trigonometria no triângulo retângulo",
+   "c": [
+    {
+     "id": "t-MAT-7-1",
+     "p": "Definição de seno, cosseno e tangente no triângulo retângulo.",
+     "r": "Seno = cateto oposto / hipotenusa. Cosseno = cateto adjacente / hipotenusa. Tangente = oposto / adjacente."
+    },
+    {
+     "id": "t-MAT-7-2",
+     "p": "Valores de seno, cosseno e tangente de 30°, 45° e 60°.",
+     "r": "30°: 1/2, √3/2, √3/3. 45°: √2/2, √2/2, 1. 60°: √3/2, 1/2, √3."
+    },
+    {
+     "id": "t-MAT-7-3",
+     "p": "Relação fundamental da trigonometria.",
+     "r": "sen²x + cos²x = 1."
+    }
+   ]
+  },
+  {
+   "id": "MAT-8",
+   "s": "MAT",
+   "t": "Estatística descritiva e probabilidade",
+   "c": [
+    {
+     "id": "t-MAT-8-1",
+     "p": "Como calcular a média aritmética?",
+     "r": "Soma dos valores dividida pela quantidade deles."
+    },
+    {
+     "id": "t-MAT-8-2",
+     "p": "O que é mediana?",
+     "r": "O valor central do conjunto ordenado. Se a quantidade é par, é a média dos dois centrais."
+    },
+    {
+     "id": "t-MAT-8-3",
+     "p": "O que é moda?",
+     "r": "O valor que aparece com mais frequência."
+    },
+    {
+     "id": "t-MAT-8-4",
+     "p": "O que é desvio padrão?",
+     "r": "Raiz quadrada da variância; mede a dispersão dos dados em torno da média."
+    },
+    {
+     "id": "t-MAT-8-5",
+     "p": "Qual a fórmula da probabilidade de um evento?",
+     "r": "P = casos favoráveis / casos possíveis (eventos equiprováveis)."
+    },
+    {
+     "id": "t-MAT-8-6",
+     "p": "Qual a probabilidade de eventos independentes ocorrerem juntos?",
+     "r": "Multiplicam-se: P(A e B) = P(A) · P(B)."
+    },
+    {
+     "id": "t-MAT-8-7",
+     "p": "Qual a probabilidade de A ou B (mutuamente exclusivos)?",
+     "r": "Somam-se: P(A ou B) = P(A) + P(B). Se não forem exclusivos, subtrai-se P(A e B)."
+    }
+   ]
+  },
+  {
+   "id": "MAT-9",
+   "s": "MAT",
+   "t": "Contagem (análise combinatória)",
+   "c": [
+    {
+     "id": "t-MAT-9-1",
+     "p": "O que diz o princípio fundamental da contagem?",
+     "r": "Se uma etapa tem m formas e outra tem n, as duas juntas têm m · n formas."
+    },
+    {
+     "id": "t-MAT-9-2",
+     "p": "Fórmula da permutação simples de n elementos.",
+     "r": "Pn = n!."
+    },
+    {
+     "id": "t-MAT-9-3",
+     "p": "Fórmula do arranjo e da combinação.",
+     "r": "A(n,p) = n!/(n − p)!. C(n,p) = n! / [p!(n − p)!]."
+    },
+    {
+     "id": "t-MAT-9-4",
+     "p": "Quando usar arranjo e quando usar combinação?",
+     "r": "Arranjo se a ordem importa (filas, senhas). Combinação se não importa (comissões, grupos)."
+    },
+    {
+     "id": "t-MAT-9-5",
+     "p": "Quanto vale 0! e 5!?",
+     "r": "0! = 1 e 5! = 120."
+    }
+   ]
+  },
+  {
+   "id": "RL-0",
+   "s": "RL",
+   "t": "Proposições e conectivos",
+   "c": [
+    {
+     "id": "t-RL-0-1",
+     "p": "Quando a conjunção \"e\" (p ∧ q) é verdadeira?",
+     "r": "Somente quando as duas proposições são verdadeiras."
+    },
+    {
+     "id": "t-RL-0-2",
+     "p": "Quando a disjunção \"ou\" (p ∨ q) é falsa?",
+     "r": "Somente quando as duas são falsas."
+    },
+    {
+     "id": "t-RL-0-3",
+     "p": "Quando a condicional \"se p então q\" é falsa?",
+     "r": "Somente quando p é verdadeira e q é falsa."
+    },
+    {
+     "id": "t-RL-0-4",
+     "p": "Quando a bicondicional \"p se e somente se q\" é verdadeira?",
+     "r": "Quando p e q têm o mesmo valor lógico."
+    },
+    {
+     "id": "t-RL-0-5",
+     "p": "Quando a disjunção exclusiva (ou p ou q) é verdadeira?",
+     "r": "Quando as duas têm valores lógicos diferentes."
+    },
+    {
+     "id": "t-RL-0-6",
+     "p": "O que é tautologia e contradição?",
+     "r": "Tautologia é sempre verdadeira. Contradição é sempre falsa."
+    }
+   ]
+  },
+  {
+   "id": "RL-1",
+   "s": "RL",
+   "t": "Equivalências e negações",
+   "c": [
+    {
+     "id": "t-RL-1-1",
+     "p": "Negação de \"p e q\".",
+     "r": "\"não p ou não q\" (lei de De Morgan)."
+    },
+    {
+     "id": "t-RL-1-2",
+     "p": "Negação de \"p ou q\".",
+     "r": "\"não p e não q\" (De Morgan)."
+    },
+    {
+     "id": "t-RL-1-3",
+     "p": "Negação de \"se p então q\".",
+     "r": "\"p e não q\"."
+    },
+    {
+     "id": "t-RL-1-4",
+     "p": "Equivalências de \"se p então q\".",
+     "r": "\"se não q então não p\" (contrapositiva) e \"não p ou q\"."
+    },
+    {
+     "id": "t-RL-1-5",
+     "p": "A recíproca de \"se p então q\" é equivalente a ela?",
+     "r": "Não. A recíproca (se q então p) não é equivalente. A contrapositiva é."
+    }
+   ]
+  },
+  {
+   "id": "RL-2",
+   "s": "RL",
+   "t": "Quantificadores e diagramas lógicos",
+   "c": [
+    {
+     "id": "t-RL-2-1",
+     "p": "Qual a negação de \"todo A é B\"?",
+     "r": "\"Algum A não é B\" (ou existe A que não é B)."
+    },
+    {
+     "id": "t-RL-2-2",
+     "p": "Qual a negação de \"algum A é B\"?",
+     "r": "\"Nenhum A é B\"."
+    },
+    {
+     "id": "t-RL-2-3",
+     "p": "Qual a negação de \"nenhum A é B\"?",
+     "r": "\"Algum A é B\"."
+    },
+    {
+     "id": "t-RL-2-4",
+     "p": "Como representar \"todo A é B\" em diagrama?",
+     "r": "O conjunto A dentro do conjunto B."
+    },
+    {
+     "id": "t-RL-2-5",
+     "p": "Como calcular a união de dois conjuntos?",
+     "r": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)."
+    }
+   ]
+  },
+  {
+   "id": "RL-3",
+   "s": "RL",
+   "t": "Argumentação, deduções e falácias",
+   "c": [
+    {
+     "id": "t-RL-3-1",
+     "p": "O que é um argumento válido?",
+     "r": "Aquele em que, se as premissas são verdadeiras, a conclusão necessariamente é verdadeira."
+    },
+    {
+     "id": "t-RL-3-2",
+     "p": "Um argumento válido tem conclusão sempre verdadeira?",
+     "r": "Não. A validade depende da forma. Com premissa falsa, a conclusão pode ser falsa."
+    },
+    {
+     "id": "t-RL-3-3",
+     "p": "O que é a falácia de afirmar o consequente?",
+     "r": "De \"se p então q\" e q, concluir p. Isso é inválido."
+    },
+    {
+     "id": "t-RL-3-4",
+     "p": "O que é o modus ponens e o modus tollens?",
+     "r": "Modus ponens: p → q; p; logo q. Modus tollens: p → q; ¬q; logo ¬p."
+    }
+   ]
+  },
+  {
+   "id": "RL-4",
+   "s": "RL",
+   "t": "Contagem e probabilidade",
+   "c": [
+    {
+     "id": "t-RL-4-1",
+     "p": "Como lidar com \"pelo menos um\" em problemas de probabilidade?",
+     "r": "Calcule o complementar: 1 − P(nenhum)."
+    },
+    {
+     "id": "t-RL-4-2",
+     "p": "O que é o princípio da casa dos pombos?",
+     "r": "Se há mais objetos do que gavetas, alguma gaveta recebe mais de um objeto."
+    },
+    {
+     "id": "t-RL-4-3",
+     "p": "Probabilidade de um evento impossível e de um certo.",
+     "r": "Impossível: 0. Certo: 1."
+    }
+   ]
+  },
+  {
+   "id": "FIS-0",
+   "s": "FIS",
+   "t": "Grandezas, unidades, notação científica e vetores",
+   "c": [
+    {
+     "id": "t-FIS-0-1",
+     "p": "Quais as unidades do SI para comprimento, massa e tempo?",
+     "r": "Metro (m), quilograma (kg) e segundo (s)."
+    },
+    {
+     "id": "t-FIS-0-2",
+     "p": "Como converter km/h em m/s e o inverso?",
+     "r": "Divida por 3,6 para m/s. Multiplique por 3,6 para km/h."
+    },
+    {
+     "id": "t-FIS-0-3",
+     "p": "O que é notação científica?",
+     "r": "Número escrito como a · 10^n, com 1 ≤ a < 10. Ex.: 3 000 = 3 · 10³."
+    },
+    {
+     "id": "t-FIS-0-4",
+     "p": "Diferença entre grandeza escalar e vetorial.",
+     "r": "Escalar tem só módulo (massa, tempo). Vetorial tem módulo, direção e sentido (força, velocidade)."
+    },
+    {
+     "id": "t-FIS-0-5",
+     "p": "Como se somam vetores perpendiculares?",
+     "r": "Pelo teorema de Pitágoras: R² = a² + b²."
+    }
+   ]
+  },
+  {
+   "id": "FIS-1",
+   "s": "FIS",
+   "t": "Movimento (cinemática)",
+   "c": [
+    {
+     "id": "t-FIS-1-1",
+     "p": "Fórmula da velocidade média.",
+     "r": "vm = Δs / Δt."
+    },
+    {
+     "id": "t-FIS-1-2",
+     "p": "Equação horária do MRU.",
+     "r": "s = s0 + v·t (velocidade constante)."
+    },
+    {
+     "id": "t-FIS-1-3",
+     "p": "Equação horária do MRUV.",
+     "r": "s = s0 + v0·t + (a·t²)/2."
+    },
+    {
+     "id": "t-FIS-1-4",
+     "p": "Equação de Torricelli.",
+     "r": "v² = v0² + 2·a·Δs."
+    },
+    {
+     "id": "t-FIS-1-5",
+     "p": "Qual a aceleração da gravidade usada nas provas e o que é queda livre?",
+     "r": "g ≈ 10 m/s² (ou 9,8). Queda livre é MRUV com aceleração g e sem resistência do ar."
+    },
+    {
+     "id": "t-FIS-1-6",
+     "p": "Como se calcula aceleração média?",
+     "r": "a = Δv / Δt."
+    }
+   ]
+  },
+  {
+   "id": "FIS-2",
+   "s": "FIS",
+   "t": "Leis de Newton, forças e equilíbrio",
+   "c": [
+    {
+     "id": "t-FIS-2-1",
+     "p": "Primeira lei de Newton (inércia).",
+     "r": "Sem força resultante, o corpo permanece em repouso ou em MRU."
+    },
+    {
+     "id": "t-FIS-2-2",
+     "p": "Segunda lei de Newton.",
+     "r": "FR = m · a."
+    },
+    {
+     "id": "t-FIS-2-3",
+     "p": "Terceira lei de Newton (ação e reação).",
+     "r": "Toda ação tem uma reação de mesma intensidade e direção, sentido oposto, em corpos diferentes."
+    },
+    {
+     "id": "t-FIS-2-4",
+     "p": "Fórmula do peso.",
+     "r": "P = m · g. Peso é força (N); massa é quantidade de matéria (kg)."
+    },
+    {
+     "id": "t-FIS-2-5",
+     "p": "Fórmula da força de atrito.",
+     "r": "fat = μ · N (N é a força normal)."
+    },
+    {
+     "id": "t-FIS-2-6",
+     "p": "Condição de equilíbrio de um ponto material.",
+     "r": "A força resultante é nula."
+    },
+    {
+     "id": "t-FIS-2-7",
+     "p": "O que é torque (momento de uma força)?",
+     "r": "M = F · d, com d a distância perpendicular ao eixo. O equilíbrio de rotação exige soma dos torques nula."
+    }
+   ]
+  },
+  {
+   "id": "FIS-3",
+   "s": "FIS",
+   "t": "Trabalho, energia e potência",
+   "c": [
+    {
+     "id": "t-FIS-3-1",
+     "p": "Fórmula do trabalho de uma força constante.",
+     "r": "W = F · d · cos θ."
+    },
+    {
+     "id": "t-FIS-3-2",
+     "p": "Fórmulas da energia cinética e potencial gravitacional.",
+     "r": "Ec = m·v²/2. Ep = m·g·h."
+    },
+    {
+     "id": "t-FIS-3-3",
+     "p": "O que diz o princípio da conservação da energia mecânica?",
+     "r": "Sem forças dissipativas, Ec + Ep permanece constante."
+    },
+    {
+     "id": "t-FIS-3-4",
+     "p": "Fórmula da potência.",
+     "r": "P = W / Δt. Unidade: watt (W)."
+    },
+    {
+     "id": "t-FIS-3-5",
+     "p": "Quantos watts tem 1 cavalo-vapor aproximadamente?",
+     "r": "Cerca de 735 W (1 CV)."
+    }
+   ]
+  },
+  {
+   "id": "FIS-4",
+   "s": "FIS",
+   "t": "Hidrostática",
+   "c": [
+    {
+     "id": "t-FIS-4-1",
+     "p": "Fórmula da pressão.",
+     "r": "p = F / A. Unidade: pascal (Pa = N/m²)."
+    },
+    {
+     "id": "t-FIS-4-2",
+     "p": "Teorema de Stevin.",
+     "r": "p = p0 + d·g·h: a pressão aumenta com a profundidade."
+    },
+    {
+     "id": "t-FIS-4-3",
+     "p": "Princípio de Pascal.",
+     "r": "O acréscimo de pressão num fluido em equilíbrio transmite-se integralmente a todos os pontos (base da prensa hidráulica)."
+    },
+    {
+     "id": "t-FIS-4-4",
+     "p": "Princípio de Arquimedes e fórmula do empuxo.",
+     "r": "Todo corpo imerso recebe empuxo igual ao peso do fluido deslocado: E = d_fluido · V_deslocado · g."
+    },
+    {
+     "id": "t-FIS-4-5",
+     "p": "Quando um corpo flutua?",
+     "r": "Quando sua densidade é menor que a do fluido (empuxo igual ao peso)."
+    }
+   ]
+  },
+  {
+   "id": "FIS-5",
+   "s": "FIS",
+   "t": "Gravitação",
+   "c": [
+    {
+     "id": "t-FIS-5-1",
+     "p": "Lei da gravitação universal de Newton.",
+     "r": "F = G · M · m / d²."
+    },
+    {
+     "id": "t-FIS-5-2",
+     "p": "Leis de Kepler: o que diz a primeira?",
+     "r": "Os planetas descrevem órbitas elípticas, com o Sol em um dos focos."
+    },
+    {
+     "id": "t-FIS-5-3",
+     "p": "O que diz a terceira lei de Kepler?",
+     "r": "O quadrado do período é proporcional ao cubo do raio médio da órbita (T² ∝ R³)."
+    }
+   ]
+  },
+  {
+   "id": "FIS-6",
+   "s": "FIS",
+   "t": "Termologia e termodinâmica",
+   "c": [
+    {
+     "id": "t-FIS-6-1",
+     "p": "Fórmula da quantidade de calor sensível.",
+     "r": "Q = m · c · Δθ."
+    },
+    {
+     "id": "t-FIS-6-2",
+     "p": "Relação entre as escalas Celsius e Kelvin.",
+     "r": "T(K) = θ(°C) + 273."
+    },
+    {
+     "id": "t-FIS-6-3",
+     "p": "Quais as formas de propagação do calor?",
+     "r": "Condução, convecção e irradiação."
+    },
+    {
+     "id": "t-FIS-6-4",
+     "p": "O que diz a primeira lei da termodinâmica?",
+     "r": "ΔU = Q − W: a variação de energia interna é o calor trocado menos o trabalho realizado."
+    },
+    {
+     "id": "t-FIS-6-5",
+     "p": "Equação geral dos gases.",
+     "r": "p·V / T = constante (T em kelvin)."
+    },
+    {
+     "id": "t-FIS-6-6",
+     "p": "Como é o calor latente?",
+     "r": "Calor trocado na mudança de estado, sem variar a temperatura: Q = m · L."
+    }
+   ]
+  },
+  {
+   "id": "FIS-7",
+   "s": "FIS",
+   "t": "Ondas e óptica",
+   "c": [
+    {
+     "id": "t-FIS-7-1",
+     "p": "Fórmula fundamental da ondulatória.",
+     "r": "v = λ · f."
+    },
+    {
+     "id": "t-FIS-7-2",
+     "p": "Ondas sonoras são longitudinais ou transversais?",
+     "r": "Longitudinais e mecânicas: precisam de meio material."
+    },
+    {
+     "id": "t-FIS-7-3",
+     "p": "Qual a velocidade da luz no vácuo?",
+     "r": "Aproximadamente 3 · 10⁸ m/s."
+    },
+    {
+     "id": "t-FIS-7-4",
+     "p": "Leis da reflexão.",
+     "r": "O raio incidente, o raio refletido e a normal estão no mesmo plano, e o ângulo de incidência é igual ao de reflexão."
+    },
+    {
+     "id": "t-FIS-7-5",
+     "p": "Como são os espelhos planos?",
+     "r": "Imagem virtual, direita, do mesmo tamanho e simétrica ao objeto."
+    },
+    {
+     "id": "t-FIS-7-6",
+     "p": "O que é refração da luz?",
+     "r": "Mudança de direção da luz ao passar de um meio para outro, por variar sua velocidade."
+    }
+   ]
+  },
+  {
+   "id": "FIS-8",
+   "s": "FIS",
+   "t": "Eletricidade e magnetismo",
+   "c": [
+    {
+     "id": "t-FIS-8-1",
+     "p": "Primeira lei de Ohm.",
+     "r": "U = R · i."
+    },
+    {
+     "id": "t-FIS-8-2",
+     "p": "Fórmula da potência elétrica.",
+     "r": "P = U · i = R · i² = U²/R."
+    },
+    {
+     "id": "t-FIS-8-3",
+     "p": "Resistores em série e em paralelo.",
+     "r": "Série: Req = R1 + R2 + ... (mesma corrente). Paralelo: 1/Req = 1/R1 + 1/R2 + ... (mesma tensão)."
+    },
+    {
+     "id": "t-FIS-8-4",
+     "p": "Lei de Coulomb.",
+     "r": "F = k · |Q1 · Q2| / d²."
+    },
+    {
+     "id": "t-FIS-8-5",
+     "p": "Cargas iguais se atraem ou se repelem?",
+     "r": "Se repelem. Cargas opostas se atraem."
+    },
+    {
+     "id": "t-FIS-8-6",
+     "p": "Como calcular a energia elétrica consumida?",
+     "r": "E = P · Δt (em kWh, com P em kW e tempo em horas)."
+    }
+   ]
+  },
+  {
+   "id": "BIO-0",
+   "s": "BIO",
+   "t": "Células e metabolismo",
+   "c": [
+    {
+     "id": "t-BIO-0-1",
+     "p": "Qual a diferença entre célula procariótica e eucariótica?",
+     "r": "Procariótica não tem núcleo organizado (bactérias). Eucariótica tem núcleo delimitado por membrana."
+    },
+    {
+     "id": "t-BIO-0-2",
+     "p": "Qual a função da mitocôndria?",
+     "r": "Respiração celular: produzir ATP."
+    },
+    {
+     "id": "t-BIO-0-3",
+     "p": "Qual a função dos ribossomos?",
+     "r": "Síntese de proteínas."
+    },
+    {
+     "id": "t-BIO-0-4",
+     "p": "Qual a diferença entre mitose e meiose?",
+     "r": "Mitose gera 2 células iguais à original (crescimento e reparo). Meiose gera 4 células com metade dos cromossomos (gametas)."
+    },
+    {
+     "id": "t-BIO-0-5",
+     "p": "Onde ocorre a fotossíntese e qual sua equação geral?",
+     "r": "Nos cloroplastos. CO2 + H2O + luz → glicose + O2."
+    },
+    {
+     "id": "t-BIO-0-6",
+     "p": "O que é difusão e osmose?",
+     "r": "Difusão é o movimento de solutos a favor do gradiente. Osmose é a passagem de água por membrana semipermeável."
+    }
+   ]
+  },
+  {
+   "id": "BIO-1",
+   "s": "BIO",
+   "t": "Genética e biotecnologia",
+   "c": [
+    {
+     "id": "t-BIO-1-1",
+     "p": "O que é o DNA e onde fica na célula eucariótica?",
+     "r": "Molécula que guarda a informação genética. Fica no núcleo (e em mitocôndrias e cloroplastos)."
+    },
+    {
+     "id": "t-BIO-1-2",
+     "p": "Quais as bases nitrogenadas do DNA?",
+     "r": "Adenina, timina, citosina e guanina (A-T, C-G)."
+    },
+    {
+     "id": "t-BIO-1-3",
+     "p": "O que diz a primeira lei de Mendel?",
+     "r": "Cada característica é determinada por um par de fatores que se separam na formação dos gametas."
+    },
+    {
+     "id": "t-BIO-1-4",
+     "p": "Cruzamento Aa x Aa: qual a proporção fenotípica (dominância completa)?",
+     "r": "3 dominantes para 1 recessivo (3:1). Genótipos: 1 AA : 2 Aa : 1 aa."
+    },
+    {
+     "id": "t-BIO-1-5",
+     "p": "O que é um transgênico?",
+     "r": "Organismo que recebeu gene de outra espécie por engenharia genética."
+    },
+    {
+     "id": "t-BIO-1-6",
+     "p": "Que são grupos sanguíneos do sistema ABO?",
+     "r": "A, B, AB e O. O tipo O é o doador universal de hemácias e o AB, o receptor universal."
+    }
+   ]
+  },
+  {
+   "id": "BIO-2",
+   "s": "BIO",
+   "t": "Tecidos, anatomia e fisiologia humana",
+   "c": [
+    {
+     "id": "t-BIO-2-1",
+     "p": "Quais os quatro tecidos básicos do corpo humano?",
+     "r": "Epitelial, conjuntivo, muscular e nervoso."
+    },
+    {
+     "id": "t-BIO-2-2",
+     "p": "Qual o trajeto do sangue na circulação pulmonar?",
+     "r": "Do ventrículo direito aos pulmões, e depois ao átrio esquerdo."
+    },
+    {
+     "id": "t-BIO-2-3",
+     "p": "Qual a função das hemácias, leucócitos e plaquetas?",
+     "r": "Hemácias transportam O2. Leucócitos defendem o corpo. Plaquetas atuam na coagulação."
+    },
+    {
+     "id": "t-BIO-2-4",
+     "p": "Onde ocorre a troca gasosa nos pulmões?",
+     "r": "Nos alvéolos pulmonares."
+    },
+    {
+     "id": "t-BIO-2-5",
+     "p": "Onde ocorre a maior parte da absorção de nutrientes?",
+     "r": "No intestino delgado."
+    },
+    {
+     "id": "t-BIO-2-6",
+     "p": "Qual a função dos rins?",
+     "r": "Filtrar o sangue e formar a urina, controlando água, sais e resíduos."
+    },
+    {
+     "id": "t-BIO-2-7",
+     "p": "Qual a diferença entre sistema nervoso central e periférico?",
+     "r": "Central: encéfalo e medula espinhal. Periférico: nervos e gânglios."
+    }
+   ]
+  },
+  {
+   "id": "BIO-3",
+   "s": "BIO",
+   "t": "Diversidade dos seres vivos",
+   "c": [
+    {
+     "id": "t-BIO-3-1",
+     "p": "Quais os cinco reinos clássicos?",
+     "r": "Monera, Protista, Fungi, Plantae e Animalia."
+    },
+    {
+     "id": "t-BIO-3-2",
+     "p": "O que são vertebrados e quais as classes?",
+     "r": "Animais com coluna vertebral: peixes, anfíbios, répteis, aves e mamíferos."
+    },
+    {
+     "id": "t-BIO-3-3",
+     "p": "O que são angiospermas e gimnospermas?",
+     "r": "Angiospermas têm flores e frutos. Gimnospermas têm sementes nuas (pinheiros)."
+    },
+    {
+     "id": "t-BIO-3-4",
+     "p": "O que são vírus: seres vivos?",
+     "r": "Não têm estrutura celular e só se reproduzem dentro de células hospedeiras; são tratados como parasitas intracelulares obrigatórios."
+    }
+   ]
+  },
+  {
+   "id": "BIO-4",
+   "s": "BIO",
+   "t": "Ecologia e meio ambiente",
+   "c": [
+    {
+     "id": "t-BIO-4-1",
+     "p": "O que é uma cadeia alimentar?",
+     "r": "Sequência de seres em que um serve de alimento ao seguinte: produtor, consumidores e decompositores."
+    },
+    {
+     "id": "t-BIO-4-2",
+     "p": "O que são produtores e decompositores?",
+     "r": "Produtores fazem fotossíntese. Decompositores (bactérias e fungos) degradam matéria orgânica e reciclam nutrientes."
+    },
+    {
+     "id": "t-BIO-4-3",
+     "p": "O que é o efeito estufa?",
+     "r": "Retenção do calor na atmosfera por gases como CO2 e metano. É natural, mas intensificado pela ação humana."
+    },
+    {
+     "id": "t-BIO-4-4",
+     "p": "O que é a camada de ozônio?",
+     "r": "Camada da estratosfera que filtra a radiação ultravioleta. É afetada pelos CFCs."
+    },
+    {
+     "id": "t-BIO-4-5",
+     "p": "O que é biodiversidade e um bioma?",
+     "r": "Biodiversidade é a variedade de vida. Bioma é grande conjunto de ecossistemas com clima e vegetação semelhantes."
+    },
+    {
+     "id": "t-BIO-4-6",
+     "p": "Quais biomas ocorrem em Pernambuco?",
+     "r": "Caatinga, Mata Atlântica e manguezais, entre outros ecossistemas litorâneos."
+    }
+   ]
+  },
+  {
+   "id": "BIO-5",
+   "s": "BIO",
+   "t": "Saúde, primeiros socorros, IST e qualidade de vida",
+   "c": [
+    {
+     "id": "t-BIO-5-1",
+     "p": "Qual a sequência do atendimento a uma vítima inconsciente que não respira?",
+     "r": "Chamar o socorro (192/193), iniciar compressões torácicas no centro do peito, forte e rápido, sem interromper desnecessariamente.",
+     "f": "Diretrizes de ressuscitação (conferir protocolo atual)"
+    },
+    {
+     "id": "t-BIO-5-2",
+     "p": "Qual o ritmo recomendado das compressões torácicas?",
+     "r": "De 100 a 120 por minuto, com profundidade de cerca de 5 a 6 cm no adulto.",
+     "f": "Diretrizes AHA/ILCOR (conferir protocolo atual)"
+    },
+    {
+     "id": "t-BIO-5-3",
+     "p": "Qual o telefone do Corpo de Bombeiros e do SAMU?",
+     "r": "Bombeiros: 193. SAMU: 192."
+    },
+    {
+     "id": "t-BIO-5-4",
+     "p": "Como estancar uma hemorragia externa grave?",
+     "r": "Comprimir diretamente o local com pano limpo e manter a pressão; elevar o membro quando possível. Chamar socorro."
+    },
+    {
+     "id": "t-BIO-5-5",
+     "p": "Qual o tratamento recomendado para queimadura leve?",
+     "r": "Resfriar com água corrente fria por alguns minutos, sem gelo, sem manteiga ou pasta, e cobrir com gaze limpa."
+    },
+    {
+     "id": "t-BIO-5-6",
+     "p": "Quais as formas de transmissão do HIV?",
+     "r": "Sexo sem preservativo, sangue contaminado, compartilhamento de agulhas e da mãe para o filho. Não se transmite por abraço, tosse ou talheres."
+    },
+    {
+     "id": "t-BIO-5-7",
+     "p": "Como se previne a dengue?",
+     "r": "Eliminando recipientes que acumulam água parada, onde o Aedes aegypti se reproduz."
+    },
+    {
+     "id": "t-BIO-5-8",
+     "p": "Qual o método mais eficaz de prevenir a maioria das IST?",
+     "r": "O preservativo (camisinha), masculino ou feminino, usado corretamente em todas as relações."
+    }
+   ]
+  },
+  {
+   "id": "DC-0",
+   "s": "DC",
+   "t": "Princípios fundamentais (arts. 1º a 4º)",
+   "c": [
+    {
+     "id": "t-DC-0-1",
+     "p": "Quantos e quais são os fundamentos da República (art. 1º)?",
+     "r": "Cinco: soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa, pluralismo político. (Macete SO-CI-DI-VA-PLU.)",
+     "f": "CF/88, art. 1º"
+    },
+    {
+     "id": "t-DC-0-2",
+     "p": "Quem tem soberania e quem tem autonomia?",
+     "r": "A República Federativa do Brasil tem soberania. Estados, DF e Municípios têm autonomia.",
+     "f": "CF/88, arts. 1º e 18"
+    },
+    {
+     "id": "t-DC-0-3",
+     "p": "Quais as quatro capacidades da autonomia dos entes?",
+     "r": "Autoadministração, autolegislação, autogoverno e auto-organização."
+    },
+    {
+     "id": "t-DC-0-4",
+     "p": "Segundo o art. 2º, quais são os Poderes da União?",
+     "r": "Legislativo, Executivo e Judiciário, independentes e harmônicos entre si.",
+     "f": "CF/88, art. 2º"
+    },
+    {
+     "id": "t-DC-0-5",
+     "p": "A separação dos Poderes pode ser abolida por emenda?",
+     "r": "Não. É cláusula pétrea (art. 60, §4º, III).",
+     "f": "CF/88, art. 60, §4º"
+    },
+    {
+     "id": "t-DC-0-6",
+     "p": "Quais os objetivos fundamentais do art. 3º?",
+     "r": "Construir sociedade livre, justa e solidária; garantir o desenvolvimento nacional; erradicar a pobreza e a marginalização e reduzir as desigualdades; promover o bem de todos sem preconceitos.",
+     "f": "CF/88, art. 3º"
+    },
+    {
+     "id": "t-DC-0-7",
+     "p": "Erradica-se ou reduz-se a pobreza? E as desigualdades?",
+     "r": "Erradicam-se a pobreza e a marginalização. Reduzem-se as desigualdades sociais e regionais.",
+     "f": "CF/88, art. 3º, III"
+    },
+    {
+     "id": "t-DC-0-8",
+     "p": "Cite princípios das relações internacionais (art. 4º).",
+     "r": "Independência nacional, prevalência dos direitos humanos, autodeterminação dos povos, não intervenção, igualdade entre os Estados, defesa da paz, solução pacífica dos conflitos, repúdio ao terrorismo e ao racismo, cooperação entre os povos, concessão de asilo político.",
+     "f": "CF/88, art. 4º"
+    },
+    {
+     "id": "t-DC-0-9",
+     "p": "Qual a integração que o parágrafo único do art. 4º busca?",
+     "r": "A integração econômica, política, social e cultural dos povos da América Latina, visando a uma comunidade latino-americana de nações.",
+     "f": "CF/88, art. 4º, parágrafo único"
+    },
+    {
+     "id": "t-DC-0-10",
+     "p": "O Preâmbulo da Constituição tem força normativa?",
+     "r": "Segundo o STF (ADI 2.076), não: não cria direitos e não é parâmetro de controle de constitucionalidade.",
+     "f": "STF, ADI 2.076"
+    }
+   ]
+  },
+  {
+   "id": "DC-1",
+   "s": "DC",
+   "t": "Direitos e garantias fundamentais (art. 5º)",
+   "c": [
+    {
+     "id": "t-DC-1-1",
+     "p": "Quais os cinco direitos invioláveis do caput do art. 5º?",
+     "r": "Vida, liberdade, igualdade, segurança e propriedade.",
+     "f": "CF/88, art. 5º, caput"
+    },
+    {
+     "id": "t-DC-1-2",
+     "p": "O art. 5º protege só brasileiros?",
+     "r": "Não. Garante aos brasileiros e aos estrangeiros residentes no País.",
+     "f": "CF/88, art. 5º, caput"
+    },
+    {
+     "id": "t-DC-1-3",
+     "p": "Os direitos fundamentais são absolutos?",
+     "r": "Não. Podem sofrer limites quando colidem com outros direitos.",
+     "f": "Doutrina e jurisprudência do STF"
+    },
+    {
+     "id": "t-DC-1-4",
+     "p": "Qual o princípio da legalidade para o particular (art. 5º, II)?",
+     "r": "Ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei.",
+     "f": "CF/88, art. 5º, II"
+    },
+    {
+     "id": "t-DC-1-5",
+     "p": "A manifestação do pensamento é livre. E o anonimato?",
+     "r": "É vedado o anonimato.",
+     "f": "CF/88, art. 5º, IV"
+    },
+    {
+     "id": "t-DC-1-6",
+     "p": "Quem pode entrar na casa sem consentimento do morador?",
+     "r": "Em flagrante delito, desastre ou para prestar socorro, a qualquer hora; por ordem judicial, só durante o dia.",
+     "f": "CF/88, art. 5º, XI"
+    },
+    {
+     "id": "t-DC-1-7",
+     "p": "O bombeiro pode entrar em casa sem ordem judicial para um resgate?",
+     "r": "Sim, em caso de desastre ou para prestar socorro, a qualquer hora, sem consentimento.",
+     "f": "CF/88, art. 5º, XI"
+    },
+    {
+     "id": "t-DC-1-8",
+     "p": "A reunião pacífica exige autorização ou aviso?",
+     "r": "Exige apenas prévio aviso à autoridade competente, não autorização. Deve ser sem armas, em locais abertos ao público.",
+     "f": "CF/88, art. 5º, XVI"
+    },
+    {
+     "id": "t-DC-1-9",
+     "p": "É permitida associação de caráter paramilitar?",
+     "r": "Não. A liberdade de associação é plena para fins lícitos, vedada a de caráter paramilitar.",
+     "f": "CF/88, art. 5º, XVII"
+    },
+    {
+     "id": "t-DC-1-10",
+     "p": "Sobre o sigilo das comunicações, o que pode ser quebrado por ordem judicial?",
+     "r": "Só as comunicações telefônicas, na forma da lei, para investigação criminal ou instrução processual penal.",
+     "f": "CF/88, art. 5º, XII"
+    },
+    {
+     "id": "t-DC-1-11",
+     "p": "Qual a regra de desapropriação?",
+     "r": "Por necessidade ou utilidade pública, ou interesse social, mediante justa e prévia indenização em dinheiro.",
+     "f": "CF/88, art. 5º, XXIV"
+    },
+    {
+     "id": "t-DC-1-12",
+     "p": "Em que caso a autoridade pode usar propriedade particular, sem prévia indenização?",
+     "r": "Em caso de iminente perigo público (requisição). Se houver dano, a indenização é posterior.",
+     "f": "CF/88, art. 5º, XXV"
+    },
+    {
+     "id": "t-DC-1-13",
+     "p": "O que diz o princípio da inafastabilidade da jurisdição?",
+     "r": "A lei não excluirá da apreciação do Poder Judiciário lesão ou ameaça a direito.",
+     "f": "CF/88, art. 5º, XXXV"
+    },
+    {
+     "id": "t-DC-1-14",
+     "p": "O que a lei não pode prejudicar (art. 5º, XXXVI)?",
+     "r": "O direito adquirido, o ato jurídico perfeito e a coisa julgada.",
+     "f": "CF/88, art. 5º, XXXVI"
+    },
+    {
+     "id": "t-DC-1-15",
+     "p": "A lei penal retroage?",
+     "r": "Não, salvo para beneficiar o réu.",
+     "f": "CF/88, art. 5º, XL"
+    },
+    {
+     "id": "t-DC-1-16",
+     "p": "Que crimes são inafiançáveis e imprescritíveis?",
+     "r": "O racismo e a ação de grupos armados, civis ou militares, contra a ordem constitucional e o Estado Democrático.",
+     "f": "CF/88, art. 5º, XLII e XLIV"
+    },
+    {
+     "id": "t-DC-1-17",
+     "p": "A tortura é imprescritível?",
+     "r": "Não consta como imprescritível. É inafiançável e insuscetível de graça ou anistia (junto com tráfico, terrorismo e hediondos).",
+     "f": "CF/88, art. 5º, XLIII"
+    },
+    {
+     "id": "t-DC-1-18",
+     "p": "Quais as penas proibidas?",
+     "r": "Morte (salvo guerra declarada), caráter perpétuo, trabalhos forçados, banimento e penas cruéis.",
+     "f": "CF/88, art. 5º, XLVII"
+    },
+    {
+     "id": "t-DC-1-19",
+     "p": "Quando alguém pode ser preso?",
+     "r": "Em flagrante delito ou por ordem escrita e fundamentada de autoridade judiciária, salvo transgressão militar ou crime propriamente militar.",
+     "f": "CF/88, art. 5º, LXI"
+    },
+    {
+     "id": "t-DC-1-20",
+     "p": "Qual a presunção de inocência?",
+     "r": "Ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória.",
+     "f": "CF/88, art. 5º, LVII"
+    },
+    {
+     "id": "t-DC-1-21",
+     "p": "Qual a garantia do preso sobre a sua prisão e o interrogatório?",
+     "r": "Tem direito a permanecer calado, à assistência da família e de advogado, e à identificação dos responsáveis pela prisão ou interrogatório.",
+     "f": "CF/88, art. 5º, LXIII e LXIV"
+    },
+    {
+     "id": "t-DC-1-22",
+     "p": "Provas obtidas por meios ilícitos são admissíveis?",
+     "r": "Não. São inadmissíveis no processo.",
+     "f": "CF/88, art. 5º, LVI"
+    },
+    {
+     "id": "t-DC-1-23",
+     "p": "Quórum para tratados de direitos humanos equivalerem a emendas?",
+     "r": "Aprovação em cada Casa, em dois turnos, por 3/5 dos membros.",
+     "f": "CF/88, art. 5º, §3º"
+    }
+   ]
+  },
+  {
+   "id": "DC-2",
+   "s": "DC",
+   "t": "Remédios constitucionais",
+   "c": [
+    {
+     "id": "t-DC-2-1",
+     "p": "Para que serve o habeas corpus?",
+     "r": "Proteger a liberdade de locomoção contra ilegalidade ou abuso de poder.",
+     "f": "CF/88, art. 5º, LXVIII"
+    },
+    {
+     "id": "t-DC-2-2",
+     "p": "Para que serve o habeas data?",
+     "r": "Conhecer e retificar informações pessoais em registros de entidades governamentais ou públicas.",
+     "f": "CF/88, art. 5º, LXXII"
+    },
+    {
+     "id": "t-DC-2-3",
+     "p": "Quando cabe mandado de segurança?",
+     "r": "Para proteger direito líquido e certo, não amparado por HC ou HD, contra ato ilegal ou abusivo de autoridade.",
+     "f": "CF/88, art. 5º, LXIX"
+    },
+    {
+     "id": "t-DC-2-4",
+     "p": "Quem pode impetrar mandado de segurança coletivo?",
+     "r": "Partido político com representação no Congresso, organização sindical, entidade de classe ou associação.",
+     "f": "CF/88, art. 5º, LXX"
+    },
+    {
+     "id": "t-DC-2-5",
+     "p": "Quando cabe mandado de injunção?",
+     "r": "Quando a falta de norma regulamentadora torna inviável o exercício de direitos e liberdades constitucionais.",
+     "f": "CF/88, art. 5º, LXXI"
+    },
+    {
+     "id": "t-DC-2-6",
+     "p": "Quem pode propor ação popular?",
+     "r": "Qualquer cidadão. Pessoa jurídica não propõe.",
+     "f": "CF/88, art. 5º, LXXIII"
+    },
+    {
+     "id": "t-DC-2-7",
+     "p": "O que a ação popular protege?",
+     "r": "Patrimônio público, moralidade administrativa, meio ambiente e patrimônio histórico e cultural.",
+     "f": "CF/88, art. 5º, LXXIII"
+    },
+    {
+     "id": "t-DC-2-8",
+     "p": "Quais as ações gratuitas por determinação constitucional?",
+     "r": "Habeas corpus e habeas data, e os atos necessários ao exercício da cidadania na forma da lei.",
+     "f": "CF/88, art. 5º, LXXVII"
+    }
+   ]
+  },
+  {
+   "id": "DC-3",
+   "s": "DC",
+   "t": "Direitos sociais, nacionalidade e direitos políticos",
+   "c": [
+    {
+     "id": "t-DC-3-1",
+     "p": "Cite direitos sociais do art. 6º.",
+     "r": "Educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância, assistência aos desamparados.",
+     "f": "CF/88, art. 6º"
+    },
+    {
+     "id": "t-DC-3-2",
+     "p": "Quem são brasileiros natos?",
+     "r": "Os nascidos no Brasil, ainda que de pais estrangeiros (desde que não a serviço de seu país); os nascidos no exterior de pai ou mãe brasileiro a serviço do Brasil; e outros casos do art. 12, I.",
+     "f": "CF/88, art. 12, I"
+    },
+    {
+     "id": "t-DC-3-3",
+     "p": "Cargos privativos de brasileiro nato (exemplos)?",
+     "r": "Presidente e Vice-Presidente, Presidente da Câmara e do Senado, Ministro do STF, carreira diplomática, oficial das Forças Armadas, Ministro de Estado da Defesa.",
+     "f": "CF/88, art. 12, §3º"
+    },
+    {
+     "id": "t-DC-3-4",
+     "p": "Quem tem voto obrigatório e quem tem voto facultativo?",
+     "r": "Obrigatório para maiores de 18 anos. Facultativo para analfabetos, maiores de 70 e maiores de 16 e menores de 18.",
+     "f": "CF/88, art. 14, §1º"
+    },
+    {
+     "id": "t-DC-3-5",
+     "p": "Idade mínima para Presidente, Governador, Deputado e Prefeito.",
+     "r": "Presidente, Vice e Senador: 35. Governador: 30. Deputado Federal/Estadual, Prefeito e juiz de paz: 21. Vereador: 18.",
+     "f": "CF/88, art. 14, §3º, VI"
+    },
+    {
+     "id": "t-DC-3-6",
+     "p": "O militar pode ser candidato?",
+     "r": "Pode. Com menos de 10 anos de serviço, deve afastar-se da atividade. Com mais de 10, fica agregado e, se eleito, passa para a inatividade.",
+     "f": "CF/88, art. 14, §8º"
+    },
+    {
+     "id": "t-DC-3-7",
+     "p": "Quem não pode se alistar como eleitor?",
+     "r": "Os estrangeiros e, durante o serviço militar obrigatório, os conscritos.",
+     "f": "CF/88, art. 14, §2º"
+    }
+   ]
+  },
+  {
+   "id": "DC-4",
+   "s": "DC",
+   "t": "Organização do Estado e Administração Pública",
+   "c": [
+    {
+     "id": "t-DC-4-1",
+     "p": "Quem forma a organização político-administrativa?",
+     "r": "União, Estados, Distrito Federal e Municípios, todos autônomos.",
+     "f": "CF/88, art. 18"
+    },
+    {
+     "id": "t-DC-4-2",
+     "p": "Território Federal é ente federativo?",
+     "r": "Não. Integra a União.",
+     "f": "CF/88, art. 18, §2º"
+    },
+    {
+     "id": "t-DC-4-3",
+     "p": "Como se cria um Município?",
+     "r": "Por lei estadual, dentro do período fixado por lei complementar federal, com consulta prévia por plebiscito.",
+     "f": "CF/88, art. 18, §4º"
+    },
+    {
+     "id": "t-DC-4-4",
+     "p": "Competência privativa da União (art. 22) é legislativa ou material?",
+     "r": "Legislativa. A competência material exclusiva da União está no art. 21.",
+     "f": "CF/88, arts. 21 e 22"
+    },
+    {
+     "id": "t-DC-4-5",
+     "p": "Quem tem competência comum (art. 23)?",
+     "r": "União, Estados, DF e Municípios, para executar tarefas como saúde, meio ambiente, cultura e educação.",
+     "f": "CF/88, art. 23"
+    },
+    {
+     "id": "t-DC-4-6",
+     "p": "Quem legisla concorrentemente (art. 24)?",
+     "r": "União, Estados e DF. A União edita normas gerais, os Estados suplementam. O Município não está no rol.",
+     "f": "CF/88, art. 24"
+    },
+    {
+     "id": "t-DC-4-7",
+     "p": "De quem é a competência para normas gerais dos bombeiros militares?",
+     "r": "Da União, privativamente (art. 22, XXI). A organização do CBMPE é do Estado.",
+     "f": "CF/88, art. 22, XXI"
+    },
+    {
+     "id": "t-DC-4-8",
+     "p": "Quem organiza e mantém a polícia militar e o corpo de bombeiros do DF?",
+     "r": "A União (art. 21, XIV).",
+     "f": "CF/88, art. 21, XIV"
+    },
+    {
+     "id": "t-DC-4-9",
+     "p": "Quais os cinco princípios do art. 37?",
+     "r": "Legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE).",
+     "f": "CF/88, art. 37, caput"
+    },
+    {
+     "id": "t-DC-4-10",
+     "p": "Qual a validade do concurso público?",
+     "r": "Até dois anos, prorrogável uma única vez, por igual período.",
+     "f": "CF/88, art. 37, III"
+    },
+    {
+     "id": "t-DC-4-11",
+     "p": "O cargo em comissão serve para quê?",
+     "r": "Apenas para direção, chefia e assessoramento. Função de confiança é só para servidor efetivo.",
+     "f": "CF/88, art. 37, V"
+    },
+    {
+     "id": "t-DC-4-12",
+     "p": "Qual a regra de responsabilidade civil do Estado (art. 37, §6º)?",
+     "r": "É objetiva: independe de culpa. O direito de regresso contra o agente depende de dolo ou culpa.",
+     "f": "CF/88, art. 37, §6º"
+    },
+    {
+     "id": "t-DC-4-13",
+     "p": "Quais as acumulações lícitas de cargos?",
+     "r": "Dois cargos de professor; um de professor e um técnico ou científico; dois privativos de profissionais de saúde, com compatibilidade de horários e respeito ao teto.",
+     "f": "CF/88, art. 37, XVI (alínea b alterada pela EC 138/2025)"
+    },
+    {
+     "id": "t-DC-4-14",
+     "p": "O militar tem direito a sindicalização e greve?",
+     "r": "Não. São proibidas pelo art. 142, §3º, IV, aplicável aos militares dos Estados.",
+     "f": "CF/88, art. 142, §3º, IV, e art. 42, §1º"
+    },
+    {
+     "id": "t-DC-4-15",
+     "p": "O militar em serviço ativo pode se filiar a partido político?",
+     "r": "Não (art. 142, §3º, V).",
+     "f": "CF/88, art. 142, §3º, V"
+    },
+    {
+     "id": "t-DC-4-16",
+     "p": "O que acontece com o militar que toma posse em cargo civil permanente?",
+     "r": "É transferido para a reserva. Em função civil temporária e não eletiva, fica agregado.",
+     "f": "CF/88, art. 142, §3º, II e III"
+    },
+    {
+     "id": "t-DC-4-17",
+     "p": "Quem são os militares dos Estados?",
+     "r": "Membros das polícias militares e dos corpos de bombeiros militares, organizados com base na hierarquia e disciplina.",
+     "f": "CF/88, art. 42"
+    },
+    {
+     "id": "t-DC-4-18",
+     "p": "Quem confere as patentes dos oficiais das PM e dos CBM?",
+     "r": "Os respectivos Governadores.",
+     "f": "CF/88, art. 42, §1º"
+    },
+    {
+     "id": "t-DC-4-19",
+     "p": "Qual o prazo de estabilidade do servidor efetivo?",
+     "r": "Três anos de efetivo exercício, com avaliação especial de desempenho.",
+     "f": "CF/88, art. 41"
+    }
+   ]
+  },
+  {
+   "id": "DC-5",
+   "s": "DC",
+   "t": "Poderes e funções essenciais à Justiça",
+   "c": [
+    {
+     "id": "t-DC-5-1",
+     "p": "Quem processa e julga o Presidente por crime de responsabilidade?",
+     "r": "A Câmara autoriza por 2/3 a instauração. O Senado julga, sob a presidência do Presidente do STF, condenando por 2/3.",
+     "f": "CF/88, arts. 51, I, e 52, I"
+    },
+    {
+     "id": "t-DC-5-2",
+     "p": "Quantos anos tem o mandato do Deputado Federal e do Senador?",
+     "r": "Deputado: 4 anos. Senador: 8 anos, com renovação de 1/3 e 2/3.",
+     "f": "CF/88, arts. 44 e 46"
+    },
+    {
+     "id": "t-DC-5-3",
+     "p": "Quantos Senadores cada Estado elege?",
+     "r": "Três, com dois suplentes cada.",
+     "f": "CF/88, art. 46"
+    },
+    {
+     "id": "t-DC-5-4",
+     "p": "O que é imunidade material do parlamentar?",
+     "r": "Invioláveis, civil e penalmente, por suas opiniões, palavras e votos.",
+     "f": "CF/88, art. 53, caput"
+    },
+    {
+     "id": "t-DC-5-5",
+     "p": "O parlamentar pode ser preso?",
+     "r": "Desde a diplomação, só em flagrante de crime inafiançável. A Casa decide sobre a prisão por maioria dos membros.",
+     "f": "CF/88, art. 53, §2º"
+    },
+    {
+     "id": "t-DC-5-6",
+     "p": "Quórum de aprovação de emenda constitucional.",
+     "r": "3/5 dos membros de cada Casa, em dois turnos. Promulgação pelas Mesas, sem sanção.",
+     "f": "CF/88, art. 60"
+    },
+    {
+     "id": "t-DC-5-7",
+     "p": "Quais as cláusulas pétreas?",
+     "r": "Forma federativa de Estado; voto direto, secreto, universal e periódico; separação dos Poderes; direitos e garantias individuais.",
+     "f": "CF/88, art. 60, §4º"
+    },
+    {
+     "id": "t-DC-5-8",
+     "p": "Quais os prazos da medida provisória?",
+     "r": "60 dias, prorrogáveis por mais 60. Entra em regime de urgência aos 45 dias.",
+     "f": "CF/88, art. 62"
+    },
+    {
+     "id": "t-DC-5-9",
+     "p": "Qual o prazo para o Presidente sancionar ou vetar um projeto?",
+     "r": "15 dias úteis. O silêncio é sanção tácita.",
+     "f": "CF/88, art. 66"
+    },
+    {
+     "id": "t-DC-5-10",
+     "p": "Quem julga as contas do Presidente da República?",
+     "r": "O Congresso Nacional. O TCU emite apenas parecer prévio.",
+     "f": "CF/88, arts. 49, IX, e 71, I"
+    },
+    {
+     "id": "t-DC-5-11",
+     "p": "Quantos Ministros tem o STF e quem os nomeia?",
+     "r": "Onze, nomeados pelo Presidente da República após aprovação por maioria absoluta do Senado.",
+     "f": "CF/88, arts. 101 e 52, III"
+    },
+    {
+     "id": "t-DC-5-12",
+     "p": "Quais os princípios do Ministério Público?",
+     "r": "Unidade, indivisibilidade e independência funcional.",
+     "f": "CF/88, art. 127, §1º"
+    },
+    {
+     "id": "t-DC-5-13",
+     "p": "Qual a função da Defensoria Pública?",
+     "r": "Orientação jurídica e defesa, em todos os graus, dos necessitados.",
+     "f": "CF/88, art. 134"
+    }
+   ]
+  },
+  {
+   "id": "DC-6",
+   "s": "DC",
+   "t": "Defesa do Estado e segurança pública (art. 144)",
+   "c": [
+    {
+     "id": "t-DC-6-1",
+     "p": "Qual o dever do Estado, segundo o art. 144?",
+     "r": "A segurança pública é dever do Estado, direito e responsabilidade de todos, para a preservação da ordem pública e da incolumidade das pessoas e do patrimônio.",
+     "f": "CF/88, art. 144, caput"
+    },
+    {
+     "id": "t-DC-6-2",
+     "p": "Quais os órgãos da segurança pública?",
+     "r": "Polícia federal, polícia rodoviária federal, polícia ferroviária federal, polícias civis, polícias militares e corpos de bombeiros militares, polícias penais federal, estaduais e distrital.",
+     "f": "CF/88, art. 144"
+    },
+    {
+     "id": "t-DC-6-3",
+     "p": "Qual a missão constitucional do corpo de bombeiros militar?",
+     "r": "Além das atribuições definidas em lei, executar atividades de defesa civil.",
+     "f": "CF/88, art. 144, §5º"
+    },
+    {
+     "id": "t-DC-6-4",
+     "p": "A quem se subordinam as PM e os CBM?",
+     "r": "Aos Governadores dos Estados, do DF e dos Territórios. São forças auxiliares e reserva do Exército.",
+     "f": "CF/88, art. 144, §6º"
+    },
+    {
+     "id": "t-DC-6-5",
+     "p": "Qual a missão das polícias militares?",
+     "r": "Polícia ostensiva e preservação da ordem pública.",
+     "f": "CF/88, art. 144, §5º"
+    },
+    {
+     "id": "t-DC-6-6",
+     "p": "Quais são os estados de exceção da Constituição?",
+     "r": "Estado de defesa, estado de sítio e intervenção federal (defesa do Estado e das instituições democráticas).",
+     "f": "CF/88, Título V"
+    },
+    {
+     "id": "t-DC-6-7",
+     "p": "Quem são as Forças Armadas e a quem se subordinam?",
+     "r": "Marinha, Exército e Aeronáutica, sob a autoridade suprema do Presidente da República.",
+     "f": "CF/88, art. 142"
+    }
+   ]
+  },
+  {
+   "id": "DC-7",
+   "s": "DC",
+   "t": "Súmulas e jurisprudência",
+   "c": [
+    {
+     "id": "t-DC-7-1",
+     "p": "O que diz a Súmula Vinculante 11?",
+     "r": "O uso de algemas só é lícito em caso de resistência e fundado receio de fuga ou perigo à integridade física, com justificativa por escrito.",
+     "f": "STF, SV 11"
+    },
+    {
+     "id": "t-DC-7-2",
+     "p": "O que diz a Súmula Vinculante 13?",
+     "r": "Veda o nepotismo: nomeação de cônjuge, companheiro ou parente até o 3º grau da autoridade para cargo em comissão, de confiança ou função gratificada.",
+     "f": "STF, SV 13"
+    },
+    {
+     "id": "t-DC-7-3",
+     "p": "O que diz a Súmula Vinculante 25?",
+     "r": "É ilícita a prisão civil de depositário infiel, qualquer que seja a modalidade de depósito.",
+     "f": "STF, SV 25"
+    },
+    {
+     "id": "t-DC-7-4",
+     "p": "O que diz a Súmula Vinculante 44?",
+     "r": "Só por lei se pode sujeitar a exame psicotécnico a habilitação de candidato a cargo público.",
+     "f": "STF, SV 44"
+    },
+    {
+     "id": "t-DC-7-5",
+     "p": "O que diz a Súmula Vinculante 6?",
+     "r": "Não viola a Constituição remuneração inferior ao salário mínimo para as praças prestadoras de serviço militar inicial.",
+     "f": "STF, SV 6"
+    },
+    {
+     "id": "t-DC-7-6",
+     "p": "O que diz a Súmula Vinculante 37?",
+     "r": "O Judiciário não pode aumentar vencimentos de servidores sob fundamento de isonomia.",
+     "f": "STF, SV 37"
+    },
+    {
+     "id": "t-DC-7-7",
+     "p": "O que diz a Súmula Vinculante 43?",
+     "r": "É inconstitucional o provimento que permita ao servidor investir-se em cargo de carreira diversa sem concurso público.",
+     "f": "STF, SV 43"
+    }
+   ]
+  },
+  {
+   "id": "DC-8",
+   "s": "DC",
+   "t": "ECA (Lei 8.069/1990)",
+   "c": [
+    {
+     "id": "t-DC-8-1",
+     "p": "Quem é criança e quem é adolescente no ECA?",
+     "r": "Criança: até 12 anos incompletos. Adolescente: entre 12 e 18 anos.",
+     "f": "Lei 8.069/1990, art. 2º"
+    },
+    {
+     "id": "t-DC-8-2",
+     "p": "O que significa prioridade absoluta?",
+     "r": "Os direitos da criança e do adolescente têm primazia na formulação de políticas e no atendimento, a cargo de família, comunidade, sociedade e poder público.",
+     "f": "Lei 8.069/1990, art. 4º; CF/88, art. 227"
+    },
+    {
+     "id": "t-DC-8-3",
+     "p": "Quem é responsável por assegurar os direitos da criança e do adolescente?",
+     "r": "A família, a sociedade e o Estado.",
+     "f": "CF/88, art. 227"
+    },
+    {
+     "id": "t-DC-8-4",
+     "p": "A quem se aplica o ECA em casos excepcionais?",
+     "r": "Excepcionalmente, a pessoas entre 18 e 21 anos de idade.",
+     "f": "Lei 8.069/1990, art. 2º, parágrafo único"
+    },
+    {
+     "id": "t-DC-8-5",
+     "p": "Qual a idade da responsabilidade penal?",
+     "r": "18 anos. Abaixo disso, são inimputáveis e sujeitos a medidas do ECA.",
+     "f": "CF/88, art. 228"
+    }
+   ]
+  },
+  {
+   "id": "DC-9",
+   "s": "DC",
+   "t": "Estatuto da Juventude (Lei 12.852/2013)",
+   "c": [
+    {
+     "id": "t-DC-9-1",
+     "p": "Quem é jovem para o Estatuto da Juventude?",
+     "r": "Pessoas entre 15 e 29 anos de idade.",
+     "f": "Lei 12.852/2013, art. 1º, §1º"
+    },
+    {
+     "id": "t-DC-9-2",
+     "p": "Os adolescentes entre 15 e 18 anos ficam sob o ECA ou o Estatuto da Juventude?",
+     "r": "Aplica-se preferencialmente o ECA, e o Estatuto da Juventude só excepcionalmente, quando não conflitar com ele.",
+     "f": "Lei 12.852/2013, art. 1º, §2º"
+    },
+    {
+     "id": "t-DC-9-3",
+     "p": "Cite direitos do jovem previstos no Estatuto.",
+     "r": "Cidadania e participação social, educação, profissionalização e trabalho, diversidade e igualdade, saúde, cultura, comunicação, desporto, território e mobilidade, segurança pública e acesso à justiça, sustentabilidade.",
+     "f": "Lei 12.852/2013, Título II"
+    }
+   ]
+  },
+  {
+   "id": "DC-10",
+   "s": "DC",
+   "t": "Lei Maria da Penha (Lei 11.340/2006)",
+   "c": [
+    {
+     "id": "t-DC-10-1",
+     "p": "Quais as formas de violência doméstica e familiar contra a mulher?",
+     "r": "Física, psicológica, sexual, patrimonial e moral.",
+     "f": "Lei 11.340/2006, art. 7º"
+    },
+    {
+     "id": "t-DC-10-2",
+     "p": "Onde ocorre a violência doméstica e familiar?",
+     "r": "No âmbito da unidade doméstica, da família ou de qualquer relação íntima de afeto, independentemente de coabitação.",
+     "f": "Lei 11.340/2006, art. 5º"
+    },
+    {
+     "id": "t-DC-10-3",
+     "p": "A lei depende de orientação sexual?",
+     "r": "Não. Aplica-se independentemente de orientação sexual.",
+     "f": "Lei 11.340/2006, art. 5º, parágrafo único"
+    },
+    {
+     "id": "t-DC-10-4",
+     "p": "O que são medidas protetivas de urgência?",
+     "r": "Medidas deferidas pelo juiz para proteger a mulher, como afastar o agressor do lar e proibir aproximação e contato.",
+     "f": "Lei 11.340/2006, arts. 22 e 23"
+    },
+    {
+     "id": "t-DC-10-5",
+     "p": "Na lesão corporal contra a mulher em violência doméstica, a vítima precisa representar para o processo?",
+     "r": "Não. A ação penal é pública incondicionada (STF, ADI 4.424).",
+     "f": "STF, ADI 4.424"
+    }
+   ]
+  },
+  {
+   "id": "ATU-0",
+   "s": "ATU",
+   "t": "Mundo contemporâneo",
+   "c": [
+    {
+     "id": "t-ATU-0-1",
+     "p": "O que é globalização?",
+     "r": "Processo de integração econômica, cultural e tecnológica entre países, acelerado pelas comunicações e pelo comércio."
+    },
+    {
+     "id": "t-ATU-0-2",
+     "p": "O que é a ONU e qual seu órgão de segurança?",
+     "r": "Organização das Nações Unidas, criada em 1945. O Conselho de Segurança tem 5 membros permanentes: EUA, Rússia, China, França e Reino Unido."
+    },
+    {
+     "id": "t-ATU-0-3",
+     "p": "O que são os BRICS?",
+     "r": "Grupo de países emergentes originalmente formado por Brasil, Rússia, Índia e China, depois ampliado. Conferir a composição atual.",
+     "f": "Conferir a composição atual em fonte oficial"
+    }
+   ]
+  },
+  {
+   "id": "ATU-1",
+   "s": "ATU",
+   "t": "Meio ambiente, energia e clima",
+   "c": [
+    {
+     "id": "t-ATU-1-1",
+     "p": "O que é o Acordo de Paris?",
+     "r": "Tratado de 2015 no âmbito da ONU para limitar o aquecimento global bem abaixo de 2 °C, buscando 1,5 °C.",
+     "f": "Convenção-Quadro da ONU sobre Mudança do Clima"
+    },
+    {
+     "id": "t-ATU-1-2",
+     "p": "Cite fontes de energia renovável.",
+     "r": "Solar, eólica, hidrelétrica, biomassa e geotérmica. O Nordeste se destaca na energia eólica e solar."
+    },
+    {
+     "id": "t-ATU-1-3",
+     "p": "O que é desenvolvimento sustentável?",
+     "r": "Atender às necessidades atuais sem comprometer as das gerações futuras."
+    }
+   ]
+  },
+  {
+   "id": "ATU-2",
+   "s": "ATU",
+   "t": "América Latina e Mercosul",
+   "c": [
+    {
+     "id": "t-ATU-2-1",
+     "p": "Quando foi criado o Mercosul e por qual tratado?",
+     "r": "Em 1991, pelo Tratado de Assunção. Fundadores: Argentina, Brasil, Paraguai e Uruguai.",
+     "f": "Tratado de Assunção (1991). Conferir composição atual."
+    },
+    {
+     "id": "t-ATU-2-2",
+     "p": "Qual a base constitucional da integração latino-americana?",
+     "r": "O parágrafo único do art. 4º da Constituição.",
+     "f": "CF/88, art. 4º, parágrafo único"
+    }
+   ]
+  },
+  {
+   "id": "ATU-3",
+   "s": "ATU",
+   "t": "Brasil: economia, sociedade e serviços públicos",
+   "c": [
+    {
+     "id": "t-ATU-3-1",
+     "p": "O que é o SUS e qual seu princípio?",
+     "r": "Sistema Único de Saúde: acesso universal, integral e gratuito. Previsto nos arts. 196 a 200 da CF.",
+     "f": "CF/88, art. 196"
+    },
+    {
+     "id": "t-ATU-3-2",
+     "p": "O que é PIB?",
+     "r": "Soma de bens e serviços finais produzidos em um país em um período."
+    },
+    {
+     "id": "t-ATU-3-3",
+     "p": "O que é inflação e qual índice oficial a mede?",
+     "r": "Alta generalizada de preços. O índice oficial é o IPCA, do IBGE."
+    }
+   ]
+  },
+  {
+   "id": "ATU-4",
+   "s": "ATU",
+   "t": "Violência contra a mulher e segurança pública",
+   "c": [
+    {
+     "id": "t-ATU-4-1",
+     "p": "Qual canal de denúncia de violência contra a mulher?",
+     "r": "Ligue 180 (Central de Atendimento à Mulher). Em emergência, 190.",
+     "f": "Conferir canais atuais em gov.br"
+    },
+    {
+     "id": "t-ATU-4-2",
+     "p": "A Lei do Feminicídio tornou-o crime autônomo?",
+     "r": "Sim: a Lei 14.994/2024 transformou o feminicídio em crime autônomo, com pena de reclusão de 20 a 40 anos.",
+     "f": "Lei 14.994/2024 (conferir texto)"
+    },
+    {
+     "id": "t-ATU-4-3",
+     "p": "O que é feminicídio?",
+     "r": "Homicídio de mulher por razões da condição do sexo feminino: violência doméstica e familiar ou menosprezo e discriminação à condição de mulher."
+    }
+   ]
+  },
+  {
+   "id": "HPE-0",
+   "s": "HPE",
+   "t": "Colonização e capitania de Duarte Coelho",
+   "c": [
+    {
+     "id": "t-HPE-0-1",
+     "p": "Que capitania Duarte Coelho recebeu e quando?",
+     "r": "A capitania de Pernambuco (Nova Lusitânia), doada em 1534; ele chegou à região em 1535."
+    },
+    {
+     "id": "t-HPE-0-2",
+     "p": "Qual a primeira vila e sede da capitania?",
+     "r": "Olinda, fundada em 1535."
+    },
+    {
+     "id": "t-HPE-0-3",
+     "p": "Por que a capitania de Pernambuco prosperou?",
+     "r": "Pela cana-de-açúcar, com solo de massapê e boa localização para o comércio com a Europa, e pelos acordos de Duarte Coelho com parte dos indígenas."
+    }
+   ]
+  },
+  {
+   "id": "HPE-1",
+   "s": "HPE",
+   "t": "Economia açucareira",
+   "c": [
+    {
+     "id": "t-HPE-1-1",
+     "p": "O que era o engenho?",
+     "r": "Unidade de produção de açúcar: casa-grande, senzala, moenda e casa de purgar. Sustentava-se em latifúndio, monocultura e mão de obra escravizada."
+    },
+    {
+     "id": "t-HPE-1-2",
+     "p": "Qual a base de trabalho da economia açucareira?",
+     "r": "O trabalho escravizado, inicialmente indígena e depois predominantemente africano."
+    },
+    {
+     "id": "t-HPE-1-3",
+     "p": "Quem era o senhor de engenho?",
+     "r": "Proprietário do engenho, de grande poder econômico e político no período colonial."
+    }
+   ]
+  },
+  {
+   "id": "HPE-2",
+   "s": "HPE",
+   "t": "Formação de Olinda e Recife",
+   "c": [
+    {
+     "id": "t-HPE-2-1",
+     "p": "Como surgiu Recife?",
+     "r": "Como povoado portuário ligado a Olinda, por causa do porto natural protegido por recifes."
+    },
+    {
+     "id": "t-HPE-2-2",
+     "p": "O que foi a Guerra dos Mascates?",
+     "r": "Conflito de 1710 a 1711 entre a aristocracia rural de Olinda e os comerciantes (mascates) de Recife, que foi elevado a vila em 1709."
+    }
+   ]
+  },
+  {
+   "id": "HPE-3",
+   "s": "HPE",
+   "t": "Domínio holandês e Maurício de Nassau",
+   "c": [
+    {
+     "id": "t-HPE-3-1",
+     "p": "Quando foi o domínio holandês em Pernambuco?",
+     "r": "De 1630 a 1654, a cargo da Companhia das Índias Ocidentais (WIC)."
+    },
+    {
+     "id": "t-HPE-3-2",
+     "p": "Quem foi Maurício de Nassau?",
+     "r": "Governador do Brasil Holandês de 1637 a 1644, que urbanizou Recife (Mauritsstad), criou pontes, jardins e trouxe artistas e cientistas."
+    },
+    {
+     "id": "t-HPE-3-3",
+     "p": "O que foi a Insurreição Pernambucana?",
+     "r": "Movimento iniciado em 1645 contra o domínio holandês, que culminou com a expulsão dos holandeses em 1654."
+    },
+    {
+     "id": "t-HPE-3-4",
+     "p": "Quais as Batalhas dos Guararapes?",
+     "r": "Duas vitórias dos luso-brasileiros sobre os holandeses, em 1648 e 1649. Marco da formação do Exército brasileiro."
+    },
+    {
+     "id": "t-HPE-3-5",
+     "p": "Que líderes destacaram-se na expulsão dos holandeses?",
+     "r": "João Fernandes Vieira, André Vidal de Negreiros, Henrique Dias e Felipe Camarão, entre outros."
+    }
+   ]
+  },
+  {
+   "id": "HPE-4",
+   "s": "HPE",
+   "t": "Resistências e movimentos emancipacionistas",
+   "c": [
+    {
+     "id": "t-HPE-4-1",
+     "p": "O que foi a Revolução Pernambucana de 1817?",
+     "r": "Movimento republicano e separatista contra o domínio português, que chegou a instalar um governo provisório em Recife."
+    },
+    {
+     "id": "t-HPE-4-2",
+     "p": "O que foi a Confederação do Equador (1824)?",
+     "r": "Movimento republicano e separatista contra o autoritarismo de Dom Pedro I, liderado em Pernambuco, com Frei Caneca entre as figuras centrais."
+    },
+    {
+     "id": "t-HPE-4-3",
+     "p": "O que foi a Revolta Praieira (1848)?",
+     "r": "Revolta liberal em Pernambuco contra o domínio dos conservadores e a concentração de poder, com reivindicações como voto livre e fim do monopólio comercial."
+    },
+    {
+     "id": "t-HPE-4-4",
+     "p": "Quem foi Frei Caneca?",
+     "r": "Frade carmelita, jornalista e líder da Confederação do Equador, condenado à morte em 1825."
+    }
+   ]
+  },
+  {
+   "id": "HPE-5",
+   "s": "HPE",
+   "t": "Pernambuco na República",
+   "c": [
+    {
+     "id": "t-HPE-5-1",
+     "p": "Quando foi abolida a escravidão no Brasil?",
+     "r": "13 de maio de 1888, pela Lei Áurea. Pernambuco teve forte movimento abolicionista, com Joaquim Nabuco."
+    },
+    {
+     "id": "t-HPE-5-2",
+     "p": "Quem foi Joaquim Nabuco?",
+     "r": "Pernambucano, abolicionista e político, autor de \"O Abolicionismo\"."
+    },
+    {
+     "id": "t-HPE-5-3",
+     "p": "O que foi o ciclo do coronelismo na República Velha?",
+     "r": "Domínio político local de grandes proprietários rurais (coronéis), com voto de cabresto e troca de favores."
+    }
+   ]
+  },
+  {
+   "id": "HPE-6",
+   "s": "HPE",
+   "t": "Cultura popular e aspectos afro-brasileiros",
+   "c": [
+    {
+     "id": "t-HPE-6-1",
+     "p": "Qual a origem do frevo?",
+     "r": "Ritmo e dança do carnaval do Recife, surgido no final do século XIX. É Patrimônio Cultural Imaterial da Humanidade pela UNESCO (2012).",
+     "f": "UNESCO (2012). Conferir em fonte oficial."
+    },
+    {
+     "id": "t-HPE-6-2",
+     "p": "O que é maracatu?",
+     "r": "Cortejo de origem afro-brasileira ligado à coroação de reis do Congo, com tambores e figurino; há o maracatu nação e o maracatu rural (de baque solto)."
+    },
+    {
+     "id": "t-HPE-6-3",
+     "p": "O que é o caboclinho?",
+     "r": "Manifestação popular de matriz indígena, com dança e música marcadas por flechas e preacas."
+    },
+    {
+     "id": "t-HPE-6-4",
+     "p": "Qual a importância da população afro-brasileira para Pernambuco?",
+     "r": "Foi central na economia, na religiosidade (xangô), na culinária, na música e nas resistências, como o Quilombo dos Palmares, em Alagoas, então território da capitania de Pernambuco."
+    }
+   ]
+  }
+ ]
+}
