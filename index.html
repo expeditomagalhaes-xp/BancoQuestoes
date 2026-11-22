@@ -124,21 +124,84 @@ nav.tabs button svg{width:22px;height:22px}
 nav.tabs button[aria-current="page"]{color:var(--accent)}
 nav.tabs .dot{min-width:18px;padding:0 4px;height:16px;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-size:.66rem;line-height:16px;position:absolute;margin-left:22px;margin-top:-4px}
 nav.tabs button{position:relative}
+/* menu inicial */
+body[data-area="inicio"],body[data-area="tango"]{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 28px)}
+.menu{display:grid;grid-template-columns:1fr;gap:14px}
+.mcard{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;text-align:left;width:100%;background:var(--surface);border:1.5px solid var(--ink);padding:18px 16px;min-height:132px}
+.mcard:hover{border-color:var(--accent)}
+.mcard h2{margin-bottom:4px}
+.mcard p{color:var(--muted);font-size:.95rem}
+.mcard .st{margin-top:8px;font-size:.85rem;font-weight:600;font-variant-numeric:tabular-nums;min-height:1.2em}
+.mart{width:64px;height:84px;color:var(--ink);flex:none}
+.back{display:inline-flex;align-items:center;gap:4px}
+
+/* tangochō */
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;padding:10px 14px 14px}
+.ringbk{position:relative;text-align:left;background:var(--surface);border:1.5px solid var(--line);padding:12px 10px 10px 36px;min-height:104px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.ringbk:hover{border-color:var(--ink)}
+.ringbk::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:14px;
+  background:radial-gradient(circle,transparent 0 3px,var(--ink) 3px 5px,transparent 5px) 0 0/14px 24px repeat-y}
+.ringbk b{font-family:var(--f-display);font-size:1.14rem;line-height:1.1;overflow-wrap:anywhere}
+.ringbk .n{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.ringbk .bar{margin-top:auto}
+.sjtools{padding:10px 14px 0}
+.stack{position:relative;perspective:1300px;margin:6px 0 6px 16px}
+.under{position:absolute;inset:0;background:var(--surface);border:1.5px solid var(--line)}
+.under.u2{transform:translate(9px,9px)}
+.under.u1{transform:translate(4px,4px);overflow:hidden;border-color:var(--ink)}
+.uf{padding:22px 20px 18px 34px;display:flex;flex-direction:column;gap:10px;justify-content:center;height:100%}
+.page{position:relative;transform-origin:0 50%;transform-style:preserve-3d;z-index:2}
+.page.turn{animation:tgturn .5s cubic-bezier(.45,0,.75,.35) forwards}
+@keyframes tgturn{0%{transform:rotateY(0);opacity:1}70%{opacity:1}100%{transform:rotateY(-105deg);opacity:0}}
+.flip{display:grid;transform-style:preserve-3d;transition:transform .5s;min-height:270px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.flip.is-flipped{transform:rotateY(180deg)}
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--surface);border:1.5px solid var(--ink);
+  padding:22px 20px 18px 34px;display:flex;flex-direction:column;gap:10px;justify-content:center;min-width:0}
+.face.verso{transform:rotateY(180deg);background:var(--soft);border-left:6px solid var(--accent);padding-left:30px}
+.bt{font-size:1.28rem;font-weight:500;overflow-wrap:anywhere;line-height:1.4}
+.ring{position:absolute;left:-15px;width:30px;height:30px;border:4px solid var(--ink);border-radius:50%;z-index:4;pointer-events:none}
+.ring.r1{top:16%}
+.ring.r2{bottom:16%}
+.btn.okb{background:var(--ok);color:var(--accent-ink)}
+.tgmsg{border-left:5px solid var(--warn);background:var(--soft);padding:10px 12px;font-size:.95rem}
+@media (prefers-reduced-motion:reduce){.flip{transition:none}.page.turn{animation:none;opacity:0}}
 [hidden]{display:none!important}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="top">
+  <header class="top" id="hdrQ" hidden>
     <div>
+      <button class="linkbtn" id="toInicio" style="margin-bottom:4px">‹ Início</button>
       <div class="label">CBMPE 2026 · Instituto AOCP</div>
       <h1>Banco de Questões</h1>
     </div>
     <div class="sync">Progresso salvo neste aparelho</div>
   </header>
 
+  <!-- INÍCIO -->
+  <section id="v-inicio" class="view">
+    <header class="top">
+      <div>
+        <div class="label">CBMPE 2026 · Instituto AOCP</div>
+        <h1>Estudo</h1>
+      </div>
+      <div class="sync">Progresso salvo neste aparelho</div>
+    </header>
+    <div class="menu" style="margin-top:16px">
+      <button class="mcard" id="goTango">
+        <svg class="mart" viewBox="0 0 64 84" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><rect x="14" y="6" width="44" height="64" transform="translate(4 8)" opacity=".35"/><rect x="10" y="6" width="44" height="64"/><circle cx="10" cy="22" r="7" stroke="var(--accent)"/><circle cx="10" cy="54" r="7" stroke="var(--accent)"/><path d="M22 30h22M22 40h16" stroke-width="2.5"/></svg>
+        <div><h2>Tangochō</h2><p>Cartões de revisão presos por argola. Uma ideia por cartão, por tema.</p><div class="st" id="stT"></div></div>
+      </button>
+      <button class="mcard" id="goQuest">
+        <svg class="mart" viewBox="0 0 64 84" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><rect x="8" y="6" width="48" height="64"/><path d="M18 24l4 4 8-9" stroke="var(--accent)"/><path d="M36 24h12M18 44l4 4 8-9" /><path d="M36 44h12" /></svg>
+        <div><h2>Questões</h2><p>Treino, conteúdos do edital, caderno de erros, redação e progresso.</p><div class="st" id="stQ"></div></div>
+      </button>
+    </div>
+  </section>
+
   <!-- TREINO -->
-  <section id="v-treino" class="view">
+  <section id="v-treino" class="view" hidden>
     <div class="card" id="setup">
       <div class="label">Banco</div>
       <div class="seg" id="srcseg">
@@ -216,7 +279,7 @@ nav.tabs button{position:relative}
     <div class="card"><div class="label">Últimas respostas</div><div id="hist"></div></div>
     <div class="card">
       <div class="label">Cópia de segurança</div>
-      <p class="muted" style="font-size:.9rem">O progresso fica guardado no aparelho e funciona sem internet. Para não perder nada ao trocar de celular ou limpar o navegador, copie o código abaixo e guarde (num e-mail ou no WhatsApp para você mesmo). Para restaurar, cole o código e toque em Restaurar.</p>
+      <p class="muted" style="font-size:.9rem">O progresso fica guardado no aparelho e funciona sem internet. Para não perder nada ao trocar de celular ou limpar o navegador, copie o código abaixo (ele inclui também o Tangochō) e guarde (num e-mail ou no WhatsApp para você mesmo). Para restaurar, cole o código e toque em Restaurar.</p>
       <div class="row"><button class="btn ghost small" id="bkCopy">Copiar código</button><button class="btn ghost small" id="bkShow">Mostrar código</button></div>
       <textarea id="bkText" rows="4" style="width:100%;font:inherit;padding:8px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)" placeholder="Cole aqui um código de cópia de segurança"></textarea>
       <div class="row"><button class="btn small" id="bkLoad">Restaurar</button><span class="muted" id="bkMsg" style="font-size:.9rem"></span></div>
@@ -228,9 +291,17 @@ nav.tabs button{position:relative}
       <div id="resetConfirm" hidden class="row"><span class="grow">Apagar respostas, checklist e redações?</span><button class="btn small" id="resetYes">Apagar</button><button class="btn ghost small" id="resetNo">Cancelar</button></div>
     </div>
   </section>
+
+  <!-- TANGOCHŌ -->
+  <section id="v-tango" class="view" hidden>
+    <div class="row"><button class="btn ghost small back" id="tgHome">‹ Início</button><span class="grow"></span><span class="label">Tangochō</span></div>
+    <div id="tgShelf" style="display:flex;flex-direction:column;gap:12px"></div>
+    <div id="tgDeck" style="display:flex;flex-direction:column;gap:12px" hidden></div>
+    <div id="tgSum" class="card" hidden></div>
+  </section>
 </div>
 
-<nav class="tabs" id="tabs">
+<nav class="tabs" id="tabs" hidden>
   <button data-v="treino" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>Treino</button>
   <button data-v="conteudos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg>Conteúdos</button>
   <button data-v="erros"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Erros<span class="dot" id="errDot" hidden></span></button>
@@ -382,8 +453,9 @@ function renderErr(){
   var ids=wrongIds();$('errCount').textContent=ids.length;$('redoErr').disabled=!ids.length;
   $('errlist').innerHTML=ids.length?ids.slice(0,60).map(function(id){var q=BYID[id];
     var gab=q.t==='ce'?(q.a===0?'Certo':'Errado'):q.o[q.a];
-    return '<div class="err"><span class="tag" style="width:fit-content">'+esc(SN[q.s])+'</span><span>'+esc(q.q)+'</span><span style="color:var(--ok);font-weight:600">Resposta: '+esc(gab)+'</span>'+(q.c?'<span class="muted" style="font-size:.9rem">'+esc(q.c)+'</span>':'')+'</div>'}).join('')+(ids.length>60?'<p class="muted">Mostrando as 60 mais recentes.</p>':'')
+    return '<div class="err"><span class="tag" style="width:fit-content">'+esc(SN[q.s])+'</span><span>'+esc(q.q)+'</span><span style="color:var(--ok);font-weight:600">Resposta: '+esc(gab)+'</span>'+(q.c?'<span class="muted" style="font-size:.9rem">'+esc(q.c)+'</span>':'')+'<button class="btn ghost small" style="width:fit-content;margin-top:4px" data-mk="'+esc(id)+'"'+(tgHasUser(id)?' disabled>Cartão criado':'>Criar cartão')+'</button></div>'}).join('')+(ids.length>60?'<p class="muted">Mostrando as 60 mais recentes.</p>':'')
     :'<div class="empty">Nenhum erro pendente.</div>';
+  $('errlist').querySelectorAll('[data-mk]').forEach(function(b){b.onclick=function(){tgMakeFromQ(b.dataset.mk);renderErr();renderInicio()}});
 }
 $('redoErr').onclick=function(){var ids=shuffle(wrongIds()).slice(0,10);if(ids.length){go('treino');startSession(ids)}};
 
@@ -405,13 +477,15 @@ function renderHist(){
     return '<div class="err"><span style="font-weight:600;color:'+(r[2]?'var(--ok)':'var(--bad)')+'">'+(r[2]?'✓ Acertou':'✗ Errou')+' <span class="muted" style="font-weight:400;font-size:.85rem">· '+esc(SN[q.s])+' · '+d.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'})+' '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})+'</span></span><span style="font-size:.95rem">'+esc(q.q.length>140?q.q.slice(0,140)+'…':q.q)+'</span></div>'}).join('')
     :'<div class="empty">Você ainda não respondeu nenhuma questão.</div>';
 }
-function bkCode(){try{return btoa(unescape(encodeURIComponent(JSON.stringify(S))))}catch(e){return ''}}
+function bkCode(){try{var o=Object.assign({},S);o.tg=T;return btoa(unescape(encodeURIComponent(JSON.stringify(o))))}catch(e){return ''}}
 $('bkShow').onclick=function(){$('bkText').value=bkCode();$('bkMsg').textContent=''};
 $('bkCopy').onclick=function(){var c=bkCode();$('bkText').value=c;
   try{navigator.clipboard.writeText(c).then(function(){$('bkMsg').textContent='Copiado.'},function(){$('bkText').select();$('bkMsg').textContent='Selecione o texto e copie.'})}catch(e){$('bkText').select();$('bkMsg').textContent='Selecione o texto e copie.'}};
 $('bkLoad').onclick=function(){var t=$('bkText').value.trim();if(!t){$('bkMsg').textContent='Cole o código primeiro.';return}
   try{var v=JSON.parse(decodeURIComponent(escape(atob(t))));if(!v||typeof v.ans!=='object')throw 0;
-    S=Object.assign({ans:{},chk:{},red:{},flag:{}},v);persist();renderAll();go('progresso');$('bkMsg').textContent='Progresso restaurado.'}
+    var tg=v.tg;delete v.tg;S=Object.assign({ans:{},chk:{},red:{},flag:{}},v);persist();
+    if(tg&&typeof tg==='object'){T=Object.assign({c:{},u:[],pref:{falta:false}},tg);if(!T.pref||typeof T.pref!=='object')T.pref={falta:false};if(!Array.isArray(T.u))T.u=[];tPersist();tgIndex()}
+    renderAll();go('progresso');$('bkMsg').textContent='Progresso restaurado.'}
   catch(e){$('bkMsg').textContent='Código inválido. Confira se copiou ele inteiro.'}};
 function renderProg(){renderHist();
   var all=Object.keys(S.ans).filter(function(id){return BYID[id]});
@@ -427,12 +501,188 @@ $('reset').onclick=function(){$('resetConfirm').hidden=false};
 $('resetNo').onclick=function(){$('resetConfirm').hidden=true};
 $('resetYes').onclick=function(){S={ans:{},chk:{},red:{},flag:{}};persist();$('resetConfirm').hidden=true;renderAll()};
 
+/* ---------- tangochō ---------- */
+var TG=null,TGERR=false,TGBY={},LT='cbmpe-tango-v1';
+var T={c:{},u:[],pref:{falta:false}};
+var TGV='shelf',D=null,TGNOTE='';
+function tLoad(){try{var v=JSON.parse(localStorage.getItem(LT)||'null');
+  if(v&&typeof v==='object'){T=Object.assign({c:{},u:[],pref:{falta:false}},v);if(!T.pref||typeof T.pref!=='object')T.pref={falta:false};if(!Array.isArray(T.u))T.u=[]}}catch(e){}}
+function tPersist(){try{localStorage.setItem(LT,JSON.stringify(T))}catch(e){}}
+function tgIndex(){TGBY={};
+  if(TG)TG.temas.forEach(function(t){t.c.forEach(function(c){c.s=t.s;c.tema=t.id;TGBY[c.id]=c})});
+  T.u.forEach(function(c){TGBY[c.id]=c})}
+function tOk(id){var r=T.c[id];return !!(r&&r[2]===1)}
+function tgAllIds(){var a=[];if(TG)TG.temas.forEach(function(t){t.c.forEach(function(c){a.push(c.id)})});T.u.forEach(function(c){a.push(c.id)});return a}
+function tgCount(ids){var n=0;ids.forEach(function(i){if(tOk(i))n++});return n}
+function tgTag(c){return c.u?'Meus cartões':(SN[c.s]||c.s)}
+
+function tgRender(){
+  if(TGV==='deck'&&D){tgDeck();return}
+  if(TGV==='sum'&&D){tgSummary();return}
+  tgShelf();
+}
+function tgShow(which){$('tgHome').parentNode.hidden=which!=='shelf';$('tgShelf').hidden=which!=='shelf';$('tgDeck').hidden=which!=='deck';$('tgSum').hidden=which!=='sum';TGV=which}
+
+/* estante */
+function tgShelf(){
+  tgShow('shelf');
+  var box=$('tgShelf');
+  if(!TG){box.innerHTML='<div class="card"><h2>Tangochō</h2><div class="empty">'+(TGERR?'Não consegui carregar os cartões. Verifique a internet e abra de novo.':'Carregando cartões…')+'</div></div>';return}
+  var all=tgAllIds(),done=tgCount(all),pct=all.length?Math.round(done/all.length*100):0;
+  var html='<div class="card"><div class="row"><h2 class="grow">Tangochō</h2><span class="big">'+pct+'%</span></div>'+
+    '<div class="bar ok"><i style="width:'+pct+'%"></i></div>'+
+    '<p class="muted" style="font-size:.92rem">'+done+' de '+all.length+' cartões lembrados. Escolha uma argola. Toque no cartão para virar e depois marque <b>Lembrei</b> ou <b>Rever</b>. Os que você marcar Rever voltam ao fim da pilha.</p>'+
+    '<div class="row"><button class="chip" id="tgFalta" aria-pressed="'+(!!T.pref.falta)+'">Só as que faltam</button><button class="btn grow" id="tgAll">Misturar todos os temas</button></div>'+
+    (TGNOTE?'<div class="tgmsg">'+esc(TGNOTE)+'</div>':'')+'</div>';
+  if(T.u.length){
+    var uids=T.u.map(function(c){return c.id}),ud=tgCount(uids);
+    html+='<div class="card"><div class="label">Feitos por você a partir dos erros</div><div class="shelf" style="padding:0"><button class="ringbk" data-ring="USR"><b>Meus cartões</b><span class="n">'+ud+'/'+uids.length+' lembrados</span><div class="bar ok"><i style="width:'+Math.round(ud/uids.length*100)+'%"></i></div></button></div></div>';
+  }
+  var by={};TG.temas.forEach(function(t){(by[t.s]||(by[t.s]=[])).push(t)});
+  html+=ORDER.filter(function(s){return by[s]}).map(function(s){
+    var ts=by[s],ids=[];ts.forEach(function(t){t.c.forEach(function(c){ids.push(c.id)})});
+    var d=tgCount(ids),p=ids.length?Math.round(d/ids.length*100):0;
+    return '<details class="sj" data-s="'+s+'"'+(openTgS[s]?' open':'')+'><summary><span style="font-weight:600">'+esc(SN[s])+' <span class="sjmeta">· '+ts.length+' argolas</span></span><span class="n">'+d+'/'+ids.length+'</span><div class="bar ok"><i style="width:'+p+'%"></i></div></summary>'+
+      '<div class="sjtools"><button class="btn ghost small" data-mix="'+s+'">Misturar '+esc(SN[s])+'</button></div>'+
+      '<div class="shelf">'+ts.map(function(t){var tid=t.c.map(function(c){return c.id}),td=tgCount(tid);
+        return '<button class="ringbk" data-ring="'+t.id+'"><b>'+esc(t.t)+'</b><span class="n">'+td+'/'+tid.length+' lembrados</span><div class="bar ok"><i style="width:'+Math.round(td/tid.length*100)+'%"></i></div></button>'}).join('')+'</div></details>';
+  }).join('');
+  html+='<div class="card"><button class="linkbtn" id="tgReset" style="width:fit-content">Zerar progresso do Tangochō</button><div id="tgResetBox" hidden class="row"><span class="grow">Apagar o que você marcou como lembrado ou rever? Os cartões que você criou continuam.</span><button class="btn small" id="tgResetYes">Apagar</button><button class="btn ghost small" id="tgResetNo">Cancelar</button></div></div>';
+  box.innerHTML=html;
+  $('tgFalta').onclick=function(){T.pref.falta=!T.pref.falta;tPersist();TGNOTE='';tgShelf()};
+  $('tgAll').onclick=function(){tgStart(tgAllIds(),'Todos os temas misturados',true)};
+  box.querySelectorAll('details').forEach(function(d){d.ontoggle=function(){openTgS[d.dataset.s]=d.open}});
+  box.querySelectorAll('[data-mix]').forEach(function(b){b.onclick=function(){var s=b.dataset.mix,ids=[];
+    TG.temas.forEach(function(t){if(t.s===s)t.c.forEach(function(c){ids.push(c.id)})});tgStart(ids,'Misturado: '+SN[s],true)}});
+  box.querySelectorAll('[data-ring]').forEach(function(b){b.onclick=function(){var r=b.dataset.ring,ids=[],title='';
+    if(r==='USR'){ids=T.u.map(function(c){return c.id});title='Meus cartões'}
+    else TG.temas.forEach(function(t){if(t.id===r){ids=t.c.map(function(c){return c.id});title=SN[t.s]+': '+t.t}});
+    tgStart(ids,title,false)}});
+  $('tgReset').onclick=function(){$('tgResetBox').hidden=false};
+  $('tgResetNo').onclick=function(){$('tgResetBox').hidden=true};
+  $('tgResetYes').onclick=function(){T.c={};tPersist();TGNOTE='';tgShelf();renderInicio()};
+}
+var openTgS={};
+
+/* pilha */
+function tgBuildQueue(){
+  var q=D.scope.filter(function(i){return TGBY[i]&&(!T.pref.falta||!tOk(i))});
+  if(D.shuf)shuffle(q);
+  D.queue=q;D.total=q.length;D.flipped=false;D.seen=false;D.hist=[];
+}
+function tgStart(ids,title,shuf){
+  D={title:title,scope:ids.slice(),shuf:!!shuf,queue:[],total:0,ok:0,rev:0,flipped:false,seen:false,anim:false,hist:[]};
+  tgBuildQueue();
+  if(!D.queue.length){var t=title;D=null;TGNOTE='Nada falta em "'+t+'". Desligue "Só as que faltam" para rever tudo.';tgShelf();window.scrollTo(0,0);return}
+  TGNOTE='';tgShow('deck');tgDeck();window.scrollTo(0,0);
+}
+function tgDeck(){
+  tgShow('deck');
+  var id=D.queue[0],c=TGBY[id],nx=D.queue[1]?TGBY[D.queue[1]]:null,left=D.queue.length;
+  var pct=D.total?Math.round((D.total-left)/D.total*100):0;
+  var back='<div class="label">Resposta</div><p class="bt">'+fmtR(c.r)+'</p>'+(c.f?'<span class="src">Fonte: '+esc(c.f)+'</span>':'');
+  $('tgDeck').innerHTML=
+    '<div class="row"><button class="btn ghost small back" id="tgBack">‹ Estante</button><span class="grow"></span><span class="muted" style="font-size:.9rem;font-variant-numeric:tabular-nums">restam '+left+'</span></div>'+
+    '<div><div class="label">'+esc(D.title)+'</div><div class="bar ok" style="margin-top:6px"><i style="width:'+pct+'%"></i></div></div>'+
+    '<div class="row"><button class="chip" id="tgFilt" aria-pressed="'+(!!T.pref.falta)+'">Só as que faltam</button><button class="btn ghost small" id="tgShuf">Embaralhar</button></div>'+
+    '<div class="stack">'+
+      '<div class="under u2"></div>'+
+      '<div class="under u1">'+(nx?'<div class="uf"><span class="label">'+esc(tgTag(nx))+' · Pergunta</span><p class="bt">'+fmtR(nx.p)+'</p></div>':'')+'</div>'+
+      '<div class="page" id="tgPage"><div class="flip'+(D.flipped?' is-flipped':'')+'" id="tgFlip" role="button" tabindex="0" aria-label="Virar o cartão">'+
+        '<div class="face front" id="tgFront"'+(D.flipped?' aria-hidden="true"':'')+'><span class="label">'+esc(tgTag(c))+' · Pergunta</span><p class="bt">'+fmtR(c.p)+'</p></div>'+
+        '<div class="face verso" id="tgBackFace"'+(D.flipped?'':' aria-hidden="true"')+'>'+back+'</div>'+
+      '</div></div>'+
+      '<span class="ring r1"></span><span class="ring r2"></span>'+
+    '</div>'+
+    '<p class="muted" id="tgHint" style="font-size:.9rem;text-align:center">'+(D.seen?'Como foi?':'Toque no cartão para ver a resposta.')+'</p>'+
+    '<div class="row"><button class="btn ghost grow" id="tgNo"'+(D.seen?'':' disabled')+'>Rever</button><button class="btn okb grow" id="tgYes"'+(D.seen?'':' disabled')+'>Lembrei</button></div>'+
+    '<div class="row" style="justify-content:space-between"><button class="linkbtn" id="tgUndo"'+(D.hist.length?'':' hidden')+'>Desfazer a última marcação</button>'+(c.u?'<button class="linkbtn" id="tgDel">Excluir este cartão</button>':'<span></span>')+'</div>';
+  $('tgBack').onclick=function(){D=null;TGNOTE='';tgShelf();renderInicio();window.scrollTo(0,0)};
+  $('tgFilt').onclick=function(){T.pref.falta=!T.pref.falta;tPersist();var keepTitle=D.title;tgBuildQueue();
+    if(!D.queue.length){tgSummary();return}tgDeck()};
+  $('tgShuf').onclick=function(){if(D.anim)return;shuffle(D.queue);D.flipped=false;D.seen=false;tgDeck()};
+  var fl=$('tgFlip');
+  fl.onclick=tgFlip;
+  fl.onkeydown=function(e){if(e.key==='Enter'||e.key===' '||e.key==='Spacebar'){e.preventDefault();tgFlip()}};
+  $('tgYes').onclick=function(){tgMark(true)};
+  $('tgNo').onclick=function(){tgMark(false)};
+  $('tgUndo').onclick=tgUndo;
+  if(c.u)$('tgDel').onclick=function(){tgDelUser(c.id)};
+}
+function tgFlip(){
+  if(!D||D.anim)return;
+  D.flipped=!D.flipped;if(D.flipped)D.seen=true;
+  $('tgFlip').classList.toggle('is-flipped',D.flipped);
+  $('tgFront').setAttribute('aria-hidden',D.flipped?'true':'false');$('tgBackFace').setAttribute('aria-hidden',D.flipped?'false':'true');
+  $('tgNo').disabled=!D.seen;$('tgYes').disabled=!D.seen;
+  $('tgHint').textContent=D.seen?'Como foi?':'Toque no cartão para ver a resposta.';
+}
+function tgMark(ok){
+  if(!D||!D.seen||D.anim)return;
+  var id=D.queue[0],prev=T.c[id]?T.c[id].slice():null,r=T.c[id]||[0,0,0,0];
+  D.hist.push({id:id,prev:prev,ok:ok,q:D.queue.slice()});
+  T.c[id]=[r[0]+(ok?1:0),r[1]+(ok?0:1),ok?1:0,Date.now()];tPersist();
+  if(ok)D.ok++;else D.rev++;
+  D.anim=true;
+  function done(){
+    D.anim=false;D.queue.shift();if(!ok)D.queue.push(id);
+    D.flipped=false;D.seen=false;
+    if(!D.queue.length)tgSummary();else tgDeck();
+    window.scrollTo(0,0);
+  }
+  var pg=$('tgPage');
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){done();return}
+  var fired=false;function once(){if(fired)return;fired=true;done()}
+  pg.addEventListener('animationend',once);pg.classList.add('turn');setTimeout(once,800);
+}
+function tgUndo(){
+  if(!D||D.anim||!D.hist.length)return;
+  var h=D.hist.pop();
+  if(h.prev)T.c[h.id]=h.prev;else delete T.c[h.id];
+  tPersist();if(h.ok)D.ok--;else D.rev--;
+  D.queue=h.q.slice();D.flipped=false;D.seen=false;tgDeck();
+}
+function tgDelUser(id){
+  T.u=T.u.filter(function(c){return c.id!==id});delete T.c[id];tPersist();tgIndex();
+  D.scope=D.scope.filter(function(i){return i!==id});D.queue=D.queue.filter(function(i){return i!==id});D.flipped=false;D.seen=false;
+  if(!D.queue.length)tgSummary();else tgDeck();
+}
+function tgSummary(){
+  tgShow('sum');
+  var left=D.scope.filter(function(i){return TGBY[i]&&!tOk(i)}).length;
+  var s=$('tgSum');
+  s.innerHTML='<div class="label">Fim da pilha</div><h2>'+esc(D.title)+'</h2>'+
+    '<div class="row" style="gap:24px"><div><div class="label">Lembrei</div><span class="big">'+D.ok+'</span></div><div><div class="label">Rever</div><span class="big">'+D.rev+'</span></div><div><div class="label">Ainda faltam</div><span class="big">'+left+'</span></div></div>'+
+    '<div class="row"><button class="btn grow" id="tgAgain"'+(left?'':' disabled')+'>Estudar as que faltam</button><button class="btn ghost grow" id="tgShelfBtn">Voltar à estante</button></div>';
+  $('tgAgain').onclick=function(){var ids=D.scope.filter(function(i){return TGBY[i]&&!tOk(i)}),t=D.title,sh=D.shuf;T.pref.falta=true;tPersist();tgStart(ids,t,sh)};
+  $('tgShelfBtn').onclick=function(){D=null;TGNOTE='';tgShelf();renderInicio();window.scrollTo(0,0)};
+  window.scrollTo(0,0);
+}
+
+/* criar cartão a partir de uma questão errada */
+function tgHasUser(qid){return T.u.some(function(c){return c.id==='u-'+qid})}
+function tgMakeFromQ(qid){
+  var q=BYID[qid];if(!q||tgHasUser(qid))return;
+  var gab=q.t==='ce'?(q.a===0?'Certo':'Errado'):q.o[q.a];
+  T.u.push({id:'u-'+qid,u:1,s:q.s,p:(q.t==='ce'?'Certo ou errado? ':'')+q.q,r:'Resposta: '+gab+(q.c?' '+q.c:''),f:q.f||''});
+  tPersist();tgIndex();
+}
+function renderInicio(){
+  var n=Object.keys(S.ans).filter(function(id){return BYID[id]}).length,e=wrongIds().length;
+  $('stQ').textContent=Q.length?(n+' respondidas · '+e+' no caderno de erros'):'';
+  if(TG){var all=tgAllIds();$('stT').textContent=tgCount(all)+' de '+all.length+' cartões lembrados'}else $('stT').textContent='';
+}
+
 /* ---------- navegação ---------- */
-var VIEWS=['treino','conteudos','erros','redacao','progresso'];
+var QVIEWS=['treino','conteudos','erros','redacao','progresso'];
+var VIEWS=['inicio','tango'].concat(QVIEWS);
 function go(v){
-  if(VIEWS.indexOf(v)<0)v='treino';
+  if(VIEWS.indexOf(v)<0)v='inicio';
   VIEWS.forEach(function(x){$('v-'+x).hidden=x!==v});
+  var inQ=QVIEWS.indexOf(v)>=0;
+  $('hdrQ').hidden=!inQ;$('tabs').hidden=!inQ;document.body.setAttribute('data-area',inQ?'q':v);
   $('tabs').querySelectorAll('button').forEach(function(b){if(b.dataset.v===v)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+  if(v==='inicio')renderInicio();if(v==='tango')tgRender();
   if(v==='conteudos')renderChk();if(v==='erros')renderErr();if(v==='redacao')renderRed();if(v==='progresso')renderProg();
   if(v==='treino'&&!sess)renderPoolInfo();
   try{if(location.hash!=='#'+v)history.replaceState(null,'','#'+v)}catch(e){}
@@ -442,16 +692,20 @@ $('tabs').querySelectorAll('button').forEach(function(b){b.onclick=function(){go
 window.addEventListener('hashchange',function(){go(location.hash.slice(1))});
 function renderBadges(){var n=wrongIds().length;var d=$('errDot');d.hidden=!n;d.textContent=n>99?'99+':n}
 function renderAllSide(){renderBadges();renderPoolInfo()}
-function renderAll(){renderChips();renderBadges();var v=location.hash.slice(1);go(VIEWS.indexOf(v)>=0?v:'treino')}
+function renderAll(){renderChips();renderBadges();var v=location.hash.slice(1);go(VIEWS.indexOf(v)>=0?v:'inicio')}
 
 /* ---------- início ---------- */
 segInit('srcseg','src','src');segInit('modeseg','mode','mode');
-load();
+load();tLoad();tgIndex();
+$('goTango').onclick=function(){go('tango')};$('goQuest').onclick=function(){go('treino')};
+$('toInicio').onclick=function(){go('inicio')};$('tgHome').onclick=function(){if(TGV!=='shelf'){D=null;TGNOTE='';TGV='shelf'}go('inicio')};
+go(location.hash.slice(1));
 ['gesturestart','gesturechange'].forEach(function(e){document.addEventListener(e,function(ev){ev.preventDefault()},{passive:false})});
 try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(e){}
 fetch('questoes.json').then(function(r){return r.json()}).then(function(d){setData(d);renderAll();
   fetch('conteudos.json').then(function(r){return r.json()}).then(function(c){CONT=c;if(!$('v-conteudos').hidden)renderChk()}).catch(function(){})})
  .catch(function(){document.querySelector('.wrap').insertAdjacentHTML('beforeend','<div class="card"><b>Não consegui carregar as questões.</b><span class="muted">Verifique a internet e abra de novo.</span></div>')});
+fetch('cartoes.json').then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){TG=d;tgIndex();if(!$('v-tango').hidden)tgRender();renderInicio()}).catch(function(){TGERR=true;if(!$('v-tango').hidden)tgRender()});
 if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){try{var had=navigator.serviceWorker.controller,rl=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(had&&!rl){rl=true;location.reload()}});navigator.serviceWorker.register('sw.js').then(function(r){r.update&&r.update()}).catch(function(){})}catch(e){}}
 </script>
 

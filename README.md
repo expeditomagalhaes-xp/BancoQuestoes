@@ -21,8 +21,29 @@ App de estudo para o concurso do Corpo de Bombeiros Militar de Pernambuco (banca
 | `index.html` | O app inteiro (telas e lógica) |
 | `questoes.json` | O banco de questões e os temas de redação |
 | `conteudos.json` | Tópicos do edital e resumos teóricos (`r` = lista de frases; `**texto**` vira negrito) |
+| `cartoes.json` | Cartões do Tangochō, agrupados por tema (um tema por tópico de `conteudos.json`) |
 | `sw.js` | Funciona sem internet e atualiza sozinho |
 | `manifest.webmanifest`, `icon-*.png` | Instalação como app |
+
+## Tangochō (cartões de revisão)
+
+O menu inicial tem dois caminhos: **Tangochō** e **Questões** (as abas Treino, Conteúdos, Erros, Redação e Progresso ficam dentro de Questões).
+
+No Tangochō, cada tema é uma argola. Toque no cartão para virar e marque **Lembrei** ou **Rever** (o cartão volta ao fim da pilha). Há filtro "Só as que faltam", Embaralhar e "Misturar todos os temas". Na aba Erros, o botão **Criar cartão** transforma uma questão errada em cartão seu.
+
+O progresso fica no aparelho, na chave `cbmpe-tango-v1`, e entra no código de backup (campo `tg`).
+
+### Como adicionar cartões
+
+Edite `cartoes.json`. Dentro de `temas`, cada tema tem `id` igual ao do tópico em `conteudos.json` (ex.: `DC-1`), `s` (matéria), `t` (título) e a lista `c`:
+
+```json
+{ "id": "t-DC-1-7", "p": "Pergunta curta", "r": "Resposta curta", "f": "CF/88, art. 5º, XI" }
+```
+
+- `f` (fonte) é opcional, mas use em artigo de lei, súmula e dado atual.
+- **Nunca mude nem reaproveite um `id` já publicado**, porque o progresso é guardado por ele. Só acrescente cartões novos ao fim.
+- Ao mudar qualquer arquivo, aumente a versão do cache em `sw.js` (`banco-vN`).
 
 ## Como adicionar questões
 
