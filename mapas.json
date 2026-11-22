@@ -1,0 +1,441 @@
+{
+ "v": 1,
+ "nota": "Prioridade é estimativa do professor, a partir da frequência em provas da AOCP e do edital. Não é oficial.",
+ "mapas": [
+  {
+   "s": "PT",
+   "r": [
+    {
+     "t": "PT-0",
+     "p": "alta",
+     "n": "Base de todas as questões: texto, inferência e ideia central."
+    },
+    {
+     "t": "PT-3",
+     "p": "alta",
+     "n": "Conjunções e relações de sentido caem sempre e ligam coesão e interpretação."
+    },
+    {
+     "t": "PT-6",
+     "p": "alta",
+     "n": "Classes de palavras sustentam sintaxe, regência e concordância."
+    },
+    {
+     "t": "PT-8",
+     "p": "alta",
+     "n": "Termos da oração e períodos: cai todo ano."
+    },
+    {
+     "t": "PT-12",
+     "p": "alta",
+     "n": "Concordância verbal e nominal: regras curtas e muito cobradas."
+    },
+    {
+     "t": "PT-13",
+     "p": "alta",
+     "n": "Regência verbal e nominal, com a crase em seguida."
+    },
+    {
+     "t": "PT-7",
+     "p": "alta",
+     "n": "Crase: aplicação direta de regra."
+    },
+    {
+     "t": "PT-11",
+     "p": "media",
+     "n": "Pontuação: vírgula e o que não separa sujeito de verbo."
+    },
+    {
+     "t": "PT-9",
+     "p": "media",
+     "n": "Funções do que e do se."
+    },
+    {
+     "t": "PT-10",
+     "p": "media",
+     "n": "Coesão: pronomes, conectivos e retomadas."
+    },
+    {
+     "t": "PT-4",
+     "p": "media",
+     "n": "Ortografia oficial: pares de palavras confusas."
+    },
+    {
+     "t": "PT-5",
+     "p": "media",
+     "n": "Acentuação gráfica: regras por tonicidade."
+    },
+    {
+     "t": "PT-14",
+     "p": "media",
+     "n": "Colocação pronominal: próclise, ênclise e mesóclise."
+    },
+    {
+     "t": "PT-2",
+     "p": "media",
+     "n": "Figuras de linguagem: identificar pelo exemplo."
+    },
+    {
+     "t": "PT-1",
+     "p": "media",
+     "n": "Tipologia e gêneros textuais."
+    },
+    {
+     "t": "PT-16",
+     "p": "baixa",
+     "n": "Significação das palavras e parônimos."
+    },
+    {
+     "t": "PT-15",
+     "p": "baixa",
+     "n": "Formação de palavras."
+    },
+    {
+     "t": "PT-17",
+     "p": "baixa",
+     "n": "Variação linguística."
+    }
+   ]
+  },
+  {
+   "s": "INF",
+   "r": [
+    {
+     "t": "INF-2",
+     "p": "alta",
+     "n": "Segurança: ameaças, malwares e princípios."
+    },
+    {
+     "t": "INF-6",
+     "p": "alta",
+     "n": "Word, Excel e equivalentes: atalhos, fórmulas e funções."
+    },
+    {
+     "t": "INF-5",
+     "p": "alta",
+     "n": "Windows 11 e comandos do Prompt."
+    },
+    {
+     "t": "INF-0",
+     "p": "media",
+     "n": "Internet, intranet e protocolos."
+    },
+    {
+     "t": "INF-1",
+     "p": "media",
+     "n": "Navegadores e nuvem."
+    },
+    {
+     "t": "INF-3",
+     "p": "media",
+     "n": "Tipos de backup."
+    },
+    {
+     "t": "INF-4",
+     "p": "baixa",
+     "n": "Arquivos, hardware e periféricos."
+    }
+   ]
+  },
+  {
+   "s": "MAT",
+   "r": [
+    {
+     "t": "MAT-1",
+     "p": "alta",
+     "n": "Razão, regra de três e porcentagem: o mais cobrado."
+    },
+    {
+     "t": "MAT-6",
+     "p": "alta",
+     "n": "Geometria: áreas, volumes e Pitágoras."
+    },
+    {
+     "t": "MAT-4",
+     "p": "alta",
+     "n": "Funções e equações do 1º e 2º grau."
+    },
+    {
+     "t": "MAT-0",
+     "p": "media",
+     "n": "Operações, MMC e MDC."
+    },
+    {
+     "t": "MAT-8",
+     "p": "media",
+     "n": "Média, mediana, moda e probabilidade."
+    },
+    {
+     "t": "MAT-9",
+     "p": "media",
+     "n": "Análise combinatória."
+    },
+    {
+     "t": "MAT-2",
+     "p": "media",
+     "n": "Juros simples e compostos."
+    },
+    {
+     "t": "MAT-3",
+     "p": "media",
+     "n": "PA e PG."
+    },
+    {
+     "t": "MAT-5",
+     "p": "baixa",
+     "n": "Sistemas e geometria analítica."
+    },
+    {
+     "t": "MAT-7",
+     "p": "baixa",
+     "n": "Trigonometria no triângulo retângulo."
+    }
+   ]
+  },
+  {
+   "s": "RL",
+   "r": [
+    {
+     "t": "RL-0",
+     "p": "alta",
+     "n": "Conectivos e tabelas-verdade."
+    },
+    {
+     "t": "RL-1",
+     "p": "alta",
+     "n": "Equivalências e negações."
+    },
+    {
+     "t": "RL-2",
+     "p": "alta",
+     "n": "Quantificadores e diagramas."
+    },
+    {
+     "t": "RL-3",
+     "p": "media",
+     "n": "Argumentos e falácias."
+    },
+    {
+     "t": "RL-4",
+     "p": "media",
+     "n": "Contagem e probabilidade."
+    }
+   ]
+  },
+  {
+   "s": "FIS",
+   "r": [
+    {
+     "t": "FIS-1",
+     "p": "alta",
+     "n": "Cinemática: MRU e MRUV."
+    },
+    {
+     "t": "FIS-2",
+     "p": "alta",
+     "n": "Leis de Newton e forças."
+    },
+    {
+     "t": "FIS-3",
+     "p": "alta",
+     "n": "Trabalho, energia e potência."
+    },
+    {
+     "t": "FIS-4",
+     "p": "media",
+     "n": "Hidrostática: pressão e empuxo, tema do bombeiro."
+    },
+    {
+     "t": "FIS-6",
+     "p": "media",
+     "n": "Calor e termodinâmica."
+    },
+    {
+     "t": "FIS-8",
+     "p": "media",
+     "n": "Eletricidade: Ohm e potência."
+    },
+    {
+     "t": "FIS-0",
+     "p": "media",
+     "n": "Unidades, notação científica e vetores."
+    },
+    {
+     "t": "FIS-7",
+     "p": "baixa",
+     "n": "Ondas e óptica."
+    },
+    {
+     "t": "FIS-5",
+     "p": "baixa",
+     "n": "Gravitação."
+    }
+   ]
+  },
+  {
+   "s": "BIO",
+   "r": [
+    {
+     "t": "BIO-5",
+     "p": "alta",
+     "n": "Primeiros socorros, IST e saúde: ligado ao cargo."
+    },
+    {
+     "t": "BIO-2",
+     "p": "alta",
+     "n": "Corpo humano: sistemas e fisiologia."
+    },
+    {
+     "t": "BIO-0",
+     "p": "media",
+     "n": "Células e metabolismo."
+    },
+    {
+     "t": "BIO-1",
+     "p": "media",
+     "n": "Genética."
+    },
+    {
+     "t": "BIO-4",
+     "p": "media",
+     "n": "Ecologia e meio ambiente."
+    },
+    {
+     "t": "BIO-3",
+     "p": "baixa",
+     "n": "Diversidade dos seres vivos."
+    }
+   ]
+  },
+  {
+   "s": "DC",
+   "r": [
+    {
+     "t": "DC-1",
+     "p": "alta",
+     "n": "Art. 5º: o tema mais cobrado da disciplina."
+    },
+    {
+     "t": "DC-2",
+     "p": "alta",
+     "n": "Remédios constitucionais."
+    },
+    {
+     "t": "DC-4",
+     "p": "alta",
+     "n": "Organização do Estado, art. 37 e militares."
+    },
+    {
+     "t": "DC-6",
+     "p": "alta",
+     "n": "Segurança pública e art. 144: o seu cargo."
+    },
+    {
+     "t": "DC-0",
+     "p": "media",
+     "n": "Arts. 1º a 4º: texto curto e literal."
+    },
+    {
+     "t": "DC-3",
+     "p": "media",
+     "n": "Direitos sociais, nacionalidade e políticos."
+    },
+    {
+     "t": "DC-5",
+     "p": "media",
+     "n": "Poderes e funções essenciais à Justiça."
+    },
+    {
+     "t": "DC-7",
+     "p": "media",
+     "n": "Súmulas vinculantes."
+    },
+    {
+     "t": "DC-8",
+     "p": "media",
+     "n": "ECA."
+    },
+    {
+     "t": "DC-10",
+     "p": "media",
+     "n": "Lei Maria da Penha."
+    },
+    {
+     "t": "DC-9",
+     "p": "baixa",
+     "n": "Estatuto da Juventude."
+    }
+   ]
+  },
+  {
+   "s": "ATU",
+   "r": [
+    {
+     "t": "ATU-4",
+     "p": "alta",
+     "n": "Violência contra a mulher e segurança pública."
+    },
+    {
+     "t": "ATU-3",
+     "p": "media",
+     "n": "Brasil: economia e serviços públicos."
+    },
+    {
+     "t": "ATU-1",
+     "p": "media",
+     "n": "Meio ambiente, energia e clima."
+    },
+    {
+     "t": "ATU-0",
+     "p": "media",
+     "n": "Mundo contemporâneo."
+    },
+    {
+     "t": "ATU-2",
+     "p": "baixa",
+     "n": "América Latina e Mercosul."
+    }
+   ]
+  },
+  {
+   "s": "HPE",
+   "r": [
+    {
+     "t": "HPE-3",
+     "p": "alta",
+     "n": "Domínio holandês e Nassau."
+    },
+    {
+     "t": "HPE-4",
+     "p": "alta",
+     "n": "Revoltas e movimentos: datas e causas."
+    },
+    {
+     "t": "HPE-0",
+     "p": "media",
+     "n": "Colonização e Duarte Coelho."
+    },
+    {
+     "t": "HPE-1",
+     "p": "media",
+     "n": "Economia açucareira."
+    },
+    {
+     "t": "HPE-2",
+     "p": "media",
+     "n": "Olinda e Recife."
+    },
+    {
+     "t": "HPE-6",
+     "p": "media",
+     "n": "Cultura popular e aspectos afro-brasileiros."
+    },
+    {
+     "t": "HPE-5",
+     "p": "baixa",
+     "n": "Pernambuco na República."
+    }
+   ]
+  }
+ ]
+}

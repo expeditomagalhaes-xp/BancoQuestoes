@@ -1,6 +1,6 @@
 {
  "v": 1,
- "fonte": "Cartões de revisão do CBMPE 2026 (Soldado). Artigos de lei e súmulas conferidos nas aulas do Projeto; dados atuais e História de PE a conferir em fonte oficial.",
+ "fonte": "Cartões de revisão do CBMPE 2026 (Soldado). Conferidos em fonte: CF/88 e súmulas (aulas do Projeto), ECA, Estatuto da Juventude, Lei Maria da Penha (arts. 5º e 7º), Lei 14.994/2024, UNESCO (frevo), datas de História de PE e parâmetros de RCP. Atualidades e BRICS: conferir antes da prova.",
  "temas": [
   {
    "id": "PT-0",
@@ -1825,7 +1825,7 @@
      "id": "t-BIO-5-2",
      "p": "Qual o ritmo recomendado das compressões torácicas?",
      "r": "De 100 a 120 por minuto, com profundidade de cerca de 5 a 6 cm no adulto.",
-     "f": "Diretrizes AHA/ILCOR (conferir protocolo atual)"
+     "f": "Diretrizes de RCP (AHA/ILCOR, 2015 em diante); conferir protocolo atual"
     },
     {
      "id": "t-BIO-5-3",
@@ -2632,7 +2632,7 @@
      "id": "t-ATU-2-1",
      "p": "Quando foi criado o Mercosul e por qual tratado?",
      "r": "Em 1991, pelo Tratado de Assunção. Fundadores: Argentina, Brasil, Paraguai e Uruguai.",
-     "f": "Tratado de Assunção (1991). Conferir composição atual."
+     "f": "Tratado de Assunção (1991)"
     },
     {
      "id": "t-ATU-2-2",
@@ -2701,13 +2701,13 @@
     },
     {
      "id": "t-HPE-0-2",
-     "p": "Qual a primeira vila e sede da capitania?",
-     "r": "Olinda, fundada em 1535."
+     "p": "Qual foi a sede da capitania de Pernambuco?",
+     "r": "Olinda, fundada em 1535 por Duarte Coelho."
     },
     {
      "id": "t-HPE-0-3",
      "p": "Por que a capitania de Pernambuco prosperou?",
-     "r": "Pela cana-de-açúcar, com solo de massapê e boa localização para o comércio com a Europa, e pelos acordos de Duarte Coelho com parte dos indígenas."
+     "r": "Principalmente pela cana-de-açúcar, cultivada em solo favorável e com boa saída para o comércio com a Europa."
     }
    ]
   },
@@ -2746,7 +2746,7 @@
     {
      "id": "t-HPE-2-2",
      "p": "O que foi a Guerra dos Mascates?",
-     "r": "Conflito de 1710 a 1711 entre a aristocracia rural de Olinda e os comerciantes (mascates) de Recife, que foi elevado a vila em 1709."
+     "r": "Conflito de 1710 a 1711 entre os senhores de engenho de Olinda e os comerciantes (mascates) de Recife, ligado à elevação de Recife a vila."
     }
    ]
   },
@@ -2773,7 +2773,7 @@
     {
      "id": "t-HPE-3-4",
      "p": "Quais as Batalhas dos Guararapes?",
-     "r": "Duas vitórias dos luso-brasileiros sobre os holandeses, em 1648 e 1649. Marco da formação do Exército brasileiro."
+     "r": "Duas vitórias dos luso-brasileiros sobre os holandeses, em 1648 e 1649, no morro dos Guararapes, decisivas para a expulsão dos holandeses em 1654."
     },
     {
      "id": "t-HPE-3-5",
@@ -2790,7 +2790,7 @@
     {
      "id": "t-HPE-4-1",
      "p": "O que foi a Revolução Pernambucana de 1817?",
-     "r": "Movimento republicano e separatista contra o domínio português, que chegou a instalar um governo provisório em Recife."
+     "r": "Movimento republicano e separatista contra o domínio português, com centro em Recife."
     },
     {
      "id": "t-HPE-4-2",
@@ -2800,12 +2800,12 @@
     {
      "id": "t-HPE-4-3",
      "p": "O que foi a Revolta Praieira (1848)?",
-     "r": "Revolta liberal em Pernambuco contra o domínio dos conservadores e a concentração de poder, com reivindicações como voto livre e fim do monopólio comercial."
+     "r": "Revolta liberal ocorrida em Pernambuco em 1848, contra o domínio político dos conservadores."
     },
     {
      "id": "t-HPE-4-4",
      "p": "Quem foi Frei Caneca?",
-     "r": "Frade carmelita, jornalista e líder da Confederação do Equador, condenado à morte em 1825."
+     "r": "Frade carmelita, jornalista e mentor da Confederação do Equador, fuzilado em Recife em 13 de janeiro de 1825."
     }
    ]
   },
@@ -2839,8 +2839,8 @@
     {
      "id": "t-HPE-6-1",
      "p": "Qual a origem do frevo?",
-     "r": "Ritmo e dança do carnaval do Recife, surgido no final do século XIX. É Patrimônio Cultural Imaterial da Humanidade pela UNESCO (2012).",
-     "f": "UNESCO (2012). Conferir em fonte oficial."
+     "r": "Expressão artística de música e dança, executada principalmente no carnaval do Recife. Foi inscrito pela UNESCO na Lista Representativa do Patrimônio Cultural Imaterial da Humanidade em 2012.",
+     "f": "UNESCO, lista do patrimônio imaterial (2012)"
     },
     {
      "id": "t-HPE-6-2",

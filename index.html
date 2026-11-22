@@ -125,7 +125,7 @@ nav.tabs button[aria-current="page"]{color:var(--accent)}
 nav.tabs .dot{min-width:18px;padding:0 4px;height:16px;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-size:.66rem;line-height:16px;position:absolute;margin-left:22px;margin-top:-4px}
 nav.tabs button{position:relative}
 /* menu inicial */
-body[data-area="inicio"],body[data-area="tango"]{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 28px)}
+body[data-area="inicio"],body[data-area="tango"],body[data-area="mapas"]{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 28px)}
 .menu{display:grid;grid-template-columns:1fr;gap:14px}
 .mcard{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;text-align:left;width:100%;background:var(--surface);border:1.5px solid var(--ink);padding:18px 16px;min-height:132px}
 .mcard:hover{border-color:var(--accent)}
@@ -165,6 +165,28 @@ body[data-area="inicio"],body[data-area="tango"]{padding-bottom:calc(env(safe-ar
 .btn.okb{background:var(--ok);color:var(--accent-ink)}
 .tgmsg{border-left:5px solid var(--warn);background:var(--soft);padding:10px 12px;font-size:.95rem}
 @media (prefers-reduced-motion:reduce){.flip{transition:none}.page.turn{animation:none;opacity:0}}
+.mpc{border:1.5px solid var(--ink);background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.mpc b{font-family:var(--f-display);font-size:1.5rem;line-height:1.05}
+.mpc span{font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.mpleg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.82rem;color:var(--muted)}
+.mpleg i{display:inline-block;width:10px;height:10px;margin-right:5px;vertical-align:-1px}
+.mpt{margin-left:12px;padding-left:14px;border-left:2px solid var(--ink);display:flex;flex-direction:column;gap:10px}
+details.mpb{position:relative;background:var(--surface);border:1.5px solid var(--line);border-left-width:6px}
+details.mpb::before{content:"";position:absolute;left:-22px;top:26px;width:16px;border-top:2px solid var(--ink)}
+details.mpb.pa{border-left-color:var(--accent)}details.mpb.pm{border-left-color:var(--ink)}details.mpb.pb{border-left-color:var(--muted)}
+details.mpb>summary{cursor:pointer;list-style:none;padding:12px 12px 10px;display:flex;flex-direction:column;gap:6px}
+details.mpb>summary::-webkit-details-marker{display:none}
+details.mpb>summary b{font-size:1.02rem;line-height:1.25;overflow-wrap:anywhere}
+.mpn{font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.mpbody{padding:0 12px 12px;display:flex;flex-direction:column;gap:8px}
+.mpwhy{font-size:.92rem;color:var(--muted);border-left:3px solid var(--line);padding-left:10px}
+details.mpl{border:1px solid var(--line);background:var(--bg)}
+details.mpl>summary{cursor:pointer;list-style:none;padding:9px 10px;display:grid;grid-template-columns:14px minmax(0,1fr);gap:8px;align-items:start;font-size:.96rem}
+details.mpl>summary::-webkit-details-marker{display:none}
+.dot{width:12px;height:12px;border:2px solid var(--accent);border-radius:50%;margin-top:4px}
+.dot.ok{background:var(--ok);border-color:var(--ok)}
+.mpans{padding:2px 10px 10px 32px;font-size:.96rem;line-height:1.45;overflow-wrap:anywhere}
+.mpans .src{display:block;margin-top:6px}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -193,11 +215,21 @@ body[data-area="inicio"],body[data-area="tango"]{padding-bottom:calc(env(safe-ar
         <svg class="mart" viewBox="0 0 64 84" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><rect x="14" y="6" width="44" height="64" transform="translate(4 8)" opacity=".35"/><rect x="10" y="6" width="44" height="64"/><circle cx="10" cy="22" r="7" stroke="var(--accent)"/><circle cx="10" cy="54" r="7" stroke="var(--accent)"/><path d="M22 30h22M22 40h16" stroke-width="2.5"/></svg>
         <div><h2>Tangochō</h2><p>Cartões de revisão presos por argola. Uma ideia por cartão, por tema.</p><div class="st" id="stT"></div></div>
       </button>
+      <button class="mcard" id="goMapas">
+        <svg class="mart" viewBox="0 0 64 84" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><circle cx="32" cy="42" r="9" stroke="var(--accent)"/><path d="M32 33V14M23 46L10 58M41 46l13 12"/><rect x="22" y="4" width="20" height="10"/><rect x="2" y="58" width="20" height="10"/><rect x="42" y="58" width="20" height="10"/></svg>
+        <div><h2>Mapas</h2><p>Um mapa mental por matéria, com os ramos por prioridade e o que ainda falta.</p><div class="st" id="stM"></div></div>
+      </button>
       <button class="mcard" id="goQuest">
         <svg class="mart" viewBox="0 0 64 84" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><rect x="8" y="6" width="48" height="64"/><path d="M18 24l4 4 8-9" stroke="var(--accent)"/><path d="M36 24h12M18 44l4 4 8-9" /><path d="M36 44h12" /></svg>
         <div><h2>Questões</h2><p>Treino, conteúdos do edital, caderno de erros, redação e progresso.</p><div class="st" id="stQ"></div></div>
       </button>
     </div>
+  </section>
+
+  <!-- MAPAS -->
+  <section id="v-mapas" class="view" hidden>
+    <div class="row"><button class="btn ghost small back" id="mpHome">‹ Início</button><span class="grow"></span><span class="label">Mapas</span></div>
+    <div id="mpBody" style="display:flex;flex-direction:column;gap:12px"></div>
   </section>
 
   <!-- TREINO -->
@@ -671,18 +703,55 @@ function renderInicio(){
   var n=Object.keys(S.ans).filter(function(id){return BYID[id]}).length,e=wrongIds().length;
   $('stQ').textContent=Q.length?(n+' respondidas · '+e+' no caderno de erros'):'';
   if(TG){var all=tgAllIds();$('stT').textContent=tgCount(all)+' de '+all.length+' cartões lembrados'}else $('stT').textContent='';
+  $('stM').textContent=MP?(MP.mapas.length+' matérias · '+MP.mapas.reduce(function(a,m){return a+m.r.length},0)+' ramos'):'';
 }
+
+/* ---------- mapas ---------- */
+var MP=null,MPERR=false,MPBY={},MPS='PT',MPO={};
+var PN={alta:'Alta',media:'Média',baixa:'Baixa'},PC={alta:'pa',media:'pm',baixa:'pb'};
+function mpTema(id){var r=null;if(TG)TG.temas.forEach(function(t){if(t.id===id)r=t});return r}
+function mpRender(){
+  var box=$('mpBody');
+  if(!MP||!TG){box.innerHTML='<div class="card"><div class="empty">'+((MPERR||TGERR)?'Não consegui carregar os mapas. Verifique a internet e abra de novo.':'Carregando mapas…')+'</div></div>';return}
+  var falta=!!T.pref.mpFalta,m=MPBY[MPS],all=[],done=0;
+  m.r.forEach(function(b){var t=mpTema(b.t);if(t)t.c.forEach(function(c){all.push(c.id);if(tOk(c.id))done++})});
+  var chips=Object.keys(MPBY).map(function(k){return '<button class="chip" data-ms="'+k+'" aria-pressed="'+(k===MPS)+'">'+esc(SN[k]||k)+'</button>'}).join('');
+  var h='<div class="chips">'+chips+'</div>'+
+    '<div class="mpc"><span class="label">Mapa mental</span><b>'+esc(SN[MPS]||MPS)+'</b><span>'+done+' de '+all.length+' cartões lembrados · '+m.r.length+' ramos</span><div class="bar ok"><i style="width:'+(all.length?Math.round(done/all.length*100):0)+'%"></i></div></div>'+
+    '<div class="row"><button class="chip" id="mpFalta" aria-pressed="'+falta+'">Só o que falta</button></div>'+
+    '<div class="mpleg"><span><i style="background:var(--accent)"></i>Prioridade alta</span><span><i style="background:var(--ink)"></i>Média</span><span><i style="background:var(--muted)"></i>Baixa</span></div>'+
+    '<div class="mpt">';
+  var shown=0;
+  m.r.forEach(function(b){
+    var t=mpTema(b.t);if(!t)return;
+    var ids=t.c.map(function(c){return c.id}),d=tgCount(ids);
+    if(falta&&d===ids.length)return;
+    shown++;
+    var leaves=t.c.filter(function(c){return !falta||!tOk(c.id)}).map(function(c){
+      return '<details class="mpl"><summary><span class="dot'+(tOk(c.id)?' ok':'')+'" title="'+(tOk(c.id)?'Lembrado':'Falta')+'"></span><span>'+fmtR(c.p)+'</span></summary><div class="mpans">'+fmtR(c.r)+(c.f?'<span class="src">Fonte: '+esc(c.f)+'</span>':'')+'</div></details>'}).join('');
+    h+='<details class="mpb '+PC[b.p]+'" data-t="'+b.t+'"'+(MPO[b.t]?' open':'')+'><summary><span class="tag" style="width:fit-content">Prioridade '+PN[b.p]+'</span><b>'+esc(t.t)+'</b><span class="mpn">'+d+'/'+ids.length+' lembrados</span><div class="bar ok"><i style="width:'+Math.round(d/ids.length*100)+'%"></i></div></summary>'+
+      '<div class="mpbody"><div class="mpwhy">'+esc(b.n)+'</div>'+leaves+'<button class="btn small" data-st="'+b.t+'">Estudar este ramo no Tangochō</button></div></details>';
+  });
+  if(!shown)h+='<div class="card"><div class="empty">Nada falta neste mapa. Desligue "Só o que falta" para rever tudo.</div></div>';
+  h+='</div><p class="muted" style="font-size:.85rem">'+esc(MP.nota)+'</p>';
+  box.innerHTML=h;
+  box.querySelectorAll('[data-ms]').forEach(function(b){b.onclick=function(){MPS=b.dataset.ms;mpRender();window.scrollTo(0,0)}});
+  $('mpFalta').onclick=function(){T.pref.mpFalta=!T.pref.mpFalta;tPersist();mpRender()};
+  box.querySelectorAll('details.mpb').forEach(function(d){d.ontoggle=function(){MPO[d.dataset.t]=d.open}});
+  box.querySelectorAll('[data-st]').forEach(function(b){b.onclick=function(e){e.preventDefault();var t=mpTema(b.dataset.st);if(!t)return;go('tango');tgStart(t.c.map(function(c){return c.id}),SN[t.s]+': '+t.t,false)}});
+}
+function mpIndex(){MPBY={};if(MP)MP.mapas.forEach(function(m){MPBY[m.s]=m})}
 
 /* ---------- navegação ---------- */
 var QVIEWS=['treino','conteudos','erros','redacao','progresso'];
-var VIEWS=['inicio','tango'].concat(QVIEWS);
+var VIEWS=['inicio','tango','mapas'].concat(QVIEWS);
 function go(v){
   if(VIEWS.indexOf(v)<0)v='inicio';
   VIEWS.forEach(function(x){$('v-'+x).hidden=x!==v});
   var inQ=QVIEWS.indexOf(v)>=0;
   $('hdrQ').hidden=!inQ;$('tabs').hidden=!inQ;document.body.setAttribute('data-area',inQ?'q':v);
   $('tabs').querySelectorAll('button').forEach(function(b){if(b.dataset.v===v)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
-  if(v==='inicio')renderInicio();if(v==='tango')tgRender();
+  if(v==='inicio')renderInicio();if(v==='tango')tgRender();if(v==='mapas')mpRender();
   if(v==='conteudos')renderChk();if(v==='erros')renderErr();if(v==='redacao')renderRed();if(v==='progresso')renderProg();
   if(v==='treino'&&!sess)renderPoolInfo();
   try{if(location.hash!=='#'+v)history.replaceState(null,'','#'+v)}catch(e){}
@@ -697,7 +766,7 @@ function renderAll(){renderChips();renderBadges();var v=location.hash.slice(1);g
 /* ---------- início ---------- */
 segInit('srcseg','src','src');segInit('modeseg','mode','mode');
 load();tLoad();tgIndex();
-$('goTango').onclick=function(){go('tango')};$('goQuest').onclick=function(){go('treino')};
+$('goTango').onclick=function(){go('tango')};$('goMapas').onclick=function(){go('mapas')};$('mpHome').onclick=function(){go('inicio')};$('goQuest').onclick=function(){go('treino')};
 $('toInicio').onclick=function(){go('inicio')};$('tgHome').onclick=function(){if(TGV!=='shelf'){D=null;TGNOTE='';TGV='shelf'}go('inicio')};
 go(location.hash.slice(1));
 ['gesturestart','gesturechange'].forEach(function(e){document.addEventListener(e,function(ev){ev.preventDefault()},{passive:false})});
@@ -705,7 +774,8 @@ try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}
 fetch('questoes.json').then(function(r){return r.json()}).then(function(d){setData(d);renderAll();
   fetch('conteudos.json').then(function(r){return r.json()}).then(function(c){CONT=c;if(!$('v-conteudos').hidden)renderChk()}).catch(function(){})})
  .catch(function(){document.querySelector('.wrap').insertAdjacentHTML('beforeend','<div class="card"><b>Não consegui carregar as questões.</b><span class="muted">Verifique a internet e abra de novo.</span></div>')});
-fetch('cartoes.json').then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){TG=d;tgIndex();if(!$('v-tango').hidden)tgRender();renderInicio()}).catch(function(){TGERR=true;if(!$('v-tango').hidden)tgRender()});
+fetch('cartoes.json').then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){TG=d;tgIndex();if(!$('v-tango').hidden)tgRender();if(!$('v-mapas').hidden)mpRender();renderInicio()}).catch(function(){TGERR=true;if(!$('v-tango').hidden)tgRender();if(!$('v-mapas').hidden)mpRender()});
+fetch('mapas.json').then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){MP=d;mpIndex();renderInicio();if(!$('v-mapas').hidden)mpRender()}).catch(function(){MPERR=true;if(!$('v-mapas').hidden)mpRender()});
 if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){try{var had=navigator.serviceWorker.controller,rl=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(had&&!rl){rl=true;location.reload()}});navigator.serviceWorker.register('sw.js').then(function(r){r.update&&r.update()}).catch(function(){})}catch(e){}}
 </script>
 
