@@ -22,6 +22,7 @@ App de estudo para o concurso do Corpo de Bombeiros Militar de Pernambuco (banca
 | `questoes.json` | O banco de questões e os temas de redação |
 | `conteudos.json` | Tópicos do edital e resumos teóricos (`r` = lista de frases; `**texto**` vira negrito) |
 | `cartoes.json` | Cartões do Tangochō, agrupados por tema (um tema por tópico de `conteudos.json`) |
+| `mapas.json` | Mapas mentais: para cada matéria, a ordem de prioridade dos tópicos e a razão de cada um (os cards de cada ramo vêm de `cartoes.json`) |
 | `sw.js` | Funciona sem internet e atualiza sozinho |
 | `manifest.webmanifest`, `icon-*.png` | Instalação como app |
 
@@ -44,6 +45,10 @@ Edite `cartoes.json`. Dentro de `temas`, cada tema tem `id` igual ao do tópico 
 - `f` (fonte) é opcional, mas use em artigo de lei, súmula e dado atual.
 - **Nunca mude nem reaproveite um `id` já publicado**, porque o progresso é guardado por ele. Só acrescente cartões novos ao fim.
 - Ao mudar qualquer arquivo, aumente a versão do cache em `sw.js` (`banco-vN`).
+
+## Mapas
+
+A parte **Mapas** mostra um mapa mental por matéria. Cada ramo é um tópico do edital, em ordem de prioridade (alta, média, baixa). Ao abrir um ramo, aparecem os cartões dele: toque em um para ver a resposta. A bolinha cheia indica que você já marcou "Lembrei" no Tangochō; a vazia, que ainda falta. "Só o que falta" esconde o que já foi lembrado, e o botão do ramo abre a pilha do Tangochō. A prioridade é estimativa e fica em `mapas.json`.
 
 ## Como adicionar questões
 
