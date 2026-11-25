@@ -81,3 +81,7 @@ Edite `questoes.json`. Cada questão é um objeto dentro da lista `q`:
 - Repetidas foram removidas. A questão 61 de Português tem duas respostas corretas e traz um aviso no comentário.
 
 Para marcar um gabarito suspeito, toque em "Gabarito parece errado?" depois de responder.
+
+## Estudo POO (UP2)
+
+A pasta `poo/` tem um segundo app, independente, para a UP2 de Desenvolvimento Orientado a Objetos (UNIT 2026.2, Prof. Aldo Moura): herança, classe abstrata, polimorfismo e tratamento de exceção. Endereço: `.../BancoQuestoes/poo/`. Detalhes em `poo/README.md`.
